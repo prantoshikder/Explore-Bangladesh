@@ -240,17 +240,18 @@ export function SpotExplorer({
         )}
 
         {/* Quick tries */}
-        {/* Sits below the hero's wave edge so every chip is on the light background */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-2 text-sm sm:mt-12">
-          <span className="mr-1 text-xs font-bold tracking-[0.18em] text-brand-600 uppercase">{t.explore.try}</span>
+        {/* Glass chips inside the dark hero, just under the search box.
+            Phones: one swipeable row. Desktop: one centred row. */}
+        <div className="-mx-4 mt-5 flex snap-x scroll-px-4 items-center gap-2 overflow-x-auto px-4 pb-1 text-sm [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 lg:-mx-24">
+          <span className="mr-1 shrink-0 snap-start text-xs font-bold tracking-[0.18em] text-brand-200 uppercase">{t.explore.try}</span>
           {t.explore.tries.map((q, i) => (
             <button
               key={q}
               type="button"
               onClick={() => setQuery(q)}
-              className="group inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-semibold text-ink/80 shadow-sm ring-1 ring-jute transition hover:-translate-y-0.5 hover:bg-brand-600 hover:text-white hover:shadow-md hover:ring-brand-600"
+              className="group inline-flex shrink-0 snap-start items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 font-semibold text-white ring-1 ring-white/25 backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white hover:text-brand-700 hover:shadow-lg"
             >
-              <span aria-hidden className="text-xs opacity-70 group-hover:opacity-100">{i < t.explore.tries.length - 2 ? "📍" : i === t.explore.tries.length - 2 ? "💧" : "🏖️"}</span>
+              <span aria-hidden className="text-xs">{i < t.explore.tries.length - 2 ? "📍" : i === t.explore.tries.length - 2 ? "💧" : "🏖️"}</span>
               {q}
             </button>
           ))}

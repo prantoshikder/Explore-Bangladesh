@@ -132,7 +132,7 @@ export function Navbar() {
                 aria-expanded={toolsOpen}
                 aria-haspopup="true"
                 onClick={() => setToolsOpen((o) => !o)}
-                className={cn(linkCls(toolsActive || toolsOpen), "inline-flex items-center gap-1.5")}
+                className={cn(linkCls(toolsActive || toolsOpen), "inline-flex items-center gap-1.5 whitespace-nowrap")}
               >
                 {t.nav.travelTools}
                 <svg aria-hidden width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" className={cn("transition-transform", toolsOpen && "rotate-180")}>
@@ -171,7 +171,7 @@ export function Navbar() {
 
           {/* ---- Right side ---- */}
           <div className="flex items-center gap-2">
-            <div className="hidden shrink-0 sm:block">
+            <div className="hidden shrink-0 sm:block md:hidden lg:block">
               <LanguageSwitcher tone={glass ? "glass" : "light"} />
             </div>
             {/* My Trip (saved places) */}
