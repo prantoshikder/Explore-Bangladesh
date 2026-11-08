@@ -40,7 +40,7 @@ export default async function ExplorePage() {
       />
 
       {/* The search box floats over the bottom edge of the hero */}
-      <div className="relative z-20 mx-auto -mt-44 max-w-7xl px-4 pb-14 sm:-mt-56 sm:px-6 lg:px-8">
+      <div className="relative z-20 mx-auto -mt-64 max-w-7xl px-4 pb-14 sm:-mt-72 sm:px-6 lg:px-8">
         {/* useSearchParams needs a Suspense boundary so the shell can prerender */}
         <Suspense fallback={<div className="mx-auto h-16 max-w-3xl animate-pulse rounded-full bg-white ring-1 ring-jute" />}>
           <SpotExplorer spots={spots} districts={DISTRICTS} covered={covered} topSpots={getTopSpots(10, locale)} altNames={altNames} />

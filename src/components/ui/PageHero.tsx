@@ -47,7 +47,7 @@ export function PageHero({
       <div
         className={cn(
           "relative mx-auto flex max-w-7xl flex-col justify-end px-4 pt-36 sm:px-6 lg:px-8",
-          overlap ? "pb-52 sm:pb-64" : "pb-28 sm:pb-36",
+          overlap ? "pb-72 sm:pb-80" : "pb-28 sm:pb-36",
           size === "lg" ? "min-h-[640px]" : "min-h-[520px]",
           center && "items-center text-center",
         )}

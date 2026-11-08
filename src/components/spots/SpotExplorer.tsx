@@ -173,94 +173,110 @@ export function SpotExplorer({
 
   return (
     <div>
-      {/* ================= Search box ================= */}
-      <div className="relative z-30 mx-auto max-w-3xl">
-        <form
-          role="search"
-          onSubmit={(e) => { e.preventDefault(); setFocused(false); inputRef.current?.blur(); }}
-          className="flex items-center gap-2 rounded-full bg-white p-2 pl-5 shadow-2xl shadow-brand-900/15 ring-1 ring-jute focus-within:ring-2 focus-within:ring-brand-500"
-        >
-          <svg aria-hidden width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-brand-600"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
-          <input
-            ref={inputRef}
-            value={query}
-            onChange={(e) => { setQuery(e.target.value); setFocused(true); }}
-            onFocus={() => setFocused(true)}
-            onBlur={() => setTimeout(() => setFocused(false), 120)}
-            onKeyDown={onKeyDown}
-            placeholder={t.explore.placeholder}
-            aria-label={t.explore.aria}
-            role="combobox"
-            aria-expanded={showSuggest}
-            aria-controls={listId}
-            aria-autocomplete="list"
-            aria-activedescendant={active >= 0 ? `${listId}-${active}` : undefined}
-            className="min-w-0 flex-1 bg-transparent py-3 text-base text-ink placeholder:text-muted focus:outline-none sm:text-lg"
-          />
-          {!query && (
-            <kbd className="hidden shrink-0 rounded-md bg-sand px-2 py-1 font-mono text-xs text-muted ring-1 ring-jute sm:block" title={t.explore.pressSlash}>/</kbd>
-          )}
-          {query && (
-            <button type="button" onClick={() => { setQuery(""); inputRef.current?.focus(); }} aria-label={t.explore.clearSearch} className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-muted hover:bg-sand">
-              ✕
-            </button>
-          )}
-          <button type="submit" className="shrink-0 rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
-            {t.explore.search}
-          </button>
-        </form>
-
-        {/* Suggestions */}
-        {showSuggest && (
-          <ul id={listId} role="listbox" className="absolute inset-x-0 top-full mt-2 overflow-hidden rounded-3xl bg-white p-2 shadow-2xl shadow-brand-900/15 ring-1 ring-jute">
-            {suggestions.map((s, i) => (
-              <li
-                key={`${s.type}-${s.label}`}
-                id={`${listId}-${i}`}
-                role="option"
-                aria-selected={i === active}
-                onPointerDown={(e) => e.preventDefault()}
-                onPointerEnter={() => setActive(i)}
-                onClick={() => pick(i)}
-                className={cn("flex cursor-pointer items-center gap-3 rounded-2xl p-2.5", i === active && "bg-brand-50")}
-              >
-                {s.image ? (
-                  <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl"><Image src={s.image} alt="" fill sizes="44px" className="object-cover" /></span>
-                ) : (
-                  <span aria-hidden className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sand text-lg">📍</span>
-                )}
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-semibold text-ink">{s.label}</span>
-                  <span className="block truncate text-xs text-muted">{s.sub}</span>
-                </span>
-                <span className="text-xs font-semibold text-brand-600">{s.type === "district" ? t.explore.district : t.explore.place}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-
-        {/* Quick tries */}
-        {/* Glass chips inside the dark hero, just under the search box.
-            Phones: one swipeable row. Desktop: one centred row. */}
-        <div className="-mx-4 mt-5 flex snap-x scroll-px-4 items-center gap-2 overflow-x-auto px-4 pb-1 text-sm [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 lg:-mx-24">
-          <span className="mr-1 shrink-0 snap-start text-xs font-bold tracking-[0.18em] text-brand-200 uppercase">{t.explore.try}</span>
-          {t.explore.tries.map((q, i) => (
-            <button
-              key={q}
-              type="button"
-              onClick={() => setQuery(q)}
-              className="group inline-flex shrink-0 snap-start items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 font-semibold text-white ring-1 ring-white/25 backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white hover:text-brand-700 hover:shadow-lg"
+      {/* ================= Search panel (floats inside the hero) =================
+          A frosted-glass card holding the search bar and popular searches,
+          with a short "what's covered" line underneath. */}
+      <div className="relative z-30 mx-auto max-w-4xl">
+        <div className="rounded-[2.25rem] bg-white/10 p-2 shadow-2xl shadow-brand-950/30 ring-1 ring-white/20 backdrop-blur-xl sm:p-2.5">
+          <div className="relative">
+            <form
+              role="search"
+              onSubmit={(e) => { e.preventDefault(); setFocused(false); inputRef.current?.blur(); }}
+              className="flex items-center gap-2 rounded-full bg-white p-2 pl-5 shadow-xl shadow-brand-900/20 transition focus-within:ring-4 focus-within:ring-brand-300/60"
             >
-              <span aria-hidden className="text-xs">{i < t.explore.tries.length - 2 ? "📍" : i === t.explore.tries.length - 2 ? "💧" : "🏖️"}</span>
-              {q}
-            </button>
-          ))}
+              <svg aria-hidden width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-brand-600"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+              <input
+                ref={inputRef}
+                value={query}
+                onChange={(e) => { setQuery(e.target.value); setFocused(true); }}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setTimeout(() => setFocused(false), 120)}
+                onKeyDown={onKeyDown}
+                placeholder={t.explore.placeholder}
+                aria-label={t.explore.aria}
+                role="combobox"
+                aria-expanded={showSuggest}
+                aria-controls={listId}
+                aria-autocomplete="list"
+                aria-activedescendant={active >= 0 ? `${listId}-${active}` : undefined}
+                className="min-w-0 flex-1 bg-transparent py-3 text-base text-ink placeholder:text-muted focus:outline-none sm:text-lg"
+              />
+              {!query && (
+                <kbd className="hidden shrink-0 rounded-md bg-sand px-2 py-1 font-mono text-xs text-muted ring-1 ring-jute sm:block" title={t.explore.pressSlash}>/</kbd>
+              )}
+              {query && (
+                <button type="button" onClick={() => { setQuery(""); inputRef.current?.focus(); }} aria-label={t.explore.clearSearch} className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-muted hover:bg-sand">
+                  ✕
+                </button>
+              )}
+              <button type="submit" className="shrink-0 rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
+                {t.explore.search}
+              </button>
+            </form>
+
+            {/* Suggestions */}
+            {showSuggest && (
+              <ul id={listId} role="listbox" className="absolute inset-x-0 top-full mt-2 overflow-hidden rounded-3xl bg-white p-2 shadow-2xl shadow-brand-900/15 ring-1 ring-jute">
+                {suggestions.map((s, i) => (
+                  <li
+                    key={`${s.type}-${s.label}`}
+                    id={`${listId}-${i}`}
+                    role="option"
+                    aria-selected={i === active}
+                    onPointerDown={(e) => e.preventDefault()}
+                    onPointerEnter={() => setActive(i)}
+                    onClick={() => pick(i)}
+                    className={cn("flex cursor-pointer items-center gap-3 rounded-2xl p-2.5", i === active && "bg-brand-50")}
+                  >
+                    {s.image ? (
+                      <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl"><Image src={s.image} alt="" fill sizes="44px" className="object-cover" /></span>
+                    ) : (
+                      <span aria-hidden className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-sand text-lg">📍</span>
+                    )}
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate font-semibold text-ink">{s.label}</span>
+                      <span className="block truncate text-xs text-muted">{s.sub}</span>
+                    </span>
+                    <span className="text-xs font-semibold text-brand-600">{s.type === "district" ? t.explore.district : t.explore.place}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Popular searches — phones: one swipeable row; larger screens: centred, wrapping */}
+          <div className="flex snap-x scroll-px-3 items-center gap-1.5 overflow-x-auto px-3 pt-3 pb-1.5 sm:gap-2 [scrollbar-width:none] sm:flex-wrap sm:justify-center sm:overflow-visible">
+            <span className="mr-1 shrink-0 snap-start text-[0.68rem] font-bold tracking-[0.2em] text-brand-200 uppercase">{t.explore.try}</span>
+            {t.explore.tries.map((q, i) => (
+              <button
+                key={q}
+                type="button"
+                onClick={() => setQuery(q)}
+                className="inline-flex shrink-0 snap-start items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-[0.8rem] font-semibold text-white/90 ring-1 ring-white/15 transition hover:-translate-y-0.5 hover:bg-white hover:text-brand-700 hover:shadow-lg"
+              >
+                <span aria-hidden className="text-[0.7rem]">{i < t.explore.tries.length - 2 ? "📍" : i === t.explore.tries.length - 2 ? "💧" : "🏖️"}</span>
+                {q}
+              </button>
+            ))}
+          </div>
         </div>
+
+        {/* What's covered */}
+        <p className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm text-white/75 max-sm:[&>span:last-child]:basis-full max-sm:[&>span:last-child]:text-center">
+          <span><strong className="font-semibold text-white">{spots.length}</strong> {t.explore.statPlaces}</span>
+          <span aria-hidden className="h-1 w-1 rounded-full bg-sun" />
+          <span><strong className="font-semibold text-white">{covered.length}</strong> {t.explore.statDistricts}</span>
+          <span aria-hidden className="hidden h-1 w-1 rounded-full bg-sun sm:block" />
+          <span>{t.explore.statLanguages}</span>
+        </p>
       </div>
+
+      {/* Breathing room between the hero and the content below */}
+      <div aria-hidden className="h-24 sm:h-32" />
 
       {/* ================= Browse (no query) ================= */}
       {!hasQuery && topSpots.length > 0 && (
-        <section className="mt-16">
+        <section>
           <GroupHeading title={t.explore.topTitle} sub={t.explore.topSub} count={topSpots.length} />
           <TopSpots spots={topSpots} variant="row" />
         </section>
@@ -289,11 +305,11 @@ export function SpotExplorer({
 
       {/* ================= Results ================= */}
       {tooShort && empty && (
-        <p className="mt-14 text-center text-sm text-muted">{t.explore.keepTyping}</p>
+        <p className="text-center text-sm text-muted">{t.explore.keepTyping}</p>
       )}
 
       {hasQuery && !nothing && !(tooShort && empty) && (
-        <div className="mt-14">
+        <div>
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="text-sm text-muted" aria-live="polite">
               {fmt(total === 1 ? t.explore.resultsForOne : t.explore.resultsFor, { query: query.trim() })
