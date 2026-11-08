@@ -161,9 +161,9 @@ export const en = {
 
   home: {
     badge: "Made for first-time visitors",
-    title: "Bangladesh,",
-    titleAccent: "step by step.",
-    intro: "Mangrove tigers, cloud-top villages, the world's longest beach. Clear routes, honest prices and every local word explained, even if you know nothing about Bangladesh.",
+    title: "Wander Bangladesh,",
+    titleAccent: "the easy way.",
+    intro: "Watch the sun rise over the Himalayas, sail into tiger country and walk the world's longest beach. Simple routes, real prices and friendly local tips, so your first trip feels like your tenth.",
     searchPlaceholder: "Type a district or place, e.g. Sylhet",
     searchAria: "Search destinations",
     search: "Search",
