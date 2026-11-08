@@ -2,7 +2,7 @@
  * "Where next?" — related destinations (same trip type or division) plus a
  * planning CTA. Keeps visitors on the site and strengthens internal linking for SEO.
  */
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { Destination } from "@/types/destination";
 import { getAllSummaries } from "@/data/destinations";
 import { getSpotsForGuide, toSpotCard } from "@/data/spots";

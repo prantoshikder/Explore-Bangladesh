@@ -1,6 +1,6 @@
 /** Full-bleed cover photo + title + quick-facts bar at the top of a guide. */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { PhotoCredit } from "@/components/ui/PhotoCredit";
 import { ShareButtons } from "@/components/ui/ShareButtons";
 import { ShowToDriverButton } from "@/components/ui/ShowToDriver";

@@ -13,10 +13,14 @@
 import type { Photo } from "@/types/destination";
 import { BOGA_LAKE_PHOTO, HERO_PHOTO, getAllSummaries, getDestinationBySlug } from "@/data/destinations";
 import { withUnsplash } from "@/data/unsplash";
+import { p } from "./photo-helpers";
+import { PHOTOS_E } from "./photos-e";
+import { PHOTOS_F } from "./photos-f";
+import { PHOTOS_G } from "./photos-g";
+import { PHOTOS_H } from "./photos-h";
+import { PHOTOS_I } from "./photos-i";
+import { PHOTOS_J } from "./photos-j";
 
-function p(file: string, alt: string, caption: string, author: string, license: string, source: string): Photo {
-  return { src: `/images/spots/${file}`, alt, caption, credit: { author, license, source } };
-}
 
 /** Reuse a destination cover photo by destination slug. */
 function cover(slug: string): Photo {
@@ -33,7 +37,7 @@ function galleryPhoto(file: string, alt: string, caption: string, author: string
 const BASE_SPOT_PHOTOS: Record<string, Photo> = {
   "laboni-beach": p("laboni-beach.jpg", "People walking on the wet sand of Laboni Beach at sunset, reflected in the shallow water", "Sunset walk on Laboni Beach", "Istiaq roktim", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Cox_bazar_sea.jpg"),
   "himchari": p("himchari.jpg", "A thin waterfall dropping down a mossy rock face in Himchari National Park", "Himchari waterfall", "Moheen Reeyad", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Himchari_Waterfall_(05).jpg"),
-  "marine-drive": p("marine-drive.jpg", "The empty Marine Drive road running straight between lines of trees near the sea", "Marine Drive road", "Rocky Masum \n\n\n\n\n\n\nThis work was made by Masum-al-Hasan Rocky and released under the license(s) stated below. Please feel free to use it for any purpose as long as you credit Masum-al-Hasan Rocky as author and follow the terms of the chosen license. If you use this work outside of the Wikimedia projects, I would very much like to get a note from you. Thanks!", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Marine_drive_near_Lengurbill.jpg"),
+  "marine-drive": p("marine-drive.jpg", "The empty Marine Drive road running straight between lines of trees near the sea", "Marine Drive road", "Masum-al-Hasan Rocky", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Marine_drive_near_Lengurbill.jpg"),
   "ramu-buddhist-temples": p("ramu-buddhist-temples.jpg", "The giant golden reclining Buddha statue at Ramu with visitors in front", "The 100-ft reclining Buddha, Ramu", "TASBIR SOHAM", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:(100_Feet_Long_Gautama_Buddha_Structure).jpg"),
   "maheshkhali-island": p("maheshkhali-island.jpg", "Aerial view of a winding river channel through mangroves and salt fields on Maheshkhali", "Mangroves of Maheshkhali from above", "Ayman Nakib Badhan", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Falling_Guardians;_Mangroves_of_Maheshkhali_7.jpg"),
   "nilachal": p("nilachal.jpg", "Hilltop view from Nilachal over forested hills and Bandarban town", "View from Nilachal", "Moheen Reeyad", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Nilachal,_Bandarban_(2Q7A0671).jpg"),
@@ -69,6 +73,22 @@ const BASE_SPOT_PHOTOS: Record<string, Photo> = {
   // ---- Group D (more districts) ----
   "patenga-beach": p("patenga-beach.jpg", "Wide sandy Patenga beach with a stone embankment along the sea", "Patenga beach", "Moheen Reeyad", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Side_view_of_Patenga_sea_beach_(10).jpg"),
   "foys-lake": p("foys-lake.jpg", "Calm Foy's Lake surrounded by trees and old buildings in Chattogram", "Foy's Lake", "Moheen Reeyad", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Foy%27s_Lake_Resort_(2Q7A0409).jpg"),
+  "dulahazara-safari-park": p("dulahazara-safari-park.jpg", "Spotted deer and tall trees beside a pond in Dulahazara Safari Park", "Dulahazara Safari Park", "Syed Sajidul Islam", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Dulahazra_Safari_Park,_Bangladesh.jpg"),
+  "shah-porir-dwip": p("shah-porir-dwip.jpg", "A long jetty stretching over the water at Shah Porir Dwip, Teknaf", "Shah Porir Dwip jetty", "Masum-al-Hasan Rocky", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Shahpori_Island_01.jpg"),
+  "debotakhum": p("debotakhum.jpg", "Green water between tall layered rock walls inside Debotakhum gorge", "Inside Debotakhum", "অভিজিৎ দাস", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:%E0%A6%A6%E0%A7%87%E0%A6%AC%E0%A6%A4%E0%A6%BE%E0%A6%96%E0%A7%81%E0%A6%AE%E0%A7%87%E0%A6%B0_%E0%A6%85%E0%A6%AD%E0%A7%8D%E0%A6%AF%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0.jpg"),
+  "keokradong": p("keokradong.jpg", "Green grassy slopes and distant blue hill ranges seen from Keokradong", "View from Keokradong", "Shamim2838", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Keokradong,_Ruma,_Bandarban,_Bangladesh.jpg"),
+  "amiakhum-waterfall": p("amiakhum-waterfall.jpg", "Clear green pool and rocks below Amiakhum in the Thanchi hills", "Amiakhum, Thanchi", "Asikul Islam Himel", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Amiakhum_falls,_bandarban_,_Bangladesh.jpg"),
+  "kaptai-national-park": p("kaptai-national-park.jpg", "A small boat on misty Kaptai Lake with forested hills behind", "Kaptai Lake and forest", "Emranhossainctg", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Kaptai_National_Park_01.jpg"),
+  "peda-ting-ting": p("peda-ting-ting.jpg", "The Peda Ting Ting sign and cottages on an island in Kaptai Lake", "Peda Ting Ting island", "Sabrina Naz", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Peda_ting_ting.jpg"),
+  "polwel-park": p("polwel-park.jpg", "Colourful flower beds and the Polwel Park sign in Rangamati", "Polwel Park, Rangamati", "Al Riaz Uddin", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Polwel_Park.jpg"),
+  "khagrachari-hanging-bridge": p("khagrachari-hanging-bridge.jpg", "People crossing a hanging bridge among palm trees in Khagrachari", "Khagrachari hanging bridge", "Masum-al-Hasan Rocky", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Hanging_bridge,_Khagrachari_01.jpg"),
+  "chandranath-hill": p("chandranath-hill.jpg", "Chandranath Hill rising above green forest, with the temple on its summit", "Chandranath Hill, Sitakunda", "Jyot1.5hompad0k", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Chandranath_Hill.jpg"),
+  "guliakhali-beach": p("guliakhali-beach.jpg", "Grass-covered shore and keora trees at Guliakhali sea beach", "Guliakhali sea beach", "Syed Sajidul Islam", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Guliakhali_Sea_Beach,_Sitakundu.jpg"),
+  "khoiyachhora-waterfall": p("khoiyachhora-waterfall.jpg", "White water falling over dark rocks at Khoiyachhora waterfall", "Khoiyachhora waterfall", "Chilekothar Senpai", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Khoiyachhora_Step_1(30th_April,_2018).jpg"),
+  "mahamaya-lake": p("mahamaya-lake.jpg", "Mahamaya Lake between low forested hills under a cloudy sky", "Mahamaya Lake, Mirsharai", "uddinnasirbd", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Mahamaya_Lake,_Mirsharai,_Chittagong.jpg"),
+  "chittagong-war-cemetery": p("chittagong-war-cemetery.jpg", "White cross and rows of headstones on green lawns at Chittagong War Cemetery", "Chittagong War Cemetery", "Md. T Mahtab", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Chittagong_War_Cemetery,_Chattogram,_Bangladesh_(2).jpg"),
+  "bayazid-bostami-shrine": p("bayazid-bostami-shrine.jpg", "The shrine building of Bayazid Bostami with green windows and minarets", "Shrine of Bayazid Bostami", "Owais Al Qarni", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Shrine_of_Bayazid_Bostami_13.jpg"),
+  "ethnological-museum": p("ethnological-museum.jpg", "Front entrance of the Ethnological Museum in Agrabad with its Bangla and English sign", "Ethnological Museum, Chattogram", "Moheen Reeyad", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Entrance_of_Ethnological_Museum_(03).jpg"),
   "mainamati": p("mainamati.jpg", "Excavated brick ruins of a Buddhist monastery among green lawns at Mainamati", "Mainamati ruins", "Sakib Ahmed Nasim", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Shalbon-vihara-05-by-Sakib-Ahmed-Nasim.jpg"),
   "puthia-temples": p("puthia-temples.jpg", "A tall Hindu temple with ornate spires beside a pond at Puthia", "Puthia temple complex", "Tanweer Morshed", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Shiva_temple_at_Puthia,_Rajshahi.JPG"),
   "varendra-museum": p("varendra-museum.jpg", "The arched facade of the Varendra Research Museum building in Rajshahi", "Varendra Research Museum", "Nahid.rajbd", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Varendra_Research_Museum_10.jpg"),
@@ -106,7 +126,7 @@ const BASE_SPOT_PHOTOS: Record<string, Photo> = {
 
 /** Spot photos, preferring a selected Unsplash photo for slot `spot:<slug>`. */
 export const SPOT_PHOTOS: Record<string, Photo> = Object.fromEntries(
-  Object.entries(BASE_SPOT_PHOTOS).map(([slug, photo]) => [slug, withUnsplash(`spot:${slug}`, photo)]),
+  Object.entries({ ...BASE_SPOT_PHOTOS, ...PHOTOS_E, ...PHOTOS_F, ...PHOTOS_G, ...PHOTOS_H, ...PHOTOS_I, ...PHOTOS_J }).map(([slug, photo]) => [slug, withUnsplash(`spot:${slug}`, photo)]),
 );
 
 /** Photo for a spot; falls back to the matching destination cover if missing. */

@@ -1,5 +1,5 @@
 /** Eyebrow + heading (+ optional "see all" link) used by every homepage section. */
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { cn } from "@/lib/format";
 
 export function SectionIntro({

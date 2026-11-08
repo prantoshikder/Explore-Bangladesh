@@ -6,7 +6,7 @@
  * the gradient sits underneath as a placeholder while the photo loads.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { DestinationSummary } from "@/types/destination";
 import { Badge, DifficultyBadge } from "./Badge";
 import { cn } from "@/lib/format";

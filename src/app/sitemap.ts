@@ -1,16 +1,22 @@
 /**
- * /sitemap.xml — every public page, with images for Google Images.
+ * /sitemap.xml — every public page in both languages (English at the bare
+ * path, Bangla under /bn), each entry listing its hreflang alternates.
  */
 import type { MetadataRoute } from "next";
 import { getAllDestinations } from "@/data/destinations";
 import { ESSENTIALS_LAST_VERIFIED } from "@/data/essentials";
 import { getGalleryItems } from "@/data/gallery";
 import { getAllSpots, getSpotPhoto } from "@/data/spots";
+import { LOCALES, localizePath } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site";
 
-type Entry = Omit<MetadataRoute.Sitemap[number], "url"> & { path: string };
+type Entry = Omit<MetadataRoute.Sitemap[number], "url" | "alternates"> & { path: string };
 
-const toUrl = ({ path, ...rest }: Entry): MetadataRoute.Sitemap[number] => ({ ...rest, url: absoluteUrl(path) });
+/** One sitemap entry per language for a path, each with en/bn alternates. */
+function localized({ path, ...rest }: Entry): MetadataRoute.Sitemap {
+  const languages = Object.fromEntries(LOCALES.map((l) => [l, absoluteUrl(localizePath(l, path))]));
+  return LOCALES.map((l) => ({ ...rest, url: absoluteUrl(localizePath(l, path)), alternates: { languages } }));
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const updated = new Date(ESSENTIALS_LAST_VERIFIED);
@@ -45,5 +51,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
     images: [absoluteUrl(getSpotPhoto(s).src)],
   }));
-  return [...staticPages, ...guides, ...spots].map(toUrl);
+  return [...staticPages, ...guides, ...spots].flatMap(localized);
 }

@@ -4,7 +4,7 @@
  * Each postcard links to its destination so it's useful, not just pretty.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { DestinationSummary } from "@/types/destination";
 import { cn } from "@/lib/format";
 import { getT } from "@/i18n/server";

@@ -7,7 +7,7 @@
  * Every card links to the spot page and has a ❤️ save button.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { TopSpot } from "@/data/spots/top";
 import { SaveButton } from "@/components/ui/SaveButton";
 import { cn } from "@/lib/format";

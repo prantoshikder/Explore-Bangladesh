@@ -4,7 +4,7 @@
  * to full guides when they exist, otherwise to a search for that place.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { DestinationSummary } from "@/types/destination";
 import { getT } from "@/i18n/server";
 

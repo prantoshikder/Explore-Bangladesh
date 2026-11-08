@@ -19,6 +19,7 @@ export function PageHero({
   children,
   align = "left",
   size = "md",
+  overlap = false,
 }: {
   photo: Photo;
   eyebrow: string;
@@ -31,6 +32,8 @@ export function PageHero({
   align?: "left" | "center";
   /** md ≈ 520px tall, lg ≈ 640px. */
   size?: "md" | "lg";
+  /** Extra room at the bottom for a search box + chips that float up into the hero. */
+  overlap?: boolean;
 }) {
   const center = align === "center";
   return (
@@ -43,7 +46,8 @@ export function PageHero({
 
       <div
         className={cn(
-          "relative mx-auto flex max-w-7xl flex-col justify-end px-4 pt-36 pb-28 sm:px-6 sm:pb-36 lg:px-8",
+          "relative mx-auto flex max-w-7xl flex-col justify-end px-4 pt-36 sm:px-6 lg:px-8",
+          overlap ? "pb-72 sm:pb-80" : "pb-28 sm:pb-36",
           size === "lg" ? "min-h-[640px]" : "min-h-[520px]",
           center && "items-center text-center",
         )}

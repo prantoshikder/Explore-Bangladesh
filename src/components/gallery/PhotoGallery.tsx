@@ -17,10 +17,12 @@
  * returns to the photo you opened.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { GalleryCategory, GalleryItem } from "@/data/gallery";
 import { cn } from "@/lib/format";
+import { fmt } from "@/i18n/config";
+import { useT } from "@/i18n/client";
 
 /** How many photos to reveal per batch. */
 const PAGE_SIZE = 12;
@@ -43,6 +45,7 @@ export function PhotoGallery({
   items: GalleryItem[];
   categories: { id: GalleryCategory; icon: string }[];
 }) {
+  const t = useT();
   const [filter, setFilter] = useState<GalleryCategory | "All">("All");
   const [open, setOpen] = useState<number | null>(null);
   const [visible, setVisible] = useState(PAGE_SIZE);
@@ -70,10 +73,10 @@ export function PhotoGallery({
   const loadMore = useCallback(() => {
     setVisible((v) => {
       const next = Math.min(v + PAGE_SIZE, shown.length);
-      if (next > v) setAnnounce(`${next - v} more photos loaded. Showing ${next} of ${shown.length}.`);
+      if (next > v) setAnnounce(fmt(t.gallery.loaded, { count: next - v, shown: next, total: shown.length }));
       return next;
     });
-  }, [shown.length]);
+  }, [shown.length, t]);
 
   /* Infinite scroll: load the next batch when the sentinel nears the viewport.
      Re-created after each batch, so it keeps going while the sentinel stays visible. */
@@ -127,7 +130,7 @@ export function PhotoGallery({
   return (
     <div>
       {/* ---- Filter chips ---- */}
-      <div role="group" aria-label="Filter photos" className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
+      <div role="group" aria-label={t.gallery.filter} className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
         {[{ id: "All" as const, icon: "✨", n: items.length }, ...categories.map((c) => ({ ...c, n: count(c.id) }))].map((c) => {
           const active = filter === c.id;
           return (
@@ -142,7 +145,7 @@ export function PhotoGallery({
               )}
             >
               <span aria-hidden>{c.icon}</span>
-              {c.id}
+              {t.labels.galleryCategory[c.id]}
               <span className={cn("rounded-full px-2 py-0.5 text-xs", active ? "bg-white/20" : "bg-sand text-muted")}>{c.n}</span>
             </button>
           );
@@ -162,7 +165,7 @@ export function PhotoGallery({
               ref={(el) => { tileRefs.current[i] = el; }}
               type="button"
               onClick={() => setOpen(i)}
-              aria-label={`View photo: ${it.photo.caption ?? it.photo.alt}`}
+              aria-label={fmt(t.gallery.view, { caption: it.photo.caption ?? it.photo.alt })}
               className={cn(
                 "group relative block h-full w-full overflow-hidden rounded-2xl text-left focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-500 md:rounded-3xl",
                 loadedSrc.has(it.photo.src) ? "bg-jute" : "shimmer",
@@ -200,7 +203,7 @@ export function PhotoGallery({
       <div className="mt-10 flex flex-col items-center gap-4">
         <div className="w-full max-w-xs">
           <div className="flex justify-between text-xs font-semibold text-muted">
-            <span>Showing {visibleItems.length} of {shown.length}</span>
+            <span>{fmt(t.gallery.showing, { shown: visibleItems.length, total: shown.length })}</span>
             <span>{Math.round((visibleItems.length / Math.max(1, shown.length)) * 100)}%</span>
           </div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-jute">
@@ -213,11 +216,11 @@ export function PhotoGallery({
             onClick={loadMore}
             className="group inline-flex items-center gap-3 rounded-full bg-brand-600 py-3 pr-3 pl-7 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 transition hover:-translate-y-0.5 hover:bg-brand-700"
           >
-            Load more photos
-            <span className="rounded-full bg-white/20 px-2.5 py-1 text-xs">{Math.min(PAGE_SIZE, remaining)} of {remaining} left</span>
+            {t.gallery.loadMore}
+            <span className="rounded-full bg-white/20 px-2.5 py-1 text-xs">{fmt(t.gallery.left, { next: Math.min(PAGE_SIZE, remaining), remaining })}</span>
           </button>
         ) : (
-          shown.length > PAGE_SIZE && <p className="text-sm font-semibold text-brand-700">🎉 You&apos;ve seen all {shown.length} photos</p>
+          shown.length > PAGE_SIZE && <p className="text-sm font-semibold text-brand-700">{fmt(t.gallery.seenAll, { total: shown.length })}</p>
         )}
       </div>
 
@@ -226,7 +229,7 @@ export function PhotoGallery({
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={current.photo.caption ?? "Photo"}
+          aria-label={current.photo.caption ?? t.common.photo}
           className="fixed inset-0 z-[100] flex flex-col bg-black/95 backdrop-blur-sm"
           onClick={(e) => e.target === e.currentTarget && close()}
           onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
@@ -240,7 +243,7 @@ export function PhotoGallery({
           {/* Top bar */}
           <div className="flex items-center justify-between px-4 py-3 text-white sm:px-6">
             <span className="text-sm font-medium text-white/70">{open + 1} / {shown.length}</span>
-            <button ref={closeRef} type="button" onClick={close} aria-label="Close" className="grid h-11 w-11 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">
+            <button ref={closeRef} type="button" onClick={close} aria-label={t.common.close} className="grid h-11 w-11 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
             </button>
           </div>
@@ -253,7 +256,7 @@ export function PhotoGallery({
                 key={d}
                 type="button"
                 onClick={() => step(d === "next" ? 1 : -1)}
-                aria-label={d === "next" ? "Next photo" : "Previous photo"}
+                aria-label={d === "next" ? t.gallery.next : t.gallery.prev}
                 className={cn(
                   "absolute top-1/2 hidden h-12 w-12 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-2xl text-white transition hover:bg-white/25 sm:grid",
                   d === "next" ? "right-4" : "left-4",
@@ -267,35 +270,35 @@ export function PhotoGallery({
           {/* Caption */}
           <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-4 text-white sm:px-6">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-200">{current.place} · {current.category}</p>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-200">{current.place} · {t.labels.galleryCategory[current.category]}</p>
               <p className="mt-1 font-display text-xl font-semibold">{current.photo.caption}</p>
               {/* Required attribution for CC BY / CC BY-SA photos — this is the only place
                   credits appear on the site, so keep it. Every site photo is in the gallery. */}
               {current.photo.credit.license === "Unsplash License" ? (
                 // Unsplash API guidelines: credit the photographer AND Unsplash, both linked
                 <p className="mt-1.5 text-xs text-white/55">
-                  Photo by{" "}
+                  {t.common.photoBy}{" "}
                   <a href={current.photo.credit.authorUrl ?? current.photo.credit.source} target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 hover:text-white">
                     {current.photo.credit.author}
                   </a>{" "}
-                  on{" "}
+                  {t.common.on}{" "}
                   <a href={current.photo.credit.source} target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 hover:text-white">
                     Unsplash
                   </a>
                 </p>
               ) : (
                 <p className="mt-1.5 text-xs text-white/55">
-                  Photo:{" "}
+                  {t.common.photo}:{" "}
                   <a href={current.photo.credit.source} target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 hover:text-white">
                     {current.photo.credit.author}
                   </a>{" "}
-                  · {current.photo.credit.license} · Wikimedia Commons
+                  · {current.photo.credit.license} · {t.gallery.commons}
                 </p>
               )}
             </div>
             {current.href && (
               <Link href={current.href} className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
-                Read the {current.place} guide →
+                {fmt(t.gallery.readGuide, { place: current.place })}
               </Link>
             )}
           </div>
