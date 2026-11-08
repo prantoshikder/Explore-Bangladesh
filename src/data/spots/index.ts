@@ -2,9 +2,9 @@
  * ============================================================================
  *  Spot registry — every tourist spot on the site, grouped by district.
  * ============================================================================
- *  Spot text lives in group-a.ts / group-b.ts / group-c.ts; photos in photos.ts.
- *  To add spots for a new district, create group-d.ts (copy any group file),
- *  add its photos to photos.ts and register the array in ALL_SPOTS below.
+ *  Spot text lives in group-a…j.ts (Bangla copies in bn/), photos in photos.ts
+ *  and photos-e…j.ts. To add spots, append to the group file for that district
+ *  (see each file's header), its bn/ copy and its photos file.
  * ============================================================================
  */
 import type { Photo } from "@/types/destination";
@@ -14,11 +14,23 @@ import { SPOTS_A } from "./group-a";
 import { SPOTS_B } from "./group-b";
 import { SPOTS_C } from "./group-c";
 import { SPOTS_D } from "./group-d";
+import { SPOTS_E } from "./group-e";
+import { SPOTS_F } from "./group-f";
+import { SPOTS_G } from "./group-g";
+import { SPOTS_H } from "./group-h";
+import { SPOTS_I } from "./group-i";
+import { SPOTS_J } from "./group-j";
 import { SPOT_PHOTOS, spotPhoto } from "./photos";
 import { SPOTS_A_BN } from "./bn/group-a";
 import { SPOTS_B_BN } from "./bn/group-b";
 import { SPOTS_C_BN } from "./bn/group-c";
 import { SPOTS_D_BN } from "./bn/group-d";
+import { SPOTS_E_BN } from "./bn/group-e";
+import { SPOTS_F_BN } from "./bn/group-f";
+import { SPOTS_G_BN } from "./bn/group-g";
+import { SPOTS_H_BN } from "./bn/group-h";
+import { SPOTS_I_BN } from "./bn/group-i";
+import { SPOTS_J_BN } from "./bn/group-j";
 import type { Locale } from "@/i18n/config";
 
 /**
@@ -42,13 +54,13 @@ const GUIDE_FOR_SPOT: Record<string, string> = {
   paharpur: "paharpur", "kusumba-mosque": "paharpur", mahasthangarh: "paharpur",
 };
 
-const ALL_SPOTS: Spot[] = [...SPOTS_A, ...SPOTS_B, ...SPOTS_C, ...SPOTS_D].map((s) => ({
+const ALL_SPOTS: Spot[] = [...SPOTS_A, ...SPOTS_B, ...SPOTS_C, ...SPOTS_D, ...SPOTS_E, ...SPOTS_F, ...SPOTS_G, ...SPOTS_H, ...SPOTS_I, ...SPOTS_J].map((s) => ({
   ...s,
   guideSlug: s.guideSlug ?? GUIDE_FOR_SPOT[s.slug],
 }));
 
 /** Bangla spots: translated text, same slugs/numbers (checked by scripts/check-translation.mjs). */
-const ALL_SPOTS_BN: Spot[] = [...SPOTS_A_BN, ...SPOTS_B_BN, ...SPOTS_C_BN, ...SPOTS_D_BN].map((s) => ({
+const ALL_SPOTS_BN: Spot[] = [...SPOTS_A_BN, ...SPOTS_B_BN, ...SPOTS_C_BN, ...SPOTS_D_BN, ...SPOTS_E_BN, ...SPOTS_F_BN, ...SPOTS_G_BN, ...SPOTS_H_BN, ...SPOTS_I_BN, ...SPOTS_J_BN].map((s) => ({
   ...s,
   guideSlug: s.guideSlug ?? GUIDE_FOR_SPOT[s.slug],
 }));
