@@ -21,7 +21,7 @@ and every local word (CNG, Chander Gari, Launch…) explained in plain English.
 | | |
 | --- | --- |
 | 🗺️ **9 full destination guides** | Cox's Bazar, Sajek Valley, Sundarbans, Sylhet (Jaflong & Ratargul), Sreemangal, Saint Martin's Island, Bandarban, Old Dhaka, Paharpur |
-| 📍 **67 tourist spots in 29 districts** | Each with directions, entry fee, opening hours, tips and a map |
+| 📍 **74 tourist spots in 29 districts** | Each with directions, entry fee, opening hours, tips and a map |
 | 🔎 **Explore by district** | Type a district or place (English, বাংলা or old spellings like "Chittagong") and see every spot with photos |
 | 🧮 **Trip cost calculator** | Days × people × travel style → itemised estimate in BDT and USD |
 | 🛺 **Transport explained** | What a CNG, Chander Gari, Leguna or Launch is, typical fares, how to book trains |
