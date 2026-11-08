@@ -80,6 +80,8 @@ export interface SpotCard {
   categories: SpotCategory[];
   difficulty: Spot["difficulty"];
   summary: string;
+  /** e.g. "2–3 hours" — shown in the card footer. */
+  timeNeeded: string;
   photo: Photo;
 }
 
@@ -110,6 +112,7 @@ export function toSpotCard(s: Spot, locale: Locale = "en"): SpotCard {
     categories: s.categories,
     difficulty: s.difficulty,
     summary: s.summary,
+    timeNeeded: s.timeNeeded,
     photo: getSpotPhoto(s, locale),
   };
 }
