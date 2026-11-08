@@ -1,0 +1,501 @@
+{
+  "slug": "sundarbans",
+  "name": "Sundarbans",
+  "localName": "সুন্দরবন",
+  "tagline": "World's largest mangrove forest & home of the Royal Bengal Tiger.",
+  "division": "Khulna",
+  "district": "Khulna, Bagerhat & Satkhira",
+  "tripTypes": ["Forest", "River"],
+  "difficulty": "Moderate",
+  "budgetLevel": "Comfortable",
+  "idealDuration": "3 days (boat tour)",
+  "cover": {
+    "src": "/images/destinations/sundarbans.jpg",
+    "alt": "Spotted deer standing among mangrove trees in the Sundarbans",
+    "caption": "Spotted deer in the mangrove forest",
+    "credit": {
+      "author": "Mheidegger",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sundarbans_East_Wildlife_Sanctuary-2023-03.jpg"
+    }
+  },
+  "coverGradient": "from-green-800 via-emerald-700 to-lime-500",
+  "coverEmoji": "🐅",
+
+  "overview": {
+    "intro": "The Sundarbans is the largest mangrove forest in the world, spread across the delta where the Ganges, Brahmaputra and Meghna rivers meet the Bay of Bengal. About 60% of it lies in Bangladesh, and it is a UNESCO World Heritage Site. There are no roads or hotels inside the forest. You visit on a tour boat that sails through rivers and narrow creeks, and you sleep on board. You need a Forest Department permit, which licensed tour operators arrange for you. Most visitors take a 2–3 night boat package from Khulna. Tigers are shy and rarely seen, but spotted deer, monkeys, crocodiles, dolphins and kingfishers are common.",
+    "highlights": [
+      "Early-morning canal safari in a small country boat through narrow mangrove creeks",
+      "Kotka (Katka) — deer meadows, a watch tower and a forest trail to Jamtola beach",
+      "Kochikhali — open grassland where deer and wild boar graze",
+      "Harbaria eco-tourism centre — wooden boardwalk through the mangroves",
+      "Karamjal — crocodile breeding centre and deer enclosure, easy day trip from Mongla",
+      "Spotting tiger pugmarks, saltwater crocodiles, river dolphins and up to 8 species of kingfisher",
+      "Sunset over the wide Pashur and Shibsa rivers from the boat deck"
+    ],
+    "bestTimeSummary": "November – February (cool, dry, calm rivers)",
+    "seasons": [
+      {
+        "name": "Winter (Peak)",
+        "months": "Nov – Feb",
+        "weather": "Cool, dry and sunny with calm rivers. Mornings can be foggy and chilly on deck. Best time for wildlife and birds. Boats fill up fast in December and January.",
+        "tempC": "12–27°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Spring / Pre-monsoon",
+        "months": "Mar – May",
+        "weather": "Hot and humid. Honey-collecting season (around April–May). Sudden evening storms (Kalbaishakhi) and cyclone risk in May.",
+        "tempC": "24–35°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Monsoon (Forest Closed)",
+        "months": "Jun – Aug",
+        "weather": "Heavy rain and rough rivers. The Forest Department usually closes the forest to all visitors for about three months (roughly June 1 – August 31) for the fish and crab breeding season.",
+        "tempC": "26–33°C",
+        "verdict": "Avoid"
+      },
+      {
+        "name": "Late Monsoon / Autumn",
+        "months": "Sep – Oct",
+        "weather": "The forest reopens. Still some rain and very green. Fewer tourists, but check cyclone warnings before you sail.",
+        "tempC": "24–32°C",
+        "verdict": "Good"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "First get from Dhaka to Khulna, the gateway city. Since the Padma Bridge opened, the bus takes about 5–6 hrs and some trains take a similar time. You can also fly to Jashore and drive about 1.5 hrs to Khulna. From Khulna your tour boat takes you into the forest. Most people book a 3-day package that starts and ends in Khulna, and many operators can pick you up from the bus stand, railway station or Jashore Airport.",
+    "distanceFromDhaka": "~230 km to Khulna (via Padma Bridge), then 80–120 km by boat into the forest",
+    "routes": [
+      {
+        "id": "bus",
+        "label": "By Bus via Padma Bridge (Recommended)",
+        "recommended": true,
+        "totalTime": "5–7 hrs to Khulna",
+        "totalCost": { "min": 800, "max": 1800 },
+        "steps": [
+          {
+            "title": "Go to the bus company's counter in Dhaka",
+            "description": "Long-distance buses leave from each company's own 'counter' (a small ticket office). Buses to Khulna via the Padma Bridge mostly leave from Sayedabad, Jatrabari, Gabtoli and Kalabagan counters. Your ticket shows the exact address.",
+            "mode": "ride-share",
+            "duration": "30–60 min",
+            "cost": { "min": 200, "max": 600 }
+          },
+          {
+            "title": "Bus to Khulna via the Padma Bridge",
+            "description": "AC and non-AC coaches (Green Line, Hanif, Eagle, Sohag, Tungipara Express and others) run day and night. The Padma Bridge cut the trip to about 5–6 hrs, depending on traffic at the Dhaka exit.",
+            "mode": "ac-bus",
+            "duration": "5–6 hrs",
+            "cost": { "min": 600, "max": 1300 },
+            "tip": "Take a night bus that arrives early in the morning. Most boat tours leave Khulna between 7 and 9 AM."
+          },
+          {
+            "title": "Get off at Sonadanga bus terminal (or your company's Khulna counter)",
+            "description": "Many tour operators meet guests here or at the railway station. Confirm the meeting point with your operator the day before.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "Easy-bike or rickshaw to the boat jetty",
+            "description": "Tour boats board at ghats (river jetties) on the Rupsha / Bhairab river, such as Jailkhana Ghat or the Rupsha area. Your operator will tell you which one.",
+            "mode": "easy-bike",
+            "duration": "15–25 min",
+            "cost": { "min": 50, "max": 200 },
+            "tip": "Many operators include a free pickup. Ask when you book."
+          }
+        ]
+      },
+      {
+        "id": "train",
+        "label": "By Train",
+        "totalTime": "5–9 hrs to Khulna",
+        "totalCost": { "min": 600, "max": 2000 },
+        "steps": [
+          {
+            "title": "Get to Kamalapur Railway Station (Dhaka)",
+            "description": "Kamalapur is Dhaka's main station. From the airport, take an Uber/Pathao car (45–90 min). Some Khulna trains also stop at Biman Bandar (Airport) station — check your ticket.",
+            "mode": "ride-share",
+            "duration": "45–90 min",
+            "cost": { "min": 350, "max": 800 }
+          },
+          {
+            "title": "Train to Khulna",
+            "description": "Trains on the newer Padma Bridge line (such as the Sundarban Express and Jahanabad Express) take roughly 5–6 hrs. Older-route trains such as the Chitra Express go the long way round via the Jamuna Bridge and take about 8–9 hrs. Train names, routes and times change, so check the current schedule.",
+            "mode": "train",
+            "duration": "~5–9 hrs",
+            "cost": { "min": 450, "max": 1800 },
+            "tip": "Book on eticket.railway.gov.bd (foreigners can register with a passport). Sales open 10 days ahead."
+          },
+          {
+            "title": "Arrive at Khulna Railway Station",
+            "description": "The station is in the city centre, close to the river ghats where tour boats board.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "Rickshaw or easy-bike to the boat jetty",
+            "description": "It is a short ride to most boarding ghats. Agree on the fare before you sit down.",
+            "mode": "rickshaw",
+            "duration": "10–20 min",
+            "cost": { "min": 50, "max": 150 }
+          }
+        ]
+      },
+      {
+        "id": "flight",
+        "label": "By Air to Jashore (Fastest)",
+        "totalTime": "3–4 hrs door to door",
+        "totalCost": { "min": 4500, "max": 10000 },
+        "steps": [
+          {
+            "title": "Domestic Terminal, Hazrat Shahjalal International Airport (DAC)",
+            "description": "Arrive 1 hour before departure. You need your passport (foreigners) or NID (locals). There is no airport in Khulna, so you fly to Jashore.",
+            "mode": "walk",
+            "duration": "1 hr check-in"
+          },
+          {
+            "title": "Flight DAC → Jashore (JSR)",
+            "description": "Biman Bangladesh, US-Bangla and Novoair fly this route, usually several times a day.",
+            "mode": "flight",
+            "duration": "~40 min",
+            "cost": { "min": 3500, "max": 7000 }
+          },
+          {
+            "title": "Road from Jashore Airport to Khulna",
+            "description": "Khulna is about 60 km away. Book a car through your tour operator or hotel, or take a CNG to Jashore town and a local bus from there (cheaper but slower).",
+            "mode": "ride-share",
+            "duration": "1.5–2 hrs",
+            "cost": { "min": 1500, "max": 3000 },
+            "tip": "Many Sundarbans operators offer a Jashore Airport pickup for an extra fee. Ask for it when you book."
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "ac-bus",
+        "name": "Green Line / Hanif / Eagle / Sohag / Tungipara Express (AC)",
+        "departFrom": "Sayedabad, Jatrabari, Gabtoli or Kalabagan counters",
+        "duration": "5–6 hrs (via Padma Bridge)",
+        "classes": [
+          { "name": "AC Economy", "price": { "min": 900, "max": 1100 }, "note": "Approx." },
+          { "name": "AC Business (2+1 seats)", "price": { "min": 1200, "max": 1600 }, "note": "Approx. More legroom, fewer stops." }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com, or at the counter a day ahead."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "Local Non-AC coaches (various companies)",
+        "departFrom": "Sayedabad & Jatrabari",
+        "duration": "6–7 hrs",
+        "classes": [{ "name": "Non-AC Seat", "price": { "min": 550, "max": 750 }, "note": "Approx. Crowded, many stops." }],
+        "bookingTip": "Cheapest option. Keep your bag on your lap or under your seat."
+      },
+      {
+        "mode": "train",
+        "name": "Sundarban Express / Jahanabad Express (Padma Bridge line)",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~5–6 hrs",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 450, "max": 550 }, "note": "Approx. Non-AC padded seat." },
+          { "name": "Snigdha", "price": { "min": 850, "max": 1050 }, "note": "Approx. AC chair car, best value." },
+          { "name": "AC Berth", "price": { "min": 1400, "max": 1800 }, "note": "Approx. Only on some trains." }
+        ],
+        "bookingTip": "Check train names and times on eticket.railway.gov.bd. Schedules on this new line have changed several times since it opened."
+      },
+      {
+        "mode": "train",
+        "name": "Chitra Express (via Jamuna Bridge)",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~8–9 hrs",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 500, "max": 600 }, "note": "Approx." },
+          { "name": "Snigdha", "price": { "min": 950, "max": 1150 }, "note": "Approx." }
+        ],
+        "bookingTip": "Slower, longer route. Use it only if the Padma Bridge trains are sold out."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman / US-Bangla / Novoair to Jashore",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~40 min + 1.5 hrs road",
+        "classes": [{ "name": "Economy", "price": { "min": 3500, "max": 7000 }, "note": "Approx. Prices rise on Thursdays and holidays." }],
+        "bookingTip": "Book on the airline's website or GoZayaan / ShareTrip. Plan the airport-to-Khulna car before you land."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Khulna (Sonadanga bus terminal / railway station)",
+        "to": "Tour boat jetty on the Rupsha / Bhairab river",
+        "mode": "easy-bike",
+        "duration": "15–25 min",
+        "cost": { "min": 50, "max": 200 },
+        "note": "Most operators include pickup. Otherwise fix the fare before boarding."
+      },
+      {
+        "from": "Khulna",
+        "to": "Mongla (for Karamjal day trips)",
+        "mode": "non-ac-bus",
+        "duration": "1–1.5 hrs",
+        "cost": { "min": 80, "max": 150 },
+        "note": "Local buses leave often from Rupsha / Sonadanga. A hired car costs around BDT 2,500–4,000 (approx.)."
+      },
+      {
+        "from": "Mongla ghat",
+        "to": "Karamjal (forest edge)",
+        "mode": "speedboat",
+        "duration": "20–60 min",
+        "cost": { "min": 1500, "max": 4000 },
+        "note": "Price is per boat (approx.). Wooden trawlers are cheaper and slower than speedboats. Wear the life jacket."
+      },
+      {
+        "from": "Tour boat (anchored in the river)",
+        "to": "Forest stations & creeks (Kotka, Kochikhali, Harbaria)",
+        "mode": "walk",
+        "duration": "10–20 min by small boat",
+        "cost": { "min": 0, "max": 0 },
+        "note": "Included in your package. A small country boat (dingi) ferries you ashore with the armed forest guard."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "The Sundarbans is visited almost only on all-inclusive boat packages, so costs below are a package split into categories for comparison. Packages ≈ BDT 12,000–30,000+ per person for 3 days / 2 nights (approx.). Foreigners usually pay more because of higher forest fees. Prices were checked for the 2025–26 season.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Group Boat",
+        "perPersonPerDay": { "localTransport": 1500, "food": 800, "stay": 1200, "entryFees": 500 },
+        "roundTripFromDhaka": 1400,
+        "roundTripMode": "Non-AC bus or Shovan Chair train to Khulna",
+        "notes": "Shared cabin or deck mattress on a big group boat, simple Bengali meals, shared toilets. About BDT 12,000–15,000 for 3 days."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Cabin Boat",
+        "perPersonPerDay": { "localTransport": 2500, "food": 1500, "stay": 2500, "entryFees": 700 },
+        "roundTripFromDhaka": 2800,
+        "roundTripMode": "AC bus or Snigdha (AC) train to Khulna",
+        "notes": "Private cabin for 2, attached bathroom on better boats, seafood and chicken meals. About BDT 18,000–24,000 for 3 days."
+      },
+      {
+        "id": "luxury",
+        "label": "Premium AC Boat",
+        "perPersonPerDay": { "localTransport": 4000, "food": 2500, "stay": 4500, "entryFees": 1500 },
+        "roundTripFromDhaka": 12000,
+        "roundTripMode": "Return flight to Jashore + private car",
+        "notes": "Small group or private AC boat, English-speaking naturalist guide, better food. BDT 30,000+ per person for 3 days. Foreigner forest fees included."
+      }
+    ],
+    "entryFees": [
+      { "place": "Sundarbans general tourist areas (Harbaria, Kalabogi etc.) — per person, per day", "local": 70, "foreigner": 1000, "note": "Approx. Plus 15% VAT. Usually included in boat packages." },
+      { "place": "Wildlife sanctuary areas (Kotka, Kochikhali, Hiron Point) — per person, per day", "local": 150, "foreigner": 1500, "note": "Approx. Fees are revised often. Included in most packages." },
+      { "place": "Karamjal (day visit from Mongla)", "local": 50, "foreigner": 500, "note": "Approx. Pay at the forest station counter." },
+      { "place": "Armed forest guard (per group, per day)", "local": 500, "foreigner": 500, "note": "Approx. Mandatory inside the forest. Included in packages." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Shared-cabin group tour boat",
+      "tier": "Budget",
+      "area": "On the boat (from Khulna)",
+      "pricePerNight": { "min": 3500, "max": 5000 },
+      "why": "The cheapest way to see the forest. Price is per person per night and includes meals, permits and guard. Expect bunk beds and shared bathrooms.",
+      "bookingTip": "Book 2–4 weeks ahead in Dec–Jan. Ask how many guests the boat carries — smaller is quieter and better for wildlife."
+    },
+    {
+      "name": "Budget hotels around Khulna city centre",
+      "tier": "Budget",
+      "area": "Khulna (near Sonadanga / KDA Avenue)",
+      "pricePerNight": { "min": 1000, "max": 2000 },
+      "why": "Simple AC or fan rooms for the night before or after your boat trip.",
+      "bookingTip": "Check that hot water and AC work before paying."
+    },
+    {
+      "name": "Parjatan Motel Pashur (Bangladesh Parjatan Corporation)",
+      "tier": "Budget",
+      "area": "Mongla",
+      "pricePerNight": { "min": 1500, "max": 3500 },
+      "why": "Government-run motel by the river. Handy if you only want a day trip to Karamjal from Mongla.",
+      "bookingTip": "Prices are approx. Book through the Parjatan website or by phone."
+    },
+    {
+      "name": "Private-cabin tour boat",
+      "tier": "Mid-range",
+      "area": "On the boat (from Khulna)",
+      "pricePerNight": { "min": 6000, "max": 9000 },
+      "why": "Your own cabin, often with an attached bathroom, and a guide who speaks some English. Price is per person per night, all-inclusive."
+    },
+    {
+      "name": "Hotel Castle Salam",
+      "tier": "Mid-range",
+      "area": "KDA Avenue, Khulna",
+      "pricePerNight": { "min": 3000, "max": 6000 },
+      "why": "Long-running, reliable city hotel with a restaurant. Good base the night before your boat leaves."
+    },
+    {
+      "name": "Hotel Royal International",
+      "tier": "Mid-range",
+      "area": "Khulna city centre",
+      "pricePerNight": { "min": 3000, "max": 6500 },
+      "why": "Comfortable rooms and used to tour groups. Some Sundarbans operators pick up from here."
+    },
+    {
+      "name": "Premium AC tour boat / City Inn Khulna",
+      "tier": "Luxury",
+      "area": "On the boat / Khulna",
+      "pricePerNight": { "min": 10000, "max": 18000 },
+      "why": "Small-group or private AC boats with naturalist guides are the most comfortable way to see the forest (per person per night). On land, City Inn is one of Khulna's most upmarket hotels."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Golda Chingri Malai Curry",
+        "localName": "গলদা চিংড়ি মালাইকারি",
+        "description": "Giant freshwater prawns cooked in a mild coconut-milk curry. Khulna is Bangladesh's prawn capital, so this is the dish to try.",
+        "priceRange": { "min": 400, "max": 1200 }
+      },
+      {
+        "name": "Chui Jhal Mutton / Beef",
+        "localName": "চুইঝাল মাংস",
+        "description": "Meat curry cooked with chui jhal, the chopped stem of a local pepper vine. Warm, peppery and very Khulna. Famous at Abbas Hotel in Chuknagar.",
+        "priceRange": { "min": 250, "max": 600 },
+        "spicy": true
+      },
+      {
+        "name": "Mud Crab Bhuna",
+        "localName": "কাঁকড়া ভুনা",
+        "description": "Mangrove mud crab cooked in a thick spicy masala. Often served on tour boats.",
+        "priceRange": { "min": 300, "max": 900 },
+        "spicy": true
+      },
+      {
+        "name": "Bhetki Fish Fry",
+        "localName": "ভেটকি মাছ ভাজা",
+        "description": "Barramundi from the coastal rivers, shallow-fried with turmeric and chilli. Firm, mild and not too bony.",
+        "priceRange": { "min": 250, "max": 700 }
+      },
+      {
+        "name": "Sundarbans Honey",
+        "localName": "সুন্দরবনের মধু",
+        "description": "Wild honey collected by mawals (traditional honey hunters), especially from khalisha flowers in spring. Buy from trusted shops — fake honey is common.",
+        "priceRange": { "min": 800, "max": 1500 }
+      }
+    ],
+    "spots": [
+      { "name": "Your tour boat's kitchen", "area": "On board", "knownFor": "Freshly cooked rice, fish, prawn, chicken and bhorta three times a day", "hygiene": "Good" },
+      { "name": "Abbas Hotel", "area": "Chuknagar (~30 km from Khulna)", "knownFor": "Legendary mutton curry and chui jhal meat", "hygiene": "Street" },
+      { "name": "Hotel restaurants (Castle Salam, City Inn)", "area": "Khulna city", "knownFor": "Bengali and Chinese-style dishes, buffet breakfast", "hygiene": "Excellent" },
+      { "name": "Mongla ghat food stalls", "area": "Mongla", "knownFor": "Tea, singara, fried fish and rice before a Karamjal trip", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "There are no shops inside the forest. Bring snacks, sealed bottled water and any special food you need.",
+      "Check that the boat uses bottled or filtered water for drinking. Never drink river water — it is salty and unsafe.",
+      "Tell your operator about allergies (prawn and crab appear in many meals) when you book.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline') and basic stomach medicine. The nearest pharmacy can be hours away."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Permits",
+      "severity": "critical",
+      "items": [
+        "You need a Forest Department permit to enter. In practice a licensed tour operator arranges it — book with an operator, not a random boatman.",
+        "Foreigners: send a copy of your passport (and visa) to the operator a few days before the trip. Carry the original on the boat.",
+        "The forest is usually closed to all visitors from about June 1 to August 31 (fish breeding season). Check the current Forest Department notice before booking.",
+        "Drones need separate government permission. Do not fly one without it."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "critical",
+      "items": [
+        "This is real tiger country. Never leave the group, never walk alone, and always stay close to the armed forest guard on land.",
+        "Never step off the boat or onto the mud without your guide's permission, even for a photo.",
+        "Do not swim or dangle your feet in the water. Crocodiles and strong tidal currents are a real danger.",
+        "Wear a life jacket on small boats. Follow the boat crew in rough weather and during cyclone signals."
+      ]
+    },
+    {
+      "category": "Health",
+      "severity": "warning",
+      "items": [
+        "Mosquitoes and sandflies are common at dawn and dusk. Bring strong repellent, long sleeves and long trousers.",
+        "The sun on the river is strong. Bring a hat, sunglasses and sunscreen.",
+        "There is no hospital or doctor in the forest. Carry your own medicines, a small first-aid kit and seasickness tablets if you get motion sickness.",
+        "Wear shoes or sandals with grip — forest stations and jetties are muddy and slippery."
+      ]
+    },
+    {
+      "category": "Customs",
+      "severity": "warning",
+      "items": [
+        "No plastic: do not throw anything into the river or forest. Take all rubbish back to the boat.",
+        "Keep quiet in the forest — no loud music or shouting. You will see far more wildlife.",
+        "Do not feed animals or take plants, honey, shells or wood. It is illegal.",
+        "Local fishermen and honey hunters pray to Bonbibi, the forest goddess. Be respectful at small shrines you see."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "Mobile signal is weak or absent deep in the forest. Some networks work near Kotka and Mongla.",
+        "There are no ATMs in the forest. Draw cash in Khulna for tips, honey and extras.",
+        "Bring a power bank. Boats charge phones from a generator only at certain times."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Katka, Sundarbans, Bangladesh",
+    "lat": 21.8628,
+    "lng": 89.7811,
+    "zoom": 10
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Board in Khulna & Sail into the Forest",
+      "activities": [
+        { "time": "7:00 AM", "activity": "Arrive in Khulna by night bus or train. Meet your operator and board the tour boat at the river ghat.", "tip": "Have breakfast at the bus stand or on the boat — most boats serve it soon after leaving." },
+        { "time": "Morning", "activity": "Cruise south down the Rupsha and Pashur rivers past Mongla port. The guide checks permits at the forest station." },
+        { "time": "Afternoon", "activity": "Walk the wooden boardwalk at Harbaria eco-tourism centre or Karamjal, with the forest guard." },
+        { "time": "Evening", "activity": "Sunset from the deck as the boat anchors in a wide river near Kotka. Dinner on board.", "tip": "Bring a warm layer — winter nights on the river are cold." }
+      ],
+      "overnight": "Tour boat (anchored near Kotka)"
+    },
+    {
+      "day": 2,
+      "title": "Kotka, Jamtola Beach & Kochikhali",
+      "activities": [
+        { "time": "6:00 AM", "activity": "Canal safari in a small country boat (dingi) through narrow creeks. Best chance to see deer, monkeys, kingfishers and maybe fresh tiger pugmarks.", "tip": "Stay silent and turn off your phone's sound. Wildlife disappears with noise." },
+        { "time": "9:00 AM", "activity": "Kotka: climb the watch tower, then a guarded forest walk to Jamtola sea beach." },
+        { "time": "Afternoon", "activity": "Kochikhali: open grassland with deer herds and wild boar. Short walk with the guard." },
+        { "time": "Evening", "activity": "Back on the boat. Watch for river dolphins at dusk, then dinner with mud crab or prawn." }
+      ],
+      "overnight": "Tour boat"
+    },
+    {
+      "day": 3,
+      "title": "Morning Creek Ride & Return to Khulna",
+      "activities": [
+        { "time": "6:00 AM", "activity": "One last dawn creek ride, often near Kalabogi or another forest station." },
+        { "time": "Midday", "activity": "Stop at Karamjal crocodile breeding centre on the way back (if not visited on Day 1)." },
+        { "time": "Evening", "activity": "Arrive back in Khulna around 5–8 PM. Buy Sundarbans honey from a trusted shop.", "tip": "Book your return bus or train for late evening, in case the boat runs late." },
+        { "time": "Night", "activity": "Night bus or train back to Dhaka." }
+      ],
+      "overnight": "Bus / train to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

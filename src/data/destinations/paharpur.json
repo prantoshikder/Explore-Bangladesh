@@ -1,0 +1,481 @@
+{
+  "slug": "paharpur",
+  "name": "Paharpur",
+  "localName": "পাহাড়পুর",
+  "tagline": "UNESCO-listed 8th-century Buddhist monastery — Somapura Mahavihara.",
+  "division": "Rajshahi",
+  "district": "Naogaon",
+  "tripTypes": ["Heritage"],
+  "difficulty": "Easy",
+  "budgetLevel": "Shoestring",
+  "idealDuration": "1–2 days",
+  "cover": {
+    "src": "/images/destinations/paharpur.jpg",
+    "alt": "The terracotta brick central shrine of Somapura Mahavihara rising above green lawns",
+    "caption": "Somapura Mahavihara",
+    "credit": {
+      "author": "Rangan Datta Wiki",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Somapura_Mahavihara_2024_1.jpg"
+    }
+  },
+  "coverGradient": "from-orange-700 via-amber-600 to-yellow-300",
+  "coverEmoji": "🏛️",
+
+  "overview": {
+    "intro": "Paharpur is the site of Somapura Mahavihara, a huge Buddhist monastery built around the 8th century by the Pala kings. For about 300 years it was one of the great centres of Buddhist learning in South Asia, and today it is a UNESCO World Heritage Site. The name means 'hill town', because the ruined central temple rose like a brick hill above the flat rice fields. It sits in a quiet village in Badalgachhi upazila (sub-district) of Naogaon, in north-west Bangladesh. The site itself takes 2–3 hours, but most travellers combine it with Mahasthangarh near Bogura, the stone Kusumba Mosque and the museums of Rajshahi for a 2–3 day heritage loop.",
+    "highlights": [
+      "The cross-shaped central temple, built in stepped brick terraces",
+      "Hundreds of terracotta plaques showing people, animals, gods and daily life",
+      "The square courtyard ringed by about 177 small monk cells",
+      "Site museum with stone and bronze statues found during excavation",
+      "Satyapir Bhita and the old bathing ghat just outside the main walls",
+      "Easy to combine with Mahasthangarh, Kusumba Mosque and Rajshahi"
+    ],
+    "bestTimeSummary": "November – February (cool, dry, clear skies)",
+    "seasons": [
+      {
+        "name": "Winter (Peak)",
+        "months": "Nov – Feb",
+        "weather": "Cool, dry and sunny days. The best time to walk around the open site. Mornings can be very foggy in Dec–Jan, which delays trains and buses.",
+        "tempC": "10–26°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Summer",
+        "months": "Mar – May",
+        "weather": "Very hot. North-west Bangladesh is the hottest part of the country, and the site has almost no shade. Visit only early morning or late afternoon. Mango season starts at the end of May.",
+        "tempC": "24–40°C",
+        "verdict": "Avoid"
+      },
+      {
+        "name": "Monsoon",
+        "months": "Jun – Sep",
+        "weather": "Hot, humid and rainy, but the fields are bright green. Paths can be muddy. Rajshahi mangoes are at their best in June–July.",
+        "tempC": "26–34°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Autumn",
+        "months": "Oct",
+        "weather": "Rain is tapering off and crowds are low. Warm but comfortable in the mornings.",
+        "tempC": "22–32°C",
+        "verdict": "Good"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "Paharpur is about 280 km north-west of Dhaka by road. The closest railway station with intercity trains is Joypurhat (also spelled Jaipurhat), about 10–12 km away. The easiest plan is a train or bus to Joypurhat, then a short CNG or easy-bike ride to the site. You can also go by bus to Naogaon or Bogura, or fly to Rajshahi or Saidpur and continue by road.",
+    "distanceFromDhaka": "~280 km by road",
+    "routes": [
+      {
+        "id": "train",
+        "label": "By Train to Joypurhat (Recommended)",
+        "recommended": true,
+        "totalTime": "7–9 hrs",
+        "totalCost": { "min": 700, "max": 2000 },
+        "steps": [
+          {
+            "title": "Get to Kamalapur or Biman Bandar (Airport) Railway Station",
+            "description": "Trains to north-west Bangladesh leave from Kamalapur, Dhaka's main station, and most also stop at Biman Bandar (Airport) station. From most parts of Dhaka, an Uber or Pathao car is the simplest way to get there.",
+            "mode": "ride-share",
+            "duration": "30–90 min",
+            "cost": { "min": 250, "max": 800 },
+            "tip": "Coming straight from the international airport? Biman Bandar station is a short walk across the footbridge from the terminal."
+          },
+          {
+            "title": "Intercity train to Joypurhat",
+            "description": "Joypurhat is on the main line north of Santahar junction. Intercity trains heading to Dinajpur, Panchagarh, Nilphamari/Chilahati or Lalmonirhat usually stop there (for example Ekota Express, Drutojan Express, Nilsagar Express and Lalmoni Express — check the current timetable). Trains to Rajshahi city do NOT pass Joypurhat.",
+            "mode": "train",
+            "duration": "~6–7 hrs",
+            "cost": { "min": 400, "max": 1300 },
+            "tip": "Check on eticket.railway.gov.bd that your train actually stops at Joypurhat before you book. Sales open 10 days ahead."
+          },
+          {
+            "title": "Arrive at Joypurhat Railway Station",
+            "description": "A small, busy town station. CNGs and battery-powered easy-bikes wait outside.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "CNG or easy-bike to Paharpur",
+            "description": "Say 'Paharpur Bouddho Bihar' to the driver. The road runs through villages and rice fields. If you want the driver to wait and bring you back, agree on a return fare with waiting time.",
+            "mode": "cng",
+            "duration": "20–40 min",
+            "cost": { "min": 150, "max": 300 },
+            "tip": "Price is per vehicle, not per person. Fix it before you get in."
+          }
+        ]
+      },
+      {
+        "id": "bus",
+        "label": "By Bus to Joypurhat or Naogaon (Cheapest)",
+        "totalTime": "7–9 hrs",
+        "totalCost": { "min": 700, "max": 1600 },
+        "steps": [
+          {
+            "title": "Go to the bus company's counter",
+            "description": "Long-distance buses leave from each company's own 'counter' (ticket office), not from one central station. Buses to the north-west mostly leave from Gabtoli, Kallyanpur, Shyamoli or Mohakhali, and some pick up at Abdullahpur near the airport.",
+            "mode": "ride-share",
+            "duration": "30–60 min",
+            "cost": { "min": 200, "max": 600 }
+          },
+          {
+            "title": "Coach to Joypurhat or Naogaon",
+            "description": "Several companies (for example Hanif, Shyamoli and others) run day and night buses via the Jamuna (Bangabandhu) Bridge and Bogura. Both AC and non-AC buses are available.",
+            "mode": "ac-bus",
+            "duration": "6–7 hrs (more with traffic at the bridge)",
+            "cost": { "min": 600, "max": 1200 },
+            "tip": "Day buses let you see the countryside. Night buses save a hotel night, but you arrive very early."
+          },
+          {
+            "title": "Get off at Joypurhat or Naogaon bus stand",
+            "description": "Joypurhat is closer to Paharpur. From Naogaon town, the site is about an hour away via Badalgachhi.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "CNG or local bus to Paharpur",
+            "description": "From Joypurhat, take a CNG or easy-bike (20–40 min). From Naogaon, take a CNG or a local bus towards Badalgachhi and Paharpur (about 1 hour).",
+            "mode": "cng",
+            "duration": "20–60 min",
+            "cost": { "min": 80, "max": 400 }
+          }
+        ]
+      },
+      {
+        "id": "flight",
+        "label": "By Air to Rajshahi or Saidpur (Fastest)",
+        "totalTime": "4–6 hrs door to door",
+        "totalCost": { "min": 5500, "max": 12000 },
+        "steps": [
+          {
+            "title": "Domestic Terminal, Hazrat Shahjalal International Airport (DAC)",
+            "description": "Arrive 1 hour before departure. You need your passport (foreigners) or NID (locals).",
+            "mode": "walk",
+            "duration": "1 hr check-in"
+          },
+          {
+            "title": "Flight to Rajshahi (RJH) or Saidpur (SPD)",
+            "description": "Biman Bangladesh, US-Bangla and Novoair fly to both airports, and Air Astra also serves Saidpur (check current schedules). There is no commercial airport at Bogura or Naogaon.",
+            "mode": "flight",
+            "duration": "~45–60 min",
+            "cost": { "min": 4000, "max": 9000 },
+            "tip": "Rajshahi is best if you also want Kusumba Mosque and the Varendra Research Museum."
+          },
+          {
+            "title": "Hired car or CNG to Paharpur",
+            "description": "From Rajshahi it is roughly 2.5–3.5 hours by road via Naogaon. From Saidpur it is roughly 2.5–3 hours via Joypurhat. A hired car with driver is the most comfortable option; buses plus CNG are much cheaper.",
+            "mode": "ride-share",
+            "duration": "2.5–3.5 hrs",
+            "cost": { "min": 1500, "max": 5000 },
+            "tip": "Car hire is per vehicle (approx. BDT 4,000–6,000 for a full day). Shared between 3–4 people, it is good value."
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "train",
+        "name": "Ekota / Drutojan / Nilsagar / Lalmoni Express (to Joypurhat)",
+        "departFrom": "Kamalapur Railway Station (most also stop at Biman Bandar / Airport station)",
+        "duration": "~6–7 hrs",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 400, "max": 480 }, "note": "Non-AC padded seat. Approx. fare." },
+          { "name": "Snigdha", "price": { "min": 750, "max": 900 }, "note": "AC chair car. Best value. Approx. fare." },
+          { "name": "AC Berth", "price": { "min": 1200, "max": 1400 }, "note": "Sleeper, only on some night trains. Approx. fare." }
+        ],
+        "bookingTip": "Book at eticket.railway.gov.bd (foreigners can register with a passport). Sales open 10 days ahead. Check that your train stops at Joypurhat."
+      },
+      {
+        "mode": "ac-bus",
+        "name": "Hanif / Shyamoli and other AC operators (to Joypurhat, Naogaon or Bogura)",
+        "departFrom": "Gabtoli, Kallyanpur, Shyamoli or Mohakhali counters",
+        "duration": "6–7 hrs (Bogura 4–6 hrs)",
+        "classes": [
+          { "name": "AC Economy", "price": { "min": 900, "max": 1200 }, "note": "Approx. fare." },
+          { "name": "AC Business (2+1 seats)", "price": { "min": 1200, "max": 1600 }, "note": "Only on some services. Approx. fare." }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com, or at the counter a day ahead."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "Non-AC coaches to Joypurhat / Naogaon",
+        "departFrom": "Gabtoli and Mohakhali bus terminals",
+        "duration": "7–8 hrs",
+        "classes": [{ "name": "Non-AC Seat", "price": { "min": 600, "max": 800 }, "note": "Cheapest, but crowded with many stops. Approx. fare." }],
+        "bookingTip": "Fine for experienced travellers. Keep valuables on your lap."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman / US-Bangla / Novoair (Rajshahi or Saidpur)",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~45–60 min",
+        "classes": [{ "name": "Economy", "price": { "min": 4000, "max": 9000 }, "note": "Prices rise before weekends and holidays." }],
+        "bookingTip": "Book on the airline's website or GoZayaan / ShareTrip. You still need 2.5–3.5 hrs by road to reach Paharpur."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Joypurhat Railway Station / bus stand",
+        "to": "Paharpur Buddhist Vihara",
+        "mode": "cng",
+        "duration": "20–40 min",
+        "cost": { "min": 150, "max": 300 },
+        "note": "Price is per vehicle (up to 3 people). Add approx. BDT 200–400 if the driver waits 2–3 hours and brings you back."
+      },
+      {
+        "from": "Jamalganj (nearest village station)",
+        "to": "Paharpur Buddhist Vihara",
+        "mode": "easy-bike",
+        "duration": "15–20 min",
+        "cost": { "min": 50, "max": 150 },
+        "note": "Jamalganj is only about 5 km from the site, but few intercity trains stop there. Battery vans also run this route."
+      },
+      {
+        "from": "Naogaon town",
+        "to": "Paharpur Buddhist Vihara",
+        "mode": "cng",
+        "duration": "~1 hr",
+        "cost": { "min": 300, "max": 500 },
+        "note": "Reserved CNG via Badalgachhi. A local bus is cheaper (approx. BDT 80–100) but slower."
+      },
+      {
+        "from": "Paharpur site gate",
+        "to": "Satyapir Bhita & surrounding village",
+        "mode": "walk",
+        "duration": "10–15 min",
+        "cost": { "min": 0, "max": 0 },
+        "note": "Everything inside the site is walkable. Rickshaw vans wait at the gate for short hops in the village."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices were checked for the 2025–26 season and are approximate. Fares and foreigner entry fees are revised often, and hotel prices rise around Eid holidays.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 300, "food": 500, "stay": 700, "entryFees": 500 },
+        "roundTripFromDhaka": 1400,
+        "roundTripMode": "Non-AC train (Shovan Chair) or non-AC bus",
+        "notes": "Simple hotel in Joypurhat or Naogaon, local rice-and-curry restaurants, shared CNGs and local buses. Entry fee shown at the foreigner rate."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 800, "food": 1000, "stay": 2000, "entryFees": 700 },
+        "roundTripFromDhaka": 2500,
+        "roundTripMode": "Snigdha (AC) train or AC bus",
+        "notes": "Good hotel in Bogura or Naogaon, reserved CNG between sites, restaurant meals. Entry fees for Paharpur plus Mahasthangarh at foreigner rates."
+      },
+      {
+        "id": "luxury",
+        "label": "Comfort with Private Car",
+        "perPersonPerDay": { "localTransport": 2500, "food": 2000, "stay": 6000, "entryFees": 1000 },
+        "roundTripFromDhaka": 12000,
+        "roundTripMode": "Return flight to Rajshahi or Saidpur",
+        "notes": "Upscale hotel in Bogura (such as Momo Inn), private car with driver for the whole loop. There are no true luxury resorts near Paharpur itself."
+      }
+    ],
+    "entryFees": [
+      { "place": "Paharpur Buddhist Vihara (incl. site museum)", "local": 30, "foreigner": 500, "note": "Approx. SAARC visitors usually pay a middle rate. Closed one weekday (often Sunday) and half day Monday — check before you go." },
+      { "place": "Mahasthangarh site museum (Bogura)", "local": 30, "foreigner": 500, "note": "Approx. The citadel walls are mostly free to walk." },
+      { "place": "Kusumba Mosque (Naogaon)", "local": 0, "foreigner": 0, "note": "Free. Avoid prayer times; donations welcome." },
+      { "place": "Varendra Research Museum (Rajshahi)", "local": 30, "foreigner": 200, "note": "Approx. Fees and closing day vary — check before you go." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Parjatan Motel, Paharpur",
+      "tier": "Budget",
+      "area": "Next to the site, Paharpur",
+      "pricePerNight": { "min": 1000, "max": 2500 },
+      "why": "Basic government-run rooms right beside the ruins, so you can see the site at sunrise. Check that it is open and taking guests before you go.",
+      "bookingTip": "Ask at Bangladesh Parjatan Corporation (parjatan.gov.bd) or call ahead. Approx. prices."
+    },
+    {
+      "name": "Simple hotels near Joypurhat station",
+      "tier": "Budget",
+      "area": "Joypurhat town",
+      "pricePerNight": { "min": 800, "max": 2000 },
+      "why": "Closest town to the site with basic AC and non-AC rooms. Good if you arrive by train in the evening.",
+      "bookingTip": "Ask to see the room and check the water, fan and AC before paying."
+    },
+    {
+      "name": "Mid-range hotels in Naogaon town",
+      "tier": "Budget",
+      "area": "Naogaon town centre",
+      "pricePerNight": { "min": 1200, "max": 3000 },
+      "why": "Handy base between Paharpur and Kusumba Mosque, with simple clean rooms and restaurants nearby."
+    },
+    {
+      "name": "Business hotels in Bogura (Satmatha area)",
+      "tier": "Mid-range",
+      "area": "Bogura town",
+      "pricePerNight": { "min": 2500, "max": 5000 },
+      "why": "Bogura has the widest choice of hotels in the region. Good base for Mahasthangarh, about 1.5–2 hours by road from Paharpur."
+    },
+    {
+      "name": "Hotel Naz Garden",
+      "tier": "Mid-range",
+      "area": "Silimpur, Bogura",
+      "pricePerNight": { "min": 5000, "max": 9000 },
+      "why": "Long-established upscale hotel with a pool, garden and restaurant, on the Dhaka highway at the edge of Bogura.",
+      "bookingTip": "Approx. prices. Book direct or through booking apps."
+    },
+    {
+      "name": "Momo Inn",
+      "tier": "Luxury",
+      "area": "Bogura",
+      "pricePerNight": { "min": 7000, "max": 14000 },
+      "why": "The most upscale hotel in the region, with a pool, gym and buffet restaurant. Best choice if you want resort-style comfort after a hot day of ruins.",
+      "bookingTip": "Approx. prices. Weekend rates are higher."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Bogura Doi (Sweet Yogurt)",
+        "localName": "বগুড়ার দই",
+        "description": "Thick, caramel-coloured sweet yogurt set in clay pots. Bogura's doi is famous across Bangladesh. Buy a small pot to eat, or a sealed one to take home.",
+        "priceRange": { "min": 60, "max": 400 }
+      },
+      {
+        "name": "Bengali Thali (Rice, Dal, Bhorta & Fish)",
+        "localName": "ভাত, ডাল, ভর্তা, মাছ",
+        "description": "Everyday local lunch: rice from Naogaon's famous paddy fields, lentil soup (dal), mashed vegetables with mustard oil and chilli (bhorta) and a river-fish curry.",
+        "priceRange": { "min": 120, "max": 350 },
+        "spicy": true
+      },
+      {
+        "name": "Kotkoti",
+        "localName": "কটকটি",
+        "description": "Crunchy fried sweet made from flour and jaggery, sold at stalls around Mahasthangarh. A cheap snack and a popular gift.",
+        "priceRange": { "min": 50, "max": 200 }
+      },
+      {
+        "name": "Kalai Ruti with Bhorta",
+        "localName": "কালাই রুটি",
+        "description": "A thick flatbread made from black lentil and rice flour, baked on a clay pan and eaten with chilli, onion and eggplant bhorta. A speciality of the Rajshahi region.",
+        "priceRange": { "min": 40, "max": 150 },
+        "spicy": true
+      },
+      {
+        "name": "Rajshahi Mangoes (in season)",
+        "localName": "রাজশাহীর আম",
+        "description": "From late May to July the whole region is full of mangoes such as Himsagar, Langra and Fazli. Buy whole fruit and peel it yourself.",
+        "priceRange": { "min": 80, "max": 200 }
+      }
+    ],
+    "spots": [
+      { "name": "Akboria Hotel & Restaurant", "area": "Thanthania, Bogura", "knownFor": "Busy local favourite for Bengali meals, curries and sweets", "hygiene": "Good" },
+      { "name": "Hotel restaurants (Naz Garden / Momo Inn)", "area": "Bogura", "knownFor": "Buffets, Bengali and continental dishes, reliable hygiene", "hygiene": "Excellent" },
+      { "name": "Doi & sweet shops", "area": "Bogura town (Satmatha area)", "knownFor": "Clay-pot doi, roshogolla and other sweets", "hygiene": "Good" },
+      { "name": "Tea stalls & rice hotels near the site gate", "area": "Paharpur village", "knownFor": "Tea, singara, simple rice-and-curry lunches", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "Drink only sealed bottled water (check that the cap seal is intact). Carry plenty, because the site has little shade.",
+      "Food options at Paharpur village are very basic. Bring snacks, or eat a good breakfast in Joypurhat, Naogaon or Bogura.",
+      "Choose busy restaurants where food is freshly cooked and served hot.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline'), sold at every pharmacy for about BDT 10."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Customs",
+      "severity": "warning",
+      "items": [
+        "Paharpur is a protected archaeological site. Do NOT climb on the temple walls or the monk cells, and stay on the marked paths.",
+        "Never pick up or take bricks, terracotta pieces or pottery. Removing antiquities is illegal.",
+        "Drones need prior permission from the Department of Archaeology. Do not fly one without it.",
+        "Locals may ask foreigners for selfies. It is friendly curiosity, and it is fine to politely say no."
+      ]
+    },
+    {
+      "category": "Dress Code",
+      "severity": "warning",
+      "items": [
+        "North-west Bangladesh is rural and conservative. Cover shoulders and knees.",
+        "At Kusumba Mosque, remove your shoes. Women should bring a scarf and may be asked to view from outside during prayers.",
+        "Light, loose cotton clothes and a hat work best in the heat."
+      ]
+    },
+    {
+      "category": "Health",
+      "severity": "warning",
+      "items": [
+        "Summer (March–May) is extremely hot, often over 38°C. Visit early morning or late afternoon, and carry water, sunscreen and a hat.",
+        "Mosquitoes are common in the evening, especially in the monsoon. Use repellent."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "info",
+      "items": [
+        "The area is calm and safe for visitors. Normal care with your bag and phone is enough.",
+        "Dense winter fog (December–January) often delays trains and buses by hours. Build slack into your plans.",
+        "Archaeological sites are usually closed one weekday (often Sunday) and open only half a day on Monday. Check before you go.",
+        "Agree on CNG and easy-bike fares, including waiting time, before you start."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "4G (Grameenphone, Robi, Banglalink) works at Paharpur and in all nearby towns, though it can be patchy in villages.",
+        "ATMs are in Joypurhat, Naogaon and Bogura, but not at the site. Carry enough cash for tickets, transport and food."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Paharpur Buddhist Vihara, Naogaon",
+    "lat": 25.031,
+    "lng": 88.977,
+    "zoom": 13
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Dhaka to Bogura & Mahasthangarh",
+      "activities": [
+        { "time": "Early morning", "activity": "AC bus from Dhaka to Bogura (4–6 hrs) via the Jamuna Bridge.", "tip": "Leave by 7 AM to beat the traffic at the bridge." },
+        { "time": "Afternoon", "activity": "Check in, then take a CNG north to Mahasthangarh (about 30 min). Walk the ancient citadel walls and visit the site museum and Govinda Bhita.", "tip": "Hire an easy-bike for 2–3 hours to see the scattered sites. Agree the price first." },
+        { "time": "Evening", "activity": "Back in Bogura: try the famous doi (sweet yogurt) and dinner at a local restaurant." }
+      ],
+      "overnight": "Bogura hotel"
+    },
+    {
+      "day": 2,
+      "title": "Paharpur — Somapura Mahavihara",
+      "activities": [
+        { "time": "7:30 AM", "activity": "Reserve a CNG or car from Bogura to Paharpur via Joypurhat (about 1.5–2 hrs)." },
+        { "time": "9:30 AM", "activity": "Explore the central temple, the terracotta plaques and the ring of monk cells. Walk out to Satyapir Bhita and the old bathing ghat.", "tip": "Go early. By noon there is almost no shade." },
+        { "time": "12:00 PM", "activity": "Visit the site museum, then a simple lunch near the gate or in Badalgachhi." },
+        { "time": "Afternoon", "activity": "Continue by CNG to Naogaon town (about 1 hr). Check in and rest." },
+        { "time": "Evening", "activity": "Stroll around Naogaon town and its markets." }
+      ],
+      "overnight": "Naogaon hotel"
+    },
+    {
+      "day": 3,
+      "title": "Kusumba Mosque, Rajshahi & Return",
+      "activities": [
+        { "time": "Morning", "activity": "Bus or CNG from Naogaon towards Manda to see Kusumba Mosque (about 1 hr), the 1558 stone mosque printed on the 5-taka note.", "tip": "Dress modestly, remove shoes, and avoid prayer times." },
+        { "time": "Midday", "activity": "Continue to Rajshahi city (about 1–1.5 hrs). Lunch with kalai ruti or, in season, Rajshahi mangoes." },
+        { "time": "Afternoon", "activity": "Optional: Varendra Research Museum, Bangladesh's oldest museum, with sculptures from Paharpur-era sites. Then a walk along the Padma River bank.", "tip": "Check its closing day before you go." },
+        { "time": "Evening / Night", "activity": "Train, bus or evening flight from Rajshahi back to Dhaka." }
+      ],
+      "overnight": "Train / bus / flight to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

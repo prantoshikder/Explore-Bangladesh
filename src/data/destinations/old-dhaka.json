@@ -1,0 +1,485 @@
+{
+  "slug": "old-dhaka",
+  "name": "Old Dhaka",
+  "localName": "পুরান ঢাকা",
+  "tagline": "Mughal forts, pink palaces, rickshaw chaos & legendary biryani.",
+  "division": "Dhaka",
+  "district": "Dhaka",
+  "tripTypes": ["Heritage", "City"],
+  "difficulty": "Easy",
+  "budgetLevel": "Shoestring",
+  "idealDuration": "1–2 days",
+  "cover": {
+    "src": "/images/destinations/old-dhaka.jpg",
+    "alt": "Aerial view of the pink Ahsan Manzil palace with its dome and grand staircase in Old Dhaka",
+    "caption": "Ahsan Manzil (Pink Palace)",
+    "credit": {
+      "author": "Shafiul Islam Shaikot",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Historic_Ahsan_Manzil_Palace_Bangladesh.jpg"
+    }
+  },
+  "coverGradient": "from-rose-600 via-orange-500 to-amber-300",
+  "coverEmoji": "🕌",
+
+  "overview": {
+    "intro": "Old Dhaka (Puran Dhaka) is the historic heart of Bangladesh's capital, on the north bank of the Buriganga River. It grew under the Mughals in the 1600s and later the Nawabs of Dhaka. Today it is a maze of narrow lanes packed with rickshaws, workshops, spice markets, mosques and temples. It is loud, crowded and intense, but also friendly, and full of history and some of the best food in the country. You do not need to stay here: most visitors base themselves elsewhere in Dhaka and come for a day by metro, ride-share or CNG, then explore by cycle rickshaw.",
+    "highlights": [
+      "Lalbagh Fort — an unfinished 17th-century Mughal fort with gardens and the tomb of Pari Bibi",
+      "Ahsan Manzil — the pink palace of the Nawabs, now a museum on the river",
+      "Star Mosque — walls covered in mosaic stars made from broken china",
+      "A wooden rowing boat (nouka) on the Buriganga at Sadarghat river port",
+      "Armenian Church (1781) and the Hindu lanes of Shankhari Bazar",
+      "Haji Biryani, Bakarkhani bread and lassi — Old Dhaka's legendary food"
+    ],
+    "bestTimeSummary": "November – February (cool, dry and best for walking)",
+    "seasons": [
+      {
+        "name": "Winter (Peak)",
+        "months": "Nov – Feb",
+        "weather": "Cool, dry and pleasant for walking and rickshaw rides. Mornings can be foggy and the air is often polluted.",
+        "tempC": "12–26°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Pre-monsoon (Summer)",
+        "months": "Mar – May",
+        "weather": "Very hot and humid in the narrow lanes. Go early in the morning and rest at midday. Occasional evening storms.",
+        "tempC": "24–36°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Monsoon",
+        "months": "Jun – Sep",
+        "weather": "Heavy downpours flood many lanes knee-deep within minutes and traffic stops. Sights stay open, but getting around is slow and messy.",
+        "tempC": "26–33°C",
+        "verdict": "Avoid"
+      },
+      {
+        "name": "Autumn",
+        "months": "Oct",
+        "weather": "Rain is ending. Durga Puja (usually October) fills Shankhari Bazar and Dhakeshwari Temple with festive crowds.",
+        "tempC": "22–32°C",
+        "verdict": "Good"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "Old Dhaka is inside the city, about 20 km south of Hazrat Shahjalal International Airport. The best way in is the Metro Rail (MRT Line 6) to Bangladesh Secretariat or Motijheel station, then a cycle rickshaw or CNG for the last 2–3 km. Uber/Pathao cars and CNGs go door to door but can take 1–2 hours in traffic. Once there, the lanes are too narrow and busy for cars: walk or hire a rickshaw.",
+    "distanceFromDhaka": "In Dhaka — ~20 km from the airport",
+    "routes": [
+      {
+        "id": "metro",
+        "label": "By Metro + Rickshaw (Recommended)",
+        "recommended": true,
+        "totalTime": "1.5–2.5 hrs from the airport",
+        "totalCost": { "min": 350, "max": 850 },
+        "steps": [
+          {
+            "title": "Get to Uttara North metro station",
+            "description": "The metro does not reach the airport yet. Take an Uber/Pathao car or CNG to Uttara North (Diabari) station, the northern end of MRT Line 6. If you are staying in Gulshan or Banani, take a ride-share to Agargaon or Farmgate station instead.",
+            "mode": "ride-share",
+            "duration": "20–40 min",
+            "cost": { "min": 200, "max": 450 },
+            "tip": "Say 'Uttara North metro station' or 'Diabari metro'."
+          },
+          {
+            "title": "MRT Line 6 to Bangladesh Secretariat or Motijheel",
+            "description": "Dhaka's air-conditioned elevated metro is clean, fast and avoids all traffic. Buy a single-journey card from the machine or counter. Trains run roughly every 8–12 minutes from early morning to about 9–10 PM.",
+            "mode": "train",
+            "duration": "~35–40 min",
+            "cost": { "min": 90, "max": 100 },
+            "tip": "Timings are shorter on Fridays (service usually starts in the afternoon). Check before you go."
+          },
+          {
+            "title": "Rickshaw or CNG into Old Dhaka",
+            "description": "From Secretariat or Motijheel station, take a cycle rickshaw or CNG to your first sight, for example Ahsan Manzil, Star Mosque or Lalbagh Fort. Agree the fare before you get in.",
+            "mode": "rickshaw",
+            "duration": "20–45 min",
+            "cost": { "min": 80, "max": 250 },
+            "tip": "Show the driver the Bangla name: Ahsan Manzil = আহসান মঞ্জিল, Lalbagh Fort = লালবাগ কেল্লা."
+          },
+          {
+            "title": "Walk the last stretch",
+            "description": "Near Sadarghat and Bangla Bazar, traffic often stops completely. Getting out and walking a few hundred metres is usually faster.",
+            "mode": "walk",
+            "duration": "5–15 min"
+          }
+        ]
+      },
+      {
+        "id": "ride-share",
+        "label": "By Uber / Pathao Car (Door to Door)",
+        "totalTime": "1–2.5 hrs from the airport",
+        "totalCost": { "min": 400, "max": 1100 },
+        "steps": [
+          {
+            "title": "Book a car in the Uber or Pathao app",
+            "description": "From the airport, walk to the pickup area outside arrivals. From Gulshan, Banani or Dhanmondi, the trip to Old Dhaka is usually 45–90 minutes. Set your destination as 'Ahsan Manzil' or 'Lalbagh Fort'.",
+            "mode": "ride-share",
+            "duration": "45 min – 2 hrs",
+            "cost": { "min": 350, "max": 1000 },
+            "tip": "Avoid the rush hours (about 8–10 AM and 5–8 PM). A Friday morning trip is fastest."
+          },
+          {
+            "title": "Get dropped at the edge of the old city",
+            "description": "Drivers may refuse to enter the narrowest lanes. Ask to be dropped at a main road (Nazira Bazar, Islampur Road or Lalbagh Road) and continue by rickshaw or on foot.",
+            "mode": "rickshaw",
+            "duration": "10–20 min",
+            "cost": { "min": 40, "max": 100 }
+          },
+          {
+            "title": "Book your ride back before dark",
+            "description": "Ride-share cars are slow to reach Old Dhaka in the evening. Walk out to a main road such as Nazira Bazar or Johnson Road before opening the app, or take a rickshaw back to Secretariat or Motijheel metro station.",
+            "mode": "walk",
+            "duration": "10–15 min",
+            "tip": "Expect surge pricing after 5 PM and when it rains."
+          }
+        ]
+      },
+      {
+        "id": "cng",
+        "label": "By CNG Auto-rickshaw (Budget, Flexible)",
+        "totalTime": "1–2 hrs from the airport",
+        "totalCost": { "min": 250, "max": 1000 },
+        "steps": [
+          {
+            "title": "Find and negotiate a CNG",
+            "description": "CNGs are green three-wheelers with a locked metal cage. Meters exist but are rarely used, so agree the fare first. From the airport, fair prices are about BDT 600–900; from Dhanmondi about BDT 200–350; from Gulshan about BDT 350–500.",
+            "mode": "cng",
+            "duration": "40 min – 1.5 hrs",
+            "cost": { "min": 200, "max": 900 },
+            "tip": "Pathao and Uber also offer CNG bookings in the app, so you don't have to negotiate."
+          },
+          {
+            "title": "Get off at a landmark",
+            "description": "Ask to be dropped at a well-known landmark such as 'Lalbagh Kella' (Lalbagh Fort) or 'Sadarghat'. CNGs can squeeze into narrower streets than cars, but the old city's lanes still jam easily.",
+            "mode": "walk",
+            "duration": "5–10 min"
+          },
+          {
+            "title": "Switch to a rickshaw to explore",
+            "description": "Once inside Old Dhaka, hire a cycle rickshaw by the hour to hop between sights.",
+            "mode": "rickshaw",
+            "duration": "As long as you like",
+            "cost": { "min": 50, "max": 100 }
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "train",
+        "name": "Dhaka Metro Rail — MRT Line 6",
+        "departFrom": "Uttara North, Agargaon, Farmgate or any Line 6 station → Bangladesh Secretariat / Motijheel",
+        "duration": "~35–40 min end to end",
+        "classes": [
+          { "name": "Single Journey Card", "price": { "min": 20, "max": 100 }, "note": "Fare depends on distance. Return the card at the exit gate." },
+          { "name": "MRT Pass / Rapid Pass", "price": { "min": 18, "max": 90 }, "note": "Approx. 10% cheaper per trip. Card has a refundable deposit (approx. BDT 200). Worth it for a longer stay." }
+        ],
+        "bookingTip": "No booking needed. Buy at the station machines or counter. Keep small notes (BDT 20, 50, 100)."
+      },
+      {
+        "mode": "ride-share",
+        "name": "Uber / Pathao (Car & Moto)",
+        "departFrom": "Anywhere in Dhaka, via the app",
+        "duration": "45 min – 2 hrs (traffic)",
+        "classes": [
+          { "name": "Car (Uber Go / Pathao Car)", "price": { "min": 300, "max": 1000 }, "note": "AC, safest and easiest for first-timers." },
+          { "name": "Motorbike (Uber Moto / Pathao Bike)", "price": { "min": 120, "max": 400 }, "note": "Fast through traffic, one passenger. Always wear the helmet." }
+        ],
+        "bookingTip": "Cash is accepted. Prices surge in rush hours and rain. Check the number plate before you get in."
+      },
+      {
+        "mode": "cng",
+        "name": "CNG Auto-rickshaw",
+        "departFrom": "Street hail anywhere, or book in the Pathao / Uber app",
+        "duration": "40 min – 1.5 hrs",
+        "classes": [
+          { "name": "Street hire (negotiated)", "price": { "min": 200, "max": 900 }, "note": "Price is for the whole vehicle, up to 3 people." }
+        ],
+        "bookingTip": "Agree the fare before you sit down, and keep bags away from the open sides."
+      },
+      {
+        "mode": "rickshaw",
+        "name": "Cycle Rickshaw",
+        "departFrom": "Everywhere in Old Dhaka",
+        "duration": "5–30 min per hop",
+        "classes": [
+          { "name": "Short ride", "price": { "min": 30, "max": 100 }, "note": "One sight to the next." },
+          { "name": "Hourly hire (rickshaw tour)", "price": { "min": 150, "max": 300 }, "note": "Approx. per hour. Agree the stops and total time first." }
+        ],
+        "bookingTip": "The best way to see Old Dhaka. Some guesthouses and tour companies arrange guided rickshaw tours."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Bangladesh Secretariat / Motijheel metro station",
+        "to": "Ahsan Manzil & Sadarghat",
+        "mode": "rickshaw",
+        "duration": "25–45 min",
+        "cost": { "min": 100, "max": 250 },
+        "note": "A CNG costs about the same but gets stuck in the same traffic."
+      },
+      {
+        "from": "Ahsan Manzil",
+        "to": "Star Mosque & Armenian Church (Armanitola)",
+        "mode": "rickshaw",
+        "duration": "10–15 min",
+        "cost": { "min": 40, "max": 80 },
+        "note": "Also an easy 15–20 minute walk through busy market lanes."
+      },
+      {
+        "from": "Armanitola / Ahsan Manzil",
+        "to": "Lalbagh Fort",
+        "mode": "rickshaw",
+        "duration": "20–40 min",
+        "cost": { "min": 60, "max": 150 },
+        "note": "Passes Chawkbazar. Dhakeshwari Temple is a short ride from Lalbagh."
+      },
+      {
+        "from": "Gulshan / Banani / Dhanmondi",
+        "to": "Lalbagh Fort or Ahsan Manzil",
+        "mode": "ride-share",
+        "duration": "45–90 min",
+        "cost": { "min": 300, "max": 600 },
+        "note": "Start before 8 AM or on a Friday morning to beat traffic."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices are approximate (2025–26). Old Dhaka is a city visit, so 'round trip' here means getting to and from the airport. Foreigner tickets at Lalbagh Fort and Ahsan Manzil (approx. BDT 500 each) make up most of the entry costs; locals pay only BDT 30–40.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 300, "food": 500, "stay": 1200, "entryFees": 600 },
+        "roundTripFromDhaka": 600,
+        "roundTripMode": "Airport transfers both ways by CNG / ride-share + Metro Rail",
+        "notes": "Simple hotel in Paltan or Motijheel, street food and biryani shops, metro and rickshaws."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 800, "food": 1200, "stay": 4000, "entryFees": 1000 },
+        "roundTripFromDhaka": 1600,
+        "roundTripMode": "Uber / Pathao car to and from the airport",
+        "notes": "3–4 star hotel in Dhanmondi or Gulshan, ride-share into Old Dhaka, hourly rickshaw tour, sit-down restaurants."
+      },
+      {
+        "id": "luxury",
+        "label": "Luxury",
+        "perPersonPerDay": { "localTransport": 3000, "food": 3000, "stay": 12000, "entryFees": 1100 },
+        "roundTripFromDhaka": 5000,
+        "roundTripMode": "Hotel car airport transfers",
+        "notes": "5-star hotel, private car with driver for the day and a professional guide for the old city."
+      }
+    ],
+    "entryFees": [
+      { "place": "Lalbagh Fort", "local": 30, "foreigner": 500, "note": "Approx. Usually closed Sunday, with a Friday prayer break — check before you go." },
+      { "place": "Ahsan Manzil (Pink Palace museum)", "local": 40, "foreigner": 500, "note": "Approx. Closed Thursday; Friday afternoon only." },
+      { "place": "Sadarghat river terminal", "local": 20, "foreigner": 20, "note": "Approx. BDT 10–20 pontoon ticket. Boat ride extra (approx. BDT 300–600 private hire)." },
+      { "place": "Star Mosque", "local": 0, "foreigner": 0, "note": "Free. Small donation welcome. Avoid prayer times." },
+      { "place": "Armenian Church", "local": 0, "foreigner": 0, "note": "Free. Donation appreciated; ask for the caretaker if the gate is locked." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Budget hotels in Paltan & Motijheel",
+      "tier": "Budget",
+      "area": "Naya Paltan / Motijheel (2–3 km from Old Dhaka)",
+      "pricePerNight": { "min": 1500, "max": 3000 },
+      "why": "Plain but cheap hotels close to the metro and Old Dhaka. Easier for foreigners than the very basic lodges inside the old city.",
+      "bookingTip": "Ask to see the room first. Some cheap hotels do not register foreign guests, so call ahead."
+    },
+    {
+      "name": "Guesthouses in Old Dhaka (Bangla Bazar / Nazira Bazar)",
+      "tier": "Budget",
+      "area": "Old Dhaka",
+      "pricePerNight": { "min": 800, "max": 2000 },
+      "why": "Wake up in the middle of the old city for early-morning walks. Very basic and noisy; only for adventurous travellers.",
+      "bookingTip": "Check that the room has a working fan, water and a lockable door."
+    },
+    {
+      "name": "Hotel Purbani International",
+      "tier": "Mid-range",
+      "area": "Dilkusha, Motijheel",
+      "pricePerNight": { "min": 4000, "max": 7000 },
+      "why": "Long-running business hotel close to Motijheel metro station, about 15–20 minutes from Old Dhaka by rickshaw."
+    },
+    {
+      "name": "Hotels in Dhanmondi",
+      "tier": "Mid-range",
+      "area": "Dhanmondi",
+      "pricePerNight": { "min": 3500, "max": 7000 },
+      "why": "Leafy, safe neighbourhood with lots of cafés and restaurants, and the closest comfortable area to Lalbagh Fort (30–45 min)."
+    },
+    {
+      "name": "InterContinental Dhaka",
+      "tier": "Luxury",
+      "area": "Shahbagh / Minto Road",
+      "pricePerNight": { "min": 18000, "max": 30000 },
+      "why": "Historic 5-star hotel, one of the closest luxury options to Old Dhaka, with a pool and several restaurants."
+    },
+    {
+      "name": "Pan Pacific Sonargaon Dhaka",
+      "tier": "Luxury",
+      "area": "Karwan Bazar",
+      "pricePerNight": { "min": 15000, "max": 28000 },
+      "why": "Classic 5-star hotel near Karwan Bazar metro station, with a big pool and garden. Easy metro ride to Old Dhaka."
+    },
+    {
+      "name": "The Westin Dhaka",
+      "tier": "Luxury",
+      "area": "Gulshan 2",
+      "pricePerNight": { "min": 18000, "max": 32000 },
+      "why": "Top international hotel in the diplomatic area. Quiet and comfortable, but 1–1.5 hrs from Old Dhaka in traffic."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Kacchi / Mutton Biryani",
+        "localName": "কাচ্চি বিরিয়ানি",
+        "description": "Old Dhaka's pride: fragrant small-grain rice cooked with goat (mutton) or beef, potatoes and spices. Haji's version uses mustard oil and is served on a leaf-lined plate.",
+        "priceRange": { "min": 200, "max": 450 }
+      },
+      {
+        "name": "Morog Polao",
+        "localName": "মোরগ পোলাও",
+        "description": "Mild, buttery rice with chicken, a speciality of Nanna Biryani. A good choice if you don't like spicy food.",
+        "priceRange": { "min": 180, "max": 350 }
+      },
+      {
+        "name": "Bakarkhani",
+        "localName": "বাকরখানি",
+        "description": "Crisp, flaky round bread baked in clay ovens in the lanes around Lalbagh and Chawkbazar. Eaten with tea for breakfast.",
+        "priceRange": { "min": 5, "max": 20 }
+      },
+      {
+        "name": "Lassi & Faluda",
+        "localName": "লাচ্ছি ও ফালুদা",
+        "description": "Thick, cold yoghurt drink and a colourful dessert of milk, vermicelli, jelly and ice cream. Beauty Lassi has been serving them for about a century.",
+        "priceRange": { "min": 60, "max": 200 }
+      },
+      {
+        "name": "Bhorta & Rice",
+        "localName": "ভর্তা ভাত",
+        "description": "A spread of 10–20 different mashed vegetables, fish and lentils (bhorta), eaten with plain rice. Nirob Hotel is famous for it.",
+        "priceRange": { "min": 150, "max": 400 },
+        "spicy": true
+      }
+    ],
+    "spots": [
+      { "name": "Haji Biryani", "area": "Kazi Alauddin Road, Nazira Bazar", "knownFor": "Mutton biryani since 1939 — often sold out by afternoon", "hygiene": "Good" },
+      { "name": "Nanna Biryani", "area": "Bechharam Dewri / Nazira Bazar", "knownFor": "Morog polao and kacchi biryani", "hygiene": "Good" },
+      { "name": "Beauty Lassi", "area": "Johnson Road (near the court area)", "knownFor": "Lassi, faluda and lime sherbet", "hygiene": "Street" },
+      { "name": "Nirob Hotel", "area": "Nazira Bazar", "knownFor": "Dozens of bhortas, brain fry and rice", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "Eat at busy places where food is cooked fresh and hot in front of you. Biryani straight from the pot is usually safe.",
+      "Skip ice, cut fruit and street drinks made with tap water if you have a sensitive stomach. Ask for a sealed bottle of water.",
+      "Wash or sanitise your hands before eating. Many places expect you to eat with your right hand, and there is always a basin.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline'), sold at every pharmacy for about BDT 10."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Dress Code",
+      "severity": "warning",
+      "items": [
+        "Old Dhaka is conservative. Cover shoulders and knees; loose long trousers or skirts are best for everyone.",
+        "At mosques (Star Mosque, Lalbagh Fort Mosque) remove your shoes. Women should cover their hair with a scarf and may be asked to stay in a separate area.",
+        "Remove shoes at Dhakeshwari Temple and in Hindu shrines, and don't touch offerings."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "warning",
+      "items": [
+        "Pickpockets work in crowds at Sadarghat, Chawkbazar and Bangla Bazar. Carry your bag in front and keep phones in a zipped pocket.",
+        "Traffic is chaotic. Cross roads with a group of locals and watch for rickshaws and motorbikes coming from every direction.",
+        "At Sadarghat, agree the boat price and duration first, and don't touch the polluted river water.",
+        "Agree all rickshaw and CNG fares before you get in. Unofficial 'guides' may expect money; politely say no if you don't want one."
+      ]
+    },
+    {
+      "category": "Customs",
+      "severity": "info",
+      "items": [
+        "Friday midday prayers (about 12:30–2:30 PM) make mosques off-limits and some sights close. Many shops close on Friday morning.",
+        "Check opening days before you go: Ahsan Manzil is closed on Thursday; Lalbagh Fort and other archaeology sites are usually closed on Sunday.",
+        "During Ramadan, avoid eating in public in daytime. The iftar food market at Chawkbazar (late afternoon) is famous.",
+        "Locals are curious and may ask for selfies. Ask before photographing people, especially women and worshippers."
+      ]
+    },
+    {
+      "category": "Health",
+      "severity": "warning",
+      "items": [
+        "Dhaka's air is often heavily polluted in winter. Carry a mask (N95) if you have asthma or a sensitive chest.",
+        "In summer the narrow lanes get very hot. Drink plenty of bottled water and rest during the midday heat.",
+        "Dengue mosquitoes are common, especially July–November. Use repellent in the daytime too."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "Good 4G everywhere (Grameenphone, Robi, Banglalink). Buy a local SIM at the airport with your passport.",
+        "Old Dhaka is cash-only for rickshaws, food and small shops. ATMs are found on the main roads; hotels and malls take cards.",
+        "Download offline maps. The lanes are confusing and GPS can jump between buildings."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Ahsan Manzil, Old Dhaka",
+    "lat": 23.7125,
+    "lng": 90.4010,
+    "zoom": 14
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Rickshaw Heritage Tour & Sadarghat",
+      "activities": [
+        { "time": "8:00 AM", "activity": "Metro to Bangladesh Secretariat, then a rickshaw to Lalbagh Fort. Breakfast of bakarkhani and tea from a nearby oven on the way.", "tip": "Lalbagh is usually closed on Sunday. Check before you go." },
+        { "time": "10:00 AM", "activity": "Hire a rickshaw by the hour. Visit Dhakeshwari Temple, then on through Chawkbazar to Star Mosque and the Armenian Church in Armanitola." },
+        { "time": "1:00 PM", "activity": "Lunch at Haji Biryani or Nanna Biryani in Nazira Bazar.", "tip": "Haji often sells out by mid-afternoon, so don't go late." },
+        { "time": "3:00 PM", "activity": "Ahsan Manzil palace museum, then walk to Sadarghat and take a 30–60 minute wooden rowing boat on the Buriganga.", "tip": "Ahsan Manzil is closed on Thursday. Late afternoon is when the big launches leave — a great sight." },
+        { "time": "Evening", "activity": "Cold lassi or faluda at Beauty Lassi, then metro or ride-share back to your hotel." }
+      ],
+      "overnight": "Your Dhaka hotel"
+    },
+    {
+      "day": 2,
+      "title": "Markets, Lanes & Food",
+      "activities": [
+        { "time": "Morning", "activity": "Walk through Shankhari Bazar, the old Hindu street of conch-shell carvers and tiny temples, and the book market of Bangla Bazar." },
+        { "time": "Late Morning", "activity": "Explore the wholesale lanes of Islampur and the spice and dry-fruit sellers near Chawkbazar." },
+        { "time": "Afternoon", "activity": "A long bhorta-and-rice lunch at Nirob Hotel, then rest during the heat." },
+        { "time": "Evening", "activity": "Street food crawl around Nazira Bazar and Chawkbazar: kebabs, chaap and sweets.", "tip": "Go with a local friend or a food-tour guide the first time." }
+      ],
+      "overnight": "Your Dhaka hotel"
+    },
+    {
+      "day": 3,
+      "title": "Optional: Modern Dhaka Day",
+      "activities": [
+        { "time": "Morning", "activity": "Metro to Bijoy Sarani or Farmgate and walk around Louis Kahn's National Parliament building and Crescent Lake." },
+        { "time": "Afternoon", "activity": "Bangladesh National Museum in Shahbagh, then the Dhaka University area and the Shaheed Minar (Language Martyrs' Monument)." },
+        { "time": "Evening", "activity": "Dinner in Dhanmondi or Gulshan, then transfer to the airport or onward train/bus.", "tip": "Allow at least 2 hours to reach the airport in evening traffic." }
+      ],
+      "overnight": "Your Dhaka hotel, or depart"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

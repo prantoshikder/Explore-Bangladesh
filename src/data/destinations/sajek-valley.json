@@ -1,0 +1,461 @@
+{
+  "slug": "sajek-valley",
+  "name": "Sajek Valley",
+  "localName": "সাজেক ভ্যালি",
+  "tagline": "The 'Queen of Hills' — sleep above the clouds in the Chittagong Hill Tracts.",
+  "division": "Chattogram",
+  "district": "Rangamati (accessed via Khagrachari)",
+  "tripTypes": ["Hills"],
+  "difficulty": "Moderate",
+  "budgetLevel": "Moderate",
+  "idealDuration": "2–3 days",
+  "cover": {
+    "src": "/images/destinations/sajek-valley.jpg",
+    "alt": "Green hills of Sajek Valley with a sea of white clouds filling the valley below",
+    "caption": "Morning clouds in the valley",
+    "credit": {
+      "author": "Sahriar ahmed tasvir",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Clouds_at_Sajek_Valley_20171220.jpg"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/destinations/sajek-valley-hills.jpg",
+      "alt": "Layers of forested hills under a blue sky seen from Sajek",
+      "caption": "View across the Chittagong Hill Tracts",
+      "credit": {
+        "author": "Sahriar ahmed tasvir",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mountain_and_clouds_at_Sajek_Valley_20171220.jpg"
+      }
+    }
+  ],
+  "coverGradient": "from-emerald-600 via-teal-500 to-sky-300",
+  "coverEmoji": "⛰️",
+
+  "overview": {
+    "intro": "Sajek is a ridge-top village at about 1,800 ft (550 m) in the Chittagong Hill Tracts (CHT). It is home to the Lushai, Pangkhua and Tripura indigenous communities. Its fame comes from mornings when a sea of clouds fills the valleys below. Getting there involves a long bus ride to Khagrachari, then a 3-hour jeep ride on winding mountain roads with a compulsory army escort. It is very achievable for a first-timer if you follow the steps below.",
+    "highlights": [
+      "Sunrise above a sea of clouds from Konglak Hill or Helipad",
+      "Ruilui Para — colourful wooden cottages along the ridge",
+      "Konglak Para trek (easy-moderate, ~45 min up)",
+      "Open-top Chander Gari jeep ride through the hills",
+      "Bamboo chicken under the stars",
+      "Hajachora waterfall & Alutila cave (on the way, near Khagrachari)"
+    ],
+    "bestTimeSummary": "June – November for clouds; Oct – Feb for clear, dry weather",
+    "seasons": [
+      {
+        "name": "Monsoon (Cloud season)",
+        "months": "Jun – Sep",
+        "weather": "This is when you will most reliably see the famous 'sea of clouds'. Expect lush green hills, rain showers and muddy paths.",
+        "tempC": "22–30°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Autumn",
+        "months": "Oct – Nov",
+        "weather": "Clouds are still common in the mornings, with clear blue days. Arguably the sweet spot.",
+        "tempC": "18–28°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Winter",
+        "months": "Dec – Feb",
+        "weather": "Dry and cool, with crisp views and fewer clouds. Nights get chilly, so bring a light jacket.",
+        "tempC": "10–24°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Summer",
+        "months": "Mar – May",
+        "weather": "Hot, hazy and dusty. Water shortages are common in the village.",
+        "tempC": "22–34°C",
+        "verdict": "Avoid"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "Sajek has NO direct transport from Dhaka. You first reach Khagrachari town (overnight bus, 7–8 hrs). From there, a reserved Chander Gari (open-top jeep) takes you up to Sajek in about 3 hrs, passing through an army checkpoint at Baghaihat where vehicles go in an escorted convoy at fixed times.",
+    "distanceFromDhaka": "~330 km (via Khagrachari)",
+    "routes": [
+      {
+        "id": "bus-jeep",
+        "label": "Bus + Chander Gari (Recommended)",
+        "recommended": true,
+        "totalTime": "11–13 hrs",
+        "totalCost": { "min": 1600, "max": 3200 },
+        "steps": [
+          {
+            "title": "Overnight bus from Dhaka to Khagrachari",
+            "description": "Shanti Paribahan, Hanif, Shyamoli, Saint Martin and Ena run Dhaka → Khagrachari. Counters are at Kalabagan, Gabtoli, Arambagh, Sayedabad and Fakirapool. Take a bus leaving between 10 and 11 PM so you arrive around 6 AM, in good time for the morning army convoy.",
+            "mode": "ac-bus",
+            "duration": "7–8 hrs",
+            "cost": { "min": 750, "max": 1600 },
+            "tip": "Take a NIGHT bus. If you miss the 10:30 AM convoy, you will have to wait until the afternoon one."
+          },
+          {
+            "title": "Arrive at Khagrachari (Shapla Chattar / bus counter)",
+            "description": "Have breakfast near the counters. Jeep drivers ('Chander Gari' line men) wait here. Find your pre-booked driver or negotiate a new one.",
+            "mode": "walk",
+            "duration": "30 min"
+          },
+          {
+            "title": "Chander Gari jeep: Khagrachari → Dighinala → Baghaihat",
+            "description": "A Chander Gari is a converted open-top 4×4 (often an old Land Cruiser or Mahindra) that seats 10–14 people. You RESERVE the whole jeep for your group, usually as a package that includes the return trip.",
+            "mode": "chander-gari",
+            "duration": "~1.5 hrs",
+            "cost": { "min": 900, "max": 1300 },
+            "tip": "A full jeep costs around BDT 10,000–13,000 (2 days / 1 night, return). Split among 10 people, that is about BDT 1,000–1,300 each."
+          },
+          {
+            "title": "Army checkpoint & escort at Baghaihat",
+            "description": "All tourist vehicles register at the Baghaihat army camp and continue together in a convoy escorted by the army. Typical departures are around 10:30 AM and 3:00 PM (times can change). Foreigners must show their passport and CHT permit here.",
+            "mode": "chander-gari",
+            "duration": "20–40 min wait",
+            "tip": "Give your driver photocopies of your NID or passport. They handle the registration list."
+          },
+          {
+            "title": "Final climb to Sajek (Ruilui Para)",
+            "description": "A steep, very winding hill road with breathtaking views. Hold on to the roof rails and keep your bags tied.",
+            "mode": "chander-gari",
+            "duration": "~1 hr",
+            "tip": "Motion sickness? Take a tablet 30 minutes before and sit near the front."
+          }
+        ]
+      },
+      {
+        "id": "train-bus-jeep",
+        "label": "Train to Chattogram + Bus + Jeep",
+        "totalTime": "14–16 hrs",
+        "totalCost": { "min": 1800, "max": 3500 },
+        "steps": [
+          {
+            "title": "Intercity train Dhaka → Chattogram",
+            "description": "Sonar Bangla, Subarna or Mohanagar Express from Kamalapur. This route is more comfortable but slower overall.",
+            "mode": "train",
+            "duration": "~5–6 hrs",
+            "cost": { "min": 405, "max": 1300 }
+          },
+          {
+            "title": "Bus Chattogram (Oxygen / Kadamtali) → Khagrachari",
+            "description": "Shanti Paribahan non-AC buses leave every 30–60 minutes from Oxygen Moor.",
+            "mode": "non-ac-bus",
+            "duration": "~3.5–4 hrs",
+            "cost": { "min": 250, "max": 350 }
+          },
+          {
+            "title": "Overnight in Khagrachari, then the jeep to Sajek next morning",
+            "description": "You will almost always miss the morning convoy on this route, so plan a night in Khagrachari town and explore Alutila Cave and Hajachora waterfall.",
+            "mode": "chander-gari",
+            "duration": "~3 hrs",
+            "cost": { "min": 900, "max": 1300 }
+          }
+        ]
+      },
+      {
+        "id": "flight-bus-jeep",
+        "label": "Fly to Chattogram + Bus + Jeep",
+        "totalTime": "8–10 hrs",
+        "totalCost": { "min": 5500, "max": 10000 },
+        "steps": [
+          {
+            "title": "Flight DAC → CGP (Shah Amanat Int'l Airport)",
+            "description": "Many daily flights, about 45 minutes in the air.",
+            "mode": "flight",
+            "duration": "~45 min",
+            "cost": { "min": 3800, "max": 8000 }
+          },
+          {
+            "title": "Ride-share to Oxygen Moor bus stand",
+            "description": "Uber/Pathao from the airport across the city.",
+            "mode": "ride-share",
+            "duration": "~1 hr",
+            "cost": { "min": 500, "max": 800 }
+          },
+          {
+            "title": "Bus to Khagrachari, then the jeep to Sajek",
+            "description": "Same as above. An early-morning flight can still make the afternoon convoy.",
+            "mode": "chander-gari",
+            "duration": "~7 hrs",
+            "cost": { "min": 1200, "max": 1700 }
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "ac-bus",
+        "name": "Shyamoli / Hanif / Saint Martin Hyundai (AC)",
+        "departFrom": "Kalabagan, Arambagh or Sayedabad counters",
+        "duration": "7–8 hrs",
+        "classes": [
+          { "name": "AC Seat", "price": { "min": 1200, "max": 1600 } }
+        ],
+        "bookingTip": "Book on shohoz.com or bdtickets.com. Weekend (Thursday night) seats sell out."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "Shanti Paribahan / Ena / Hanif (Non-AC)",
+        "departFrom": "Gabtoli, Kalabagan, Sayedabad",
+        "duration": "7–9 hrs",
+        "classes": [
+          { "name": "Non-AC Seat", "price": { "min": 750, "max": 900 }, "note": "Shanti Paribahan is the classic Khagrachari operator." }
+        ],
+        "bookingTip": "Buy at the counter a day before. Pick a seat in the front half to reduce motion sickness."
+      },
+      {
+        "mode": "chander-gari",
+        "name": "Chander Gari (reserved jeep)",
+        "departFrom": "Khagrachari town (Shapla Chattar)",
+        "duration": "~3 hrs one-way",
+        "classes": [
+          { "name": "Full jeep, same-day return", "price": { "min": 8000, "max": 9500 }, "note": "Per vehicle, up to 12–14 people." },
+          { "name": "Full jeep, 2 days / 1 night", "price": { "min": 10000, "max": 13000 }, "note": "Driver stays overnight. The most common option." }
+        ],
+        "bookingTip": "Pre-book with a driver through your Sajek resort or a Khagrachari jeep association number. Solo? Join a shared group on Facebook travel groups."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman / US-Bangla / Novoair (to Chattogram)",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~45 min",
+        "classes": [{ "name": "Economy", "price": { "min": 3800, "max": 8000 } }],
+        "bookingTip": "Only worth it if you are short on time. There is still 7+ hrs of road travel after landing."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Khagrachari bus counter",
+        "to": "Sajek (Ruilui Para)",
+        "mode": "chander-gari",
+        "duration": "~3 hrs incl. checkpoint",
+        "cost": { "min": 10000, "max": 13000 },
+        "note": "Per jeep, return + overnight. Up to 12–14 people. The only practical way up."
+      },
+      {
+        "from": "Khagrachari",
+        "to": "Dighinala (halfway)",
+        "mode": "cng",
+        "duration": "~1 hr",
+        "cost": { "min": 150, "max": 250 },
+        "note": "Budget alternative for solo travellers: shared CNG to Dighinala, then find a jeep or motorbike to Sajek. Not recommended for foreigners."
+      },
+      {
+        "from": "Ruilui Para (main village)",
+        "to": "Konglak Para (hilltop)",
+        "mode": "walk",
+        "duration": "~45 min uphill",
+        "cost": { "min": 0, "max": 50 },
+        "note": "The jeep drops you at the base. The last part is a steep footpath, and a bamboo walking stick costs about BDT 20."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "The jeep is your biggest cost and is shared by the group. Costs below assume a group of 8–10 sharing one Chander Gari. A pair travelling alone will pay much more unless they join a group.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 700, "food": 700, "stay": 900, "entryFees": 150 },
+        "roundTripFromDhaka": 1700,
+        "roundTripMode": "Non-AC bus to Khagrachari",
+        "notes": "Shared cottage room, local Pahari restaurants, a big group in one jeep."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 1300, "food": 1300, "stay": 2500, "entryFees": 200 },
+        "roundTripFromDhaka": 3000,
+        "roundTripMode": "AC bus to Khagrachari",
+        "notes": "Valley-view resort with an attached bath, a smaller group sharing a jeep."
+      },
+      {
+        "id": "luxury",
+        "label": "Premium",
+        "perPersonPerDay": { "localTransport": 3000, "food": 2000, "stay": 6000, "entryFees": 300 },
+        "roundTripFromDhaka": 9000,
+        "roundTripMode": "Fly to Chattogram + private car",
+        "notes": "Best-located resort (book months ahead) and a private jeep."
+      }
+    ],
+    "entryFees": [
+      { "place": "Sajek tourist entry (Baghaihat)", "local": 20, "foreigner": 20, "note": "Per person. The vehicle entry fee (~BDT 100) is paid by the driver." },
+      { "place": "Konglak Para", "local": 20, "foreigner": 20, "note": "Village maintenance fee" },
+      { "place": "Alutila Cave (Khagrachari)", "local": 20, "foreigner": 100, "note": "Plus a mashal (torch) for about BDT 10–20" },
+      { "place": "Hajachora Waterfall", "local": 20, "foreigner": 20 }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Ruilui Para homestay cottages",
+      "tier": "Budget",
+      "area": "Ruilui Para",
+      "pricePerNight": { "min": 1500, "max": 3000 },
+      "why": "Simple wooden rooms run by local families, often with shared bathrooms.",
+      "bookingTip": "On weekends, nearly every room is booked. Reserve 2–3 weeks ahead by phone."
+    },
+    {
+      "name": "Megh Machang",
+      "tier": "Mid-range",
+      "area": "Ruilui Para (valley side)",
+      "pricePerNight": { "min": 3500, "max": 6000 },
+      "why": "Bamboo-and-wood cottages with balconies hanging over the cloud valley."
+    },
+    {
+      "name": "Meghpunji Resort",
+      "tier": "Mid-range",
+      "area": "Ruilui Para",
+      "pricePerNight": { "min": 4000, "max": 7000 },
+      "why": "Small cottages with valley views, and it is popular with photographers."
+    },
+    {
+      "name": "Sajek Resort (Army-run)",
+      "tier": "Luxury",
+      "area": "Near Helipad",
+      "pricePerNight": { "min": 10000, "max": 15000 },
+      "why": "The most comfortable and secure stay, with a reliable power backup and a restaurant.",
+      "bookingTip": "Book through the Khagrachari Cantonment / official contacts listed online. Fills up months ahead."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Bamboo Chicken",
+        "localName": "ব্যাম্বু চিকেন",
+        "description": "Chicken marinated with hill spices, stuffed into a green bamboo tube and slow-roasted over a fire. Order it at lunch and it is ready by dinner.",
+        "priceRange": { "min": 600, "max": 1000 }
+      },
+      {
+        "name": "Bamboo Shoot Curry",
+        "localName": "বাঁশ কোড়ল",
+        "description": "Tender young bamboo shoots cooked with dried fish or pork. A traditional indigenous dish.",
+        "priceRange": { "min": 150, "max": 300 }
+      },
+      {
+        "name": "Pahari Rice Thali",
+        "localName": "পাহাড়ি খাবার",
+        "description": "Sticky hill rice with forest vegetables, lentils, and pork or chicken.",
+        "priceRange": { "min": 200, "max": 400 },
+        "spicy": true
+      },
+      {
+        "name": "Hill Fruits",
+        "description": "Local pineapple, papaya, jackfruit and bananas from the hill gardens. Very sweet and cheap.",
+        "priceRange": { "min": 30, "max": 150 }
+      }
+    ],
+    "spots": [
+      { "name": "Chimney Restaurant", "area": "Ruilui Para", "knownFor": "Bamboo chicken, BBQ nights", "hygiene": "Good" },
+      { "name": "Resort restaurants (pre-order)", "area": "Your resort", "knownFor": "Set Bangla meals", "hygiene": "Good" },
+      { "name": "Sistem Restaurant", "area": "Khagrachari town", "knownFor": "Famous Pahari (indigenous) cuisine", "hygiene": "Good" }
+    ],
+    "safetyTips": [
+      "Pre-order dinner by around 4 PM, because restaurants cook to order in small quantities.",
+      "There is no ATM in Sajek. Withdraw enough cash in Khagrachari.",
+      "Bring bottled water from Khagrachari. It is pricier up the hill and sometimes runs out.",
+      "Ask whether a dish contains pork if you avoid it, because it is common in indigenous cuisine."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Permits",
+      "severity": "critical",
+      "items": [
+        "FOREIGNERS: Sajek is in the Chittagong Hill Tracts (CHT). You need prior permission. Apply 7–15 days ahead through a licensed tour operator, who submits your passport and visa copies to the Ministry of Home Affairs and the Rangamati Deputy Commissioner's office.",
+        "Carry several photocopies of your passport, visa page and CHT permit. You will be checked at Baghaihat and sometimes at other army checkpoints.",
+        "Locals (Bangladeshi citizens) need only their NID or birth certificate for the checkpoint registration list.",
+        "Rules change with the security situation. Always check the latest status with your tour operator or the local police before travelling."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "warning",
+      "items": [
+        "Travel only with the army escort convoy. Never drive the Baghaihat–Sajek road at night.",
+        "Stay seated in the open jeep on bends. Do not stand on the back step for photos.",
+        "Do not wander into the forest or onto unmarked trails after dark.",
+        "Konglak path: wear proper shoes with grip, because it is slippery after rain."
+      ]
+    },
+    {
+      "category": "Customs",
+      "severity": "warning",
+      "items": [
+        "You are a guest in indigenous villages (Lushai, Pangkhua, Tripura). Always ask before photographing people or homes.",
+        "Do not enter houses or sacred spots without an invitation.",
+        "Keep noise down at night. Loud music and parties disturb the residents.",
+        "Do not litter. Carry your plastic back to Khagrachari."
+      ]
+    },
+    {
+      "category": "Dress Code",
+      "severity": "info",
+      "items": [
+        "Casual and modest: T-shirts and long trousers. Bring a warm layer for early mornings (Oct–Feb).",
+        "Pack a raincoat or poncho in the monsoon. Umbrellas are useless in the open jeep."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "warning",
+      "items": [
+        "Electricity is limited and often runs only in the evening (solar or generator). Bring a power bank.",
+        "Mobile signal is patchy: Robi and Teletalk usually work best, and Grameenphone is weak in places.",
+        "There are no ATMs, card machines or pharmacies in Sajek. Carry cash and basic medicines."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Sajek Valley, Rangamati",
+    "lat": 23.3819,
+    "lng": 92.2938,
+    "zoom": 11
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Khagrachari → Sajek",
+      "activities": [
+        { "time": "6:00 AM", "activity": "Arrive in Khagrachari by night bus. Breakfast and meet your jeep driver." },
+        { "time": "8:30 AM", "activity": "Leave by Chander Gari. Optional quick stop at Hajachora waterfall on the way (season-dependent)." },
+        { "time": "10:30 AM", "activity": "Register at the Baghaihat army camp and join the escorted convoy to Sajek.", "tip": "Keep passport copies handy." },
+        { "time": "12:00 PM", "activity": "Check in at Ruilui Para. Pre-order bamboo chicken for dinner." },
+        { "time": "4:30 PM", "activity": "Sunset from Helipad and the Ruilui viewpoint." },
+        { "time": "Night", "activity": "Bamboo chicken dinner and star-gazing (the sky is very dark here)." }
+      ],
+      "overnight": "Sajek cottage / resort"
+    },
+    {
+      "day": 2,
+      "title": "Sea of Clouds & Konglak Trek",
+      "activities": [
+        { "time": "5:00 AM", "activity": "Walk to Konglak Para or the Helipad for sunrise over the clouds.", "tip": "Clouds are most likely June–November, just after dawn." },
+        { "time": "8:00 AM", "activity": "Breakfast, then slowly explore Ruilui Para and the Lushai village." },
+        { "time": "Late morning", "activity": "Check out. Take the escorted convoy down (around 10:30 AM or 3:00 PM)." },
+        { "time": "Afternoon", "activity": "Back in Khagrachari: visit Alutila Cave (bring the torch they sell) and the Richhang waterfall." }
+      ],
+      "overnight": "Khagrachari town hotel (or night bus to Dhaka)"
+    },
+    {
+      "day": 3,
+      "title": "Khagrachari & Return (optional extra day)",
+      "activities": [
+        { "time": "Morning", "activity": "Visit the Hanging Bridge and Debta Pukur (a hilltop lake, about a 30-minute climb)." },
+        { "time": "Afternoon", "activity": "Pahari lunch at Sistem Restaurant and shop for handloom shawls." },
+        { "time": "Night", "activity": "Night bus to Dhaka, arriving early morning." }
+      ],
+      "overnight": "Bus to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

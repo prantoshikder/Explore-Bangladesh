@@ -1,0 +1,514 @@
+{
+  "slug": "bandarban",
+  "name": "Bandarban",
+  "localName": "বান্দরবান",
+  "tagline": "Highest peaks, Nilgiri clouds & multi-day treks to remote waterfalls.",
+  "division": "Chattogram",
+  "district": "Bandarban",
+  "tripTypes": ["Hills"],
+  "difficulty": "Trekking",
+  "budgetLevel": "Moderate",
+  "idealDuration": "3–5 days",
+  "cover": {
+    "src": "/images/destinations/bandarban.jpg",
+    "alt": "Nafakhum waterfall rushing over wide rock ledges in the forest of Thanchi, Bandarban",
+    "caption": "Nafakhum waterfall, Thanchi",
+    "credit": {
+      "author": "Nripo Khan",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:NafaKhum,Thanchi,Bandarban.jpg"
+    }
+  },
+  "coverGradient": "from-emerald-800 via-green-600 to-amber-200",
+  "coverEmoji": "🥾",
+
+  "overview": {
+    "intro": "Bandarban is the wildest and highest part of Bangladesh. It sits in the Chittagong Hill Tracts (CHT), a region of steep forested hills in the south-east, home to more than ten indigenous peoples such as the Marma, Bawm, Mro and Tripura. The small town of Bandarban is the base. Easy day trips from town reach hilltop viewpoints like Nilachal and Nilgiri, where clouds fill the valleys below. Further in, multi-day trips by jeep, river boat and on foot lead to Boga Lake and Nafakhum waterfall. Foreigners need prior permission to visit, and some remote areas close to tourists at short notice, so plan ahead.",
+    "highlights": [
+      "Sunrise above a sea of clouds at Nilgiri (about 2,200 ft)",
+      "Sunset over endless green ridges at Nilachal, 6 km from town",
+      "The gold, Myanmar-style Buddha Dhatu Jadi (Golden Temple)",
+      "Hanging bridges over the lake at Meghla",
+      "Wooden boat up the rocky Sangu river and a jungle trek to Nafakhum waterfall",
+      "Boga Lake and the trek to Keokradong, one of the country's highest peaks"
+    ],
+    "bestTimeSummary": "October – February (dry trails, clear views, cool nights)",
+    "seasons": [
+      {
+        "name": "Winter (Peak)",
+        "months": "Nov – Feb",
+        "weather": "Dry and sunny with cool mornings. Best trekking conditions and clear views. Nights on the hilltops can be cold. Hotels are full on weekends and around New Year.",
+        "tempC": "10–27°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Pre-monsoon",
+        "months": "Mar – May",
+        "weather": "Hot and hazy. Waterfalls are low or dry. Storms start in late April and May.",
+        "tempC": "20–34°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Monsoon",
+        "months": "Jun – Sep",
+        "weather": "Heavy rain, beautiful clouds and full waterfalls, but landslides block roads, the Sangu river floods and leeches are everywhere on trails. Remote treks are often stopped.",
+        "tempC": "24–32°C",
+        "verdict": "Avoid"
+      },
+      {
+        "name": "Autumn",
+        "months": "Oct",
+        "weather": "Rain is ending, hills are very green and Nafakhum is at its most powerful. Trails can still be muddy.",
+        "tempC": "21–31°C",
+        "verdict": "Good"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "There are no trains or flights to Bandarban itself. The easiest way is a direct overnight bus from Dhaka (about 8–9 hrs). Alternatively, take a train or flight to Chattogram and then a 2.5–3 hour bus ride from Bahaddarhat bus terminal. Inside the hills you travel by Chander Gari (open-top jeep), local bus and, for Nafakhum, a wooden engine boat on the Sangu river.",
+    "distanceFromDhaka": "~320 km",
+    "routes": [
+      {
+        "id": "bus",
+        "label": "By Direct Night Bus (Recommended)",
+        "recommended": true,
+        "totalTime": "8–10 hrs",
+        "totalCost": { "min": 1100, "max": 2600 },
+        "steps": [
+          {
+            "title": "Go to the bus company's counter in Dhaka",
+            "description": "Long-distance buses leave from each company's own counter (small ticket office), not from one central station. Bandarban buses mostly leave from Sayedabad, Arambagh, Fakirapool and Kalabagan. Your ticket shows the exact counter.",
+            "mode": "ride-share",
+            "duration": "30–60 min",
+            "cost": { "min": 200, "max": 600 },
+            "tip": "Arrive 30 minutes early. Evening traffic in Dhaka is very slow."
+          },
+          {
+            "title": "Overnight bus Dhaka → Bandarban",
+            "description": "Shyamoli, Hanif, S. Alam, Saint Martin and Unique run direct buses. Most leave between 10 PM and 11:30 PM and arrive in Bandarban town early in the morning. The last 2 hours after Chattogram are on a winding hill road.",
+            "mode": "ac-bus",
+            "duration": "~8–9 hrs",
+            "cost": { "min": 900, "max": 2000 },
+            "tip": "If you get travel sick, take a front seat and a motion-sickness tablet before the hill section."
+          },
+          {
+            "title": "Army/police checkpoint on the way",
+            "description": "Buses are stopped at checkpoints when entering the Hill Tracts. Foreigners will be asked to show their passport and CHT permission. Keep the copies in your hand luggage, not in the hold.",
+            "mode": "walk",
+            "duration": "10–30 min"
+          },
+          {
+            "title": "Rickshaw or CNG to your hotel",
+            "description": "Bandarban town is small. Most hotels are within 1–2 km of the bus counters. Resorts on the Chimbuk or Meghla road need a CNG.",
+            "mode": "rickshaw",
+            "duration": "5–20 min",
+            "cost": { "min": 50, "max": 200 }
+          }
+        ]
+      },
+      {
+        "id": "train-chattogram",
+        "label": "By Train to Chattogram + Bus",
+        "totalTime": "9–11 hrs",
+        "totalCost": { "min": 800, "max": 2000 },
+        "steps": [
+          {
+            "title": "Intercity train Dhaka → Chattogram",
+            "description": "Subarna Express and Sonar Bangla Express (fastest, about 5 hrs), Mohanagar and Turna (night train) leave from Kamalapur Railway Station and also stop at Biman Bandar (Airport) station.",
+            "mode": "train",
+            "duration": "5–6.5 hrs",
+            "cost": { "min": 405, "max": 1400 },
+            "tip": "Book on eticket.railway.gov.bd as soon as sales open, 10 days before travel. Foreigners can register with a passport."
+          },
+          {
+            "title": "CNG or ride-share to Bahaddarhat bus terminal",
+            "description": "From Chattogram Railway Station, take a CNG or Uber/Pathao to the Bahaddarhat bus terminal, where Bandarban buses start.",
+            "mode": "cng",
+            "duration": "30–45 min",
+            "cost": { "min": 200, "max": 400 }
+          },
+          {
+            "title": "Bus Bahaddarhat → Bandarban",
+            "description": "Purobi and Purabi non-AC buses leave every 20–30 minutes from early morning to evening. They stop at Meghla just before town if you want to get off there.",
+            "mode": "non-ac-bus",
+            "duration": "~2.5–3 hrs",
+            "cost": { "min": 200, "max": 300 },
+            "tip": "Take a bus before about 4 PM so you arrive in daylight."
+          },
+          {
+            "title": "Rickshaw to your hotel",
+            "description": "The bus stops in Bandarban town, close to most hotels.",
+            "mode": "rickshaw",
+            "duration": "5–15 min",
+            "cost": { "min": 40, "max": 100 }
+          }
+        ]
+      },
+      {
+        "id": "flight-chattogram",
+        "label": "By Air to Chattogram (Fastest)",
+        "totalTime": "5–6 hrs door to door",
+        "totalCost": { "min": 4800, "max": 14000 },
+        "steps": [
+          {
+            "title": "Domestic Terminal, Hazrat Shahjalal International Airport (DAC)",
+            "description": "Arrive 1 hour before departure. Foreigners need their passport.",
+            "mode": "walk",
+            "duration": "1 hr check-in"
+          },
+          {
+            "title": "Flight DAC → CGP (Shah Amanat International Airport, Chattogram)",
+            "description": "Biman Bangladesh, US-Bangla, Novoair and Air Astra fly many times a day.",
+            "mode": "flight",
+            "duration": "~45 min",
+            "cost": { "min": 4000, "max": 9000 }
+          },
+          {
+            "title": "Ride-share to Bahaddarhat, or a private car straight to Bandarban",
+            "description": "The airport is at the far end of the city, so getting to Bahaddarhat takes time. If you are in a group, a hired car from the airport to Bandarban (approx. 3–4 hrs) is easier.",
+            "mode": "ride-share",
+            "duration": "45–90 min (to Bahaddarhat)",
+            "cost": { "min": 500, "max": 900 },
+            "tip": "A private car airport → Bandarban costs approx. BDT 4,000–6,000 for the whole car."
+          },
+          {
+            "title": "Bus Bahaddarhat → Bandarban",
+            "description": "Same Purobi / Purabi buses as on the train route.",
+            "mode": "non-ac-bus",
+            "duration": "~2.5–3 hrs",
+            "cost": { "min": 200, "max": 300 }
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "ac-bus",
+        "name": "Shyamoli / Hanif / Saint Martin / Unique (AC)",
+        "departFrom": "Sayedabad, Arambagh, Fakirapool or Kalabagan counters",
+        "duration": "~8–9 hrs (overnight)",
+        "classes": [
+          { "name": "AC Economy", "price": { "min": 1400, "max": 1700 }, "note": "Approx. Fares change with fuel prices." },
+          { "name": "AC Business (2+1 seats)", "price": { "min": 1700, "max": 2200 }, "note": "Approx. Wider seats, fewer stops." }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com, or at the counter a day ahead. Thursday and Friday nights sell out first."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "S. Alam / Shyamoli / Hanif / Unique (Non-AC)",
+        "departFrom": "Sayedabad Bus Terminal, Arambagh & Fakirapool",
+        "duration": "~9–10 hrs",
+        "classes": [
+          { "name": "Non-AC Seat", "price": { "min": 900, "max": 1100 }, "note": "Approx. Cheapest direct option, but cramped and many stops." }
+        ],
+        "bookingTip": "Ask for a seat in the front half of the bus. The back bounces a lot on the hill road."
+      },
+      {
+        "mode": "train",
+        "name": "Subarna Express / Sonar Bangla Express / Turna (to Chattogram)",
+        "departFrom": "Kamalapur Railway Station (also stops at Biman Bandar / Airport station)",
+        "duration": "5–6.5 hrs",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 405, "max": 405 }, "note": "Approx. Non-AC padded seat." },
+          { "name": "Snigdha", "price": { "min": 780, "max": 780 }, "note": "Approx. AC chair car. Best value." },
+          { "name": "AC Seat", "price": { "min": 935, "max": 935 }, "note": "Approx." },
+          { "name": "AC Berth", "price": { "min": 1400, "max": 1400 }, "note": "Approx. Sleeper, on the Turna night train." }
+        ],
+        "bookingTip": "Book at eticket.railway.gov.bd 10 days ahead. You still need the 2.5–3 hour bus from Chattogram to Bandarban."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "Purobi / Purabi (Chattogram → Bandarban)",
+        "departFrom": "Bahaddarhat Bus Terminal, Chattogram",
+        "duration": "~2.5–3 hrs",
+        "classes": [
+          { "name": "Non-AC Seat", "price": { "min": 200, "max": 300 }, "note": "Approx. Frequent departures all day." }
+        ],
+        "bookingTip": "No advance booking needed. Just buy a ticket at the counter at Bahaddarhat."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman / US-Bangla / Novoair / Air Astra (to Chattogram)",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~45 min",
+        "classes": [
+          { "name": "Economy", "price": { "min": 4000, "max": 9000 }, "note": "Approx. Higher on Thursdays and holidays." }
+        ],
+        "bookingTip": "Book on the airline website or GoZayaan / ShareTrip. An early-morning flight gets you to Bandarban by early afternoon."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Bandarban town",
+        "to": "Nilachal, Meghla & Golden Temple",
+        "mode": "cng",
+        "duration": "10–20 min each",
+        "cost": { "min": 400, "max": 1000 },
+        "note": "Reserve one CNG for a half-day loop with waiting time. A Chander Gari can do all three for approx. BDT 1,500–2,500."
+      },
+      {
+        "from": "Bandarban town (Thanchi / Roangchhari stand)",
+        "to": "Shoilo Propat, Chimbuk & Nilgiri",
+        "mode": "chander-gari",
+        "duration": "1.5–2 hrs each way",
+        "cost": { "min": 3500, "max": 5500 },
+        "note": "Price is for the whole jeep (up to about 10–12 people), return trip with stops. Local buses towards Thanchi are a cheap but slow alternative (approx. BDT 150–250)."
+      },
+      {
+        "from": "Bandarban town",
+        "to": "Thanchi bazar (for Remakri & Nafakhum)",
+        "mode": "chander-gari",
+        "duration": "3–4 hrs",
+        "cost": { "min": 5000, "max": 7000 },
+        "note": "Reserved jeep, approx. Local bus approx. BDT 200–300 per person. Leave early: checkpoints close to new arrivals in the afternoon."
+      },
+      {
+        "from": "Thanchi ghat",
+        "to": "Remakri (start of the Nafakhum trek)",
+        "mode": "speedboat",
+        "duration": "2–3 hrs upstream",
+        "cost": { "min": 4000, "max": 6000 },
+        "note": "This is a narrow wooden engine boat, not a real speedboat. Price is approx. per boat return, shared by your group. In the dry season you may have to get out and push over the rocks."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices are approximate and were checked for the 2025–26 season. Jeep and boat costs are per vehicle, so they get much cheaper per person in a group of 6–10. Foreigners should add tour-operator fees for the CHT permit and a licensed guide (approx. BDT 1,500–2,500 per day for remote areas).",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 600, "food": 600, "stay": 800, "entryFees": 150 },
+        "roundTripFromDhaka": 2000,
+        "roundTripMode": "Non-AC night bus Dhaka ⇄ Bandarban",
+        "notes": "Simple hotel in town or village homestay, local rice-and-curry meals, shared jeep with a big group."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 1500, "food": 1200, "stay": 2500, "entryFees": 250 },
+        "roundTripFromDhaka": 3800,
+        "roundTripMode": "AC night bus, or Snigdha train to Chattogram + bus",
+        "notes": "Hill-view resort with attached bathroom, jeep shared by a small group, guide for remote trips."
+      },
+      {
+        "id": "luxury",
+        "label": "Premium",
+        "perPersonPerDay": { "localTransport": 4000, "food": 2000, "stay": 8000, "entryFees": 400 },
+        "roundTripFromDhaka": 14000,
+        "roundTripMode": "Return flight to Chattogram + private car to Bandarban",
+        "notes": "Top resort such as Sairu, private jeep and a dedicated guide. Bandarban has very few true luxury hotels."
+      }
+    ],
+    "entryFees": [
+      { "place": "Nilgiri hilltop", "local": 100, "foreigner": 100, "note": "Approx. Plus a vehicle fee paid by the driver." },
+      { "place": "Nilachal viewpoint", "local": 50, "foreigner": 50, "note": "Approx." },
+      { "place": "Meghla Tourist Complex", "local": 50, "foreigner": 100, "note": "Approx. Boats and rides are extra." },
+      { "place": "Golden Temple (Buddha Dhatu Jadi)", "local": 50, "foreigner": 50, "note": "Approx. Opening hours limited; may close around midday." },
+      { "place": "Boga Lake / Nafakhum registration", "local": 100, "foreigner": 200, "note": "Approx. small local fees, plus a compulsory licensed guide and boat/jeep hire." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Hotel Hill View",
+      "tier": "Budget",
+      "area": "Bandarban town (near the bus counters)",
+      "pricePerNight": { "min": 1200, "max": 2500 },
+      "why": "Simple, clean rooms in the town centre. Easy for an early jeep start and close to restaurants.",
+      "bookingTip": "Call or WhatsApp to book directly. Weekends fill up in winter."
+    },
+    {
+      "name": "Village homestays in Thanchi, Remakri & Boga Lake",
+      "tier": "Budget",
+      "area": "Remote hill villages",
+      "pricePerNight": { "min": 300, "max": 800 },
+      "why": "Bamboo cottages run by local families. Very basic (shared toilet, little electricity), but often the only option on multi-day trips.",
+      "bookingTip": "Your licensed guide arranges this. Price is usually per person, and meals cost extra."
+    },
+    {
+      "name": "Hotel Plaza Bandarban",
+      "tier": "Mid-range",
+      "area": "Bandarban town",
+      "pricePerNight": { "min": 2500, "max": 5000 },
+      "why": "One of the better town hotels, with AC rooms, a restaurant and staff used to tourists."
+    },
+    {
+      "name": "Hillside Resort",
+      "tier": "Mid-range",
+      "area": "Milonchhari, Chimbuk road (~4 km from town)",
+      "pricePerNight": { "min": 3000, "max": 7000 },
+      "why": "Cottages on a ridge with wide valley views and a quiet, green setting. Popular with foreign travellers."
+    },
+    {
+      "name": "Venus Resort",
+      "tier": "Mid-range",
+      "area": "Meghla",
+      "pricePerNight": { "min": 3000, "max": 6000 },
+      "why": "Garden cottages near the Meghla lake, a short ride from town. Good for families."
+    },
+    {
+      "name": "Nilgiri Resort (army-run cottages)",
+      "tier": "Mid-range",
+      "area": "Nilgiri hilltop, Thanchi road",
+      "pricePerNight": { "min": 5000, "max": 12000 },
+      "why": "The only way to wake up above the clouds at Nilgiri. Simple cottages, unbeatable location.",
+      "bookingTip": "Approx. prices. Rooms are booked through the army and sell out weeks ahead. Ask a tour operator to help."
+    },
+    {
+      "name": "Sairu Hill Resort",
+      "tier": "Luxury",
+      "area": "Chimbuk road (~16 km from town)",
+      "pricePerNight": { "min": 15000, "max": 30000 },
+      "why": "The most upscale stay in Bandarban, with an infinity pool facing the hills and good food.",
+      "bookingTip": "Book weeks ahead for winter weekends. You will need your own transport to town."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Bamboo Chicken",
+        "localName": "ব্যাম্বু চিকেন",
+        "description": "Chicken with chilli, garlic and herbs, packed into a green bamboo tube and slow-cooked over a fire. Smoky and tender. Order a few hours ahead.",
+        "priceRange": { "min": 500, "max": 1200 },
+        "spicy": true
+      },
+      {
+        "name": "Mundi",
+        "localName": "মুন্ডি",
+        "description": "Marma rice-noodle soup with a light fish or chicken broth, fried garlic and chilli. A cheap, filling breakfast in town.",
+        "priceRange": { "min": 60, "max": 150 }
+      },
+      {
+        "name": "Bamboo Shoot Curry",
+        "localName": "বাঁশ কোড়ল",
+        "description": "Young bamboo shoots cooked with chicken, fish or pork. A classic hill dish, mostly found in the monsoon and autumn.",
+        "priceRange": { "min": 120, "max": 300 }
+      },
+      {
+        "name": "Jum Rice & Pahari Bhorta",
+        "localName": "জুম চাল ও পাহাড়ি ভর্তা",
+        "description": "Sticky, nutty rice grown on hill slopes (jum farming), served with mashed vegetable and dried-fish pastes (bhorta). Some hill dishes use nappi, a strong fermented fish paste.",
+        "priceRange": { "min": 150, "max": 350 },
+        "spicy": true
+      },
+      {
+        "name": "Hill Fruits",
+        "localName": "পাহাড়ি ফল",
+        "description": "Small, very sweet pineapples, bananas and papayas sold at roadside stalls and bazars. Safe to eat if you peel them yourself.",
+        "priceRange": { "min": 20, "max": 100 }
+      }
+    ],
+    "spots": [
+      { "name": "Marma restaurants around Bandarban Bazar", "area": "Bandarban town centre", "knownFor": "Mundi, bamboo chicken, local hill dishes", "hygiene": "Good" },
+      { "name": "Hillside Resort restaurant", "area": "Milonchhari, Chimbuk road", "knownFor": "Bengali and Chinese-style meals with a valley view", "hygiene": "Good" },
+      { "name": "Nilgiri café", "area": "Nilgiri hilltop", "knownFor": "Tea, snacks and set meals (army-run)", "hygiene": "Good" },
+      { "name": "Thanchi bazar rice hotels", "area": "Thanchi", "knownFor": "Rice, dal, egg and chicken curry before the boat trip", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "Drink only sealed bottled water in town. On treks, carry purification tablets or a filter bottle, because stream water is not safe to drink untreated.",
+      "In remote villages, meals are cooked for you by your host. Tell your guide in advance if you do not eat pork or spicy food.",
+      "Eat freshly cooked hot food and avoid raw salads on multi-day treks.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline') and basic stomach medicine. There are no pharmacies past Thanchi or Ruma."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Permits",
+      "severity": "critical",
+      "items": [
+        "FOREIGNERS: Bandarban is in the Chittagong Hill Tracts (CHT), and you need prior permission to visit. Apply 7–15 days ahead through a licensed tour operator, who submits your passport and visa copies to the authorities.",
+        "Carry several photocopies of your passport, visa page and CHT permission. You will be checked at army and police checkpoints on the way in and on hill roads.",
+        "Remote areas (Thanchi, Remakri, Nafakhum, Ruma, Boga Lake, Keokradong) need registration at the army camp and police station AND a licensed local guide. Your guide handles the forms.",
+        "These remote areas have at times been closed to all tourists, or only to foreigners, for security reasons. Always check the current status with your tour operator or the Bandarban district administration before you travel.",
+        "Bangladeshi citizens need their NID or birth certificate for checkpoint registration."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "warning",
+      "items": [
+        "Travel only in daylight. Checkpoints stop new entries in the afternoon (approx. 3–4 PM), and hill roads are dangerous after dark.",
+        "Do NOT swim in the pool below Nafakhum or in the Sangu river. Currents are strong and people drown every year. Avoid river trips in or just after heavy rain.",
+        "Treks involve steep, slippery rock and stream crossings. Wear trekking shoes or river sandals with grip, and never trek without your guide.",
+        "In the open jeep, stay seated on bends and keep bags tied down."
+      ]
+    },
+    {
+      "category": "Health",
+      "severity": "warning",
+      "items": [
+        "The Hill Tracts have malaria. Use mosquito repellent, long sleeves at dusk and a net at night. Ask a travel doctor about anti-malaria tablets before you go.",
+        "Leeches are common on trails in the monsoon and autumn. Wear long socks over your trousers; salt or a lighter makes them drop off. They are harmless but bleed a lot.",
+        "Purify all stream and village water. Carry a basic first-aid kit, blister plasters and any personal medicine."
+      ]
+    },
+    {
+      "category": "Customs",
+      "severity": "warning",
+      "items": [
+        "You are a guest of indigenous communities (Marma, Bawm, Mro, Tripura and others). Always ask before photographing people, homes or ceremonies.",
+        "Dress modestly: long trousers and covered shoulders, especially in villages. Remove shoes and cover shoulders and knees at Buddhist temples.",
+        "Do not enter houses, jum fields or sacred sites without an invitation.",
+        "Carry your rubbish back to town. There is no waste collection in the villages."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "warning",
+      "items": [
+        "Good 4G in Bandarban town. Past Thanchi and Ruma, signal is weak or absent; Teletalk and Robi usually work best.",
+        "Villages have little or no electricity (small solar panels only). Bring a large power bank and a torch.",
+        "ATMs are only in Bandarban town. Carry enough cash for guides, boats, food and homestays."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Bandarban, Bangladesh",
+    "lat": 22.1953,
+    "lng": 92.2184,
+    "zoom": 10
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrive & Town Sights",
+      "activities": [
+        { "time": "Morning", "activity": "Arrive by night bus. Check in, freshen up and have a bowl of mundi (rice-noodle soup) for breakfast." },
+        { "time": "Late Morning", "activity": "CNG to Meghla: walk across the hanging bridges and around the lake." },
+        { "time": "Afternoon", "activity": "Golden Temple (Buddha Dhatu Jadi) on its hilltop above town.", "tip": "Cover shoulders and knees. Check opening hours, as it may close around midday." },
+        { "time": "Evening", "activity": "Sunset at Nilachal, about 6 km from town.", "tip": "Arrange your return CNG before sunset; they are hard to find after dark." }
+      ],
+      "overnight": "Bandarban town hotel or a resort on the Chimbuk road"
+    },
+    {
+      "day": 2,
+      "title": "Shoilo Propat, Chimbuk & Nilgiri",
+      "activities": [
+        { "time": "7:00 AM", "activity": "Reserve a Chander Gari for the day and drive the Thanchi road. Show your passport and permit at the checkpoints." },
+        { "time": "Morning", "activity": "Quick stop at Shoilo Propat waterfall and the Bawm village stalls selling hand-woven cloth." },
+        { "time": "Midday", "activity": "Chimbuk viewpoint, then on to Nilgiri hilltop for lunch at the café and wide views over the ranges." },
+        { "time": "Afternoon", "activity": "Drive back to town before dark, or stay overnight at Nilgiri if you managed to book a cottage.", "tip": "Staying at Nilgiri gives you the famous sunrise above the clouds, best in early winter." }
+      ],
+      "overnight": "Bandarban town, or Nilgiri Resort"
+    },
+    {
+      "day": 3,
+      "title": "Sangu River Town Life & Departure",
+      "activities": [
+        { "time": "Morning", "activity": "Walk along the Sangu river and through Bandarban Bazar, where hill people bring fruit, rice and handicrafts to sell." },
+        { "time": "Late Morning", "activity": "Visit a Marma Buddhist monastery (kyang) in town and try bamboo chicken for lunch (order ahead)." },
+        { "time": "Afternoon / Night", "activity": "Rest, then catch the night bus back to Dhaka.", "tip": "Want Nafakhum or Boga Lake? Add 2–3 days, a licensed guide and confirmed permission. Leave town by 7 AM for Thanchi or Ruma." }
+      ],
+      "overnight": "Night bus to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

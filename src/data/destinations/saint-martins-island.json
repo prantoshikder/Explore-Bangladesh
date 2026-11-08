@@ -1,0 +1,504 @@
+{
+  "slug": "saint-martins-island",
+  "name": "Saint Martin's Island",
+  "localName": "সেন্ট মার্টিন",
+  "tagline": "The only coral island of Bangladesh — turquoise water & coconut palms.",
+  "division": "Chattogram",
+  "district": "Cox's Bazar (Teknaf Upazila)",
+  "tripTypes": ["Island", "Beach"],
+  "difficulty": "Moderate",
+  "budgetLevel": "Moderate",
+  "idealDuration": "2–3 days",
+  "cover": {
+    "src": "/images/destinations/saint-martins-island.jpg",
+    "alt": "Wooden fishing boats on turquoise water off the palm-lined shore of Saint Martin's Island",
+    "caption": "Fishing boats off the island",
+    "credit": {
+      "author": "Tanvir Rahat",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Scenic_view_of_Saint_Martin_Island,_Bangladesh_2.jpg"
+    }
+  },
+  "coverGradient": "from-sky-600 via-cyan-400 to-teal-200",
+  "coverEmoji": "🏝️",
+
+  "overview": {
+    "intro": "Saint Martin's Island is a small island of about 8 km² in the Bay of Bengal, around 9 km south of the mainland tip at Teknaf. Locals also call it Narikel Jinjira, 'Coconut Island'. It is the only coral island in Bangladesh, with clear blue-green water, rocky coral shores and rows of coconut palms. There are no cars — you walk, cycle or ride a battery van. Because the coral and sea-turtle habitat are fragile, the government now strictly limits tourism: the island is open only for a few months a year, daily visitor numbers are capped, and you need an online travel pass. These rules change every season, so always check the latest government notice before you book anything.",
+    "highlights": [
+      "Turquoise water and coral-stone beaches on the west side of the island",
+      "Chhera Dwip — the tiny southern tip, cut off at high tide, the southernmost land of Bangladesh",
+      "Sunset over the sea from the West Beach",
+      "Cycling or walking the full ring of the island (about 3–4 hrs)",
+      "Fresh fish BBQ and green coconuts (daab) straight from the trees",
+      "Starry, quiet nights with no city lights (when overnight stays are allowed)"
+    ],
+    "bestTimeSummary": "December – January (when tourist access is open; rules change every season)",
+    "seasons": [
+      {
+        "name": "Early Season",
+        "months": "Nov",
+        "weather": "Dry and sunny, sea calming down after the monsoon. In recent seasons November was open for day trips only (no overnight stays). Check the current notice.",
+        "tempC": "20–30°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Peak (Open Season)",
+        "months": "Dec – Jan",
+        "weather": "Cool, dry and calm — the best sea conditions. In recent seasons overnight stays were allowed in these months, with a daily visitor cap (around 2,000 people).",
+        "tempC": "17–28°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Closed to Tourists",
+        "months": "Feb – Apr",
+        "weather": "Pleasant to hot, but in recent seasons tourist ships stopped from February to protect the island's ecosystem and turtle nesting.",
+        "tempC": "20–33°C",
+        "verdict": "Avoid"
+      },
+      {
+        "name": "Monsoon & Cyclone Season",
+        "months": "May – Oct",
+        "weather": "Rough sea, heavy rain and cyclone risk. Tourist ships do not run.",
+        "tempC": "25–32°C",
+        "verdict": "Avoid"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "It is a two-part trip. First get from Dhaka to Cox's Bazar by train, bus or flight. Then take a licensed tourist ship to the island. In recent seasons ships left from the BIWTA jetty at Nuniachhara in Cox's Bazar (about 6–7 hrs each way), because the shorter Teknaf route was closed for security reasons. Ships leave early in the morning, so plan to spend the night before in Cox's Bazar. Ship tickets, the travel pass and departure points change every season — check the latest notice first.",
+    "distanceFromDhaka": "~400 km to Cox's Bazar, then ~120 km by sea (≈9 km from Teknaf)",
+    "routes": [
+      {
+        "id": "train-ship",
+        "label": "Train to Cox's Bazar + Ship (Recommended)",
+        "recommended": true,
+        "totalTime": "~1.5 days (incl. one night in Cox's Bazar)",
+        "totalCost": { "min": 2500, "max": 6500 },
+        "steps": [
+          {
+            "title": "Register online and get your travel pass",
+            "description": "In recent seasons every visitor needed an online registration / travel pass (with a QR code) linked to a ship ticket. Buy ship tickets only through the official portal or the ship company — numbers are capped each day.",
+            "mode": "walk",
+            "tip": "Do this BEFORE you book your train. If you cannot get a ship date, the rest of the plan falls apart."
+          },
+          {
+            "title": "Train from Dhaka to Cox's Bazar",
+            "description": "The Cox's Bazar Express (overnight) or Parjatak Express (daytime) leaves Kamalapur Railway Station and also stops at Biman Bandar (Airport) station.",
+            "mode": "train",
+            "duration": "~8.5–9 hrs",
+            "cost": { "min": 695, "max": 2383 },
+            "tip": "Book on eticket.railway.gov.bd exactly when sales open, 10 days before travel."
+          },
+          {
+            "title": "Night in Cox's Bazar",
+            "description": "Ships leave around 7 AM, so stay the night in Kolatoli or near the Nuniachhara jetty. See our Cox's Bazar guide for hotels.",
+            "mode": "cng",
+            "duration": "15–25 min from the station",
+            "cost": { "min": 200, "max": 350 }
+          },
+          {
+            "title": "CNG to the BIWTA jetty, Nuniachhara",
+            "description": "The jetty is at the north end of Cox's Bazar town. Arrive at least 45 minutes early for ticket and travel-pass checks.",
+            "mode": "cng",
+            "duration": "10–20 min",
+            "cost": { "min": 150, "max": 300 }
+          },
+          {
+            "title": "Ship to Saint Martin's Island",
+            "description": "Large tourist ships (sea-going vessels with seats, open decks and some cabins) sail down the coast to the island jetty. Ships usually arrive in the early afternoon.",
+            "mode": "ship",
+            "duration": "~6–7 hrs",
+            "cost": { "min": 1500, "max": 3500 },
+            "tip": "Take seasickness tablets 30 minutes before boarding if you are prone to it. Sit near the middle of the ship."
+          }
+        ]
+      },
+      {
+        "id": "bus-ship",
+        "label": "Overnight Bus to Cox's Bazar + Ship (Cheapest)",
+        "totalTime": "~1.5 days (incl. one night in Cox's Bazar)",
+        "totalCost": { "min": 2500, "max": 6000 },
+        "steps": [
+          {
+            "title": "Overnight coach to Cox's Bazar",
+            "description": "AC buses (Green Line, Shyamoli NR, Hanif, Saint Martin Hyundai) leave Dhaka counters at Arambagh, Fakirapool, Sayedabad and Kalabagan between 9 and 11 PM.",
+            "mode": "ac-bus",
+            "duration": "10–12 hrs",
+            "cost": { "min": 1000, "max": 2500 }
+          },
+          {
+            "title": "Day and night in Cox's Bazar",
+            "description": "You arrive in the morning, too late for that day's ship. Enjoy the beach and sleep in Cox's Bazar.",
+            "mode": "rickshaw",
+            "duration": "5–15 min to your hotel",
+            "cost": { "min": 50, "max": 150 }
+          },
+          {
+            "title": "CNG to the BIWTA jetty, Nuniachhara",
+            "description": "Leave your hotel by about 6 AM. Carry your passport/NID and printed or phone copy of the travel pass.",
+            "mode": "cng",
+            "duration": "10–20 min",
+            "cost": { "min": 150, "max": 300 }
+          },
+          {
+            "title": "Ship to Saint Martin's Island",
+            "description": "About 6–7 hrs along the coast. Food and tea are sold on board, but bring water and snacks.",
+            "mode": "ship",
+            "duration": "~6–7 hrs",
+            "cost": { "min": 1500, "max": 3500 }
+          }
+        ]
+      },
+      {
+        "id": "flight-ship",
+        "label": "Flight to Cox's Bazar + Ship (Fastest)",
+        "totalTime": "~1 day (evening flight, morning ship)",
+        "totalCost": { "min": 6500, "max": 15000 },
+        "steps": [
+          {
+            "title": "Flight DAC → CXB",
+            "description": "Biman Bangladesh, US-Bangla, Novoair and Air Astra fly several times a day from the domestic terminal of Hazrat Shahjalal International Airport.",
+            "mode": "flight",
+            "duration": "~1 hr",
+            "cost": { "min": 4500, "max": 11000 },
+            "tip": "Take an afternoon or evening flight the day before your ship. Morning flights land too late for the 7 AM departure."
+          },
+          {
+            "title": "CNG to your Cox's Bazar hotel",
+            "description": "The airport is in town. Choose a hotel near Kolatoli or the north end of town for an easy early start.",
+            "mode": "cng",
+            "duration": "10–15 min",
+            "cost": { "min": 150, "max": 250 }
+          },
+          {
+            "title": "CNG to the BIWTA jetty, Nuniachhara",
+            "description": "Arrive at least 45 minutes before departure for checks.",
+            "mode": "cng",
+            "duration": "10–20 min",
+            "cost": { "min": 150, "max": 300 }
+          },
+          {
+            "title": "Ship to Saint Martin's Island",
+            "description": "Pick a cabin or business-class seat if you want more comfort on the long ride.",
+            "mode": "ship",
+            "duration": "~6–7 hrs",
+            "cost": { "min": 1500, "max": 3500 }
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "ship",
+        "name": "Tourist ships from Cox's Bazar (e.g. Karnafuly Express, Bay One and others)",
+        "departFrom": "BIWTA jetty, Nuniachhara, Cox's Bazar",
+        "duration": "~6–7 hrs each way",
+        "classes": [
+          { "name": "Open Deck / Economy Seat (return)", "price": { "min": 2500, "max": 3500 }, "note": "Approx. Cheapest, can be windy." },
+          { "name": "Business / AC Seat (return)", "price": { "min": 4000, "max": 6000 }, "note": "Approx. Indoor, more comfortable." },
+          { "name": "Private Cabin (return, per person)", "price": { "min": 6000, "max": 10000 }, "note": "Approx. Limited number — book early." }
+        ],
+        "bookingTip": "Buy only via the official travel-pass portal or the ship company. Ships and fares change each season; avoid touts selling 'guaranteed' tickets."
+      },
+      {
+        "mode": "ship",
+        "name": "Ships from Teknaf (when the route is open)",
+        "departFrom": "Damdamia jetty, Teknaf",
+        "duration": "~2–2.5 hrs each way",
+        "classes": [{ "name": "Seat (return)", "price": { "min": 1500, "max": 3000 }, "note": "Approx. This route was closed in recent seasons for security reasons on the Naf River." }],
+        "bookingTip": "Shorter and cheaper, but only use it if the season's notice says Teknaf departures are allowed."
+      },
+      {
+        "mode": "train",
+        "name": "Cox's Bazar Express / Parjatak Express (Dhaka → Cox's Bazar)",
+        "departFrom": "Kamalapur Railway Station (also Biman Bandar / Airport station)",
+        "duration": "~8.5–9 hrs",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 695, "max": 695 } },
+          { "name": "Snigdha", "price": { "min": 1325, "max": 1325 }, "note": "AC chair car. Best value." },
+          { "name": "AC Berth", "price": { "min": 2383, "max": 2383 }, "note": "Overnight train only." }
+        ],
+        "bookingTip": "Book at eticket.railway.gov.bd (foreigners can register with a passport). Sales open 10 days ahead."
+      },
+      {
+        "mode": "ac-bus",
+        "name": "Green Line / Shyamoli NR / Hanif / Saint Martin Hyundai",
+        "departFrom": "Arambagh, Fakirapool, Sayedabad or Kalabagan counters",
+        "duration": "10–12 hrs",
+        "classes": [
+          { "name": "AC Economy", "price": { "min": 1400, "max": 1800 } },
+          { "name": "AC Business / Sleeper", "price": { "min": 2000, "max": 3000 } }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com. Some companies sell bus + ship combo tickets in season — check they include a valid travel pass."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman / US-Bangla / Novoair / Air Astra to Cox's Bazar",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~1 hr",
+        "classes": [{ "name": "Economy", "price": { "min": 4500, "max": 11000 }, "note": "Prices rise sharply in December holidays." }],
+        "bookingTip": "Book 2+ weeks ahead on the airline's website or GoZayaan / ShareTrip."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Cox's Bazar hotels (Kolatoli)",
+        "to": "BIWTA jetty, Nuniachhara",
+        "mode": "cng",
+        "duration": "10–20 min",
+        "cost": { "min": 150, "max": 300 },
+        "note": "Price per vehicle. Book the CNG the night before for a 6 AM pickup."
+      },
+      {
+        "from": "Saint Martin's jetty (north side)",
+        "to": "Hotels and cottages",
+        "mode": "easy-bike",
+        "duration": "5–20 min",
+        "cost": { "min": 50, "max": 200 },
+        "note": "Battery vans and rickshaw-vans wait at the jetty. Many places are walkable — ask your hotel for directions."
+      },
+      {
+        "from": "Main island",
+        "to": "Chhera Dwip (south tip)",
+        "mode": "walk",
+        "duration": "1.5–2 hrs each way",
+        "cost": { "min": 0, "max": 0 },
+        "note": "Walk or cycle along the beach at low tide only. Easy-bikes go part of the way (about BDT 300–600 per vehicle, approx.). Local boats also run (approx. BDT 200–300 per person)."
+      },
+      {
+        "from": "Around the island",
+        "to": "West Beach, Golachipa, North Beach",
+        "mode": "rickshaw",
+        "duration": "10–30 min",
+        "cost": { "min": 50, "max": 200 },
+        "note": "Bicycles can be rented (approx. BDT 100–150 per hour) — the best way to explore."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices were checked for the 2025–26 season and are approximate. Ship fares, the travel pass and whether overnight stays are allowed change every season. Late December is the most expensive time.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 300, "food": 700, "stay": 1200, "entryFees": 0 },
+        "roundTripFromDhaka": 4500,
+        "roundTripMode": "Shovan Chair train or non-AC bus + open-deck ship",
+        "notes": "Simple cottage with fan, local rice-and-fish meals, walking and cycling."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 600, "food": 1500, "stay": 3000, "entryFees": 0 },
+        "roundTripFromDhaka": 7500,
+        "roundTripMode": "Snigdha (AC) train or AC bus + business-class ship seat",
+        "notes": "Resort room with attached bathroom and generator/solar power, fish BBQ dinners, easy-bike to Chhera Dwip."
+      },
+      {
+        "id": "luxury",
+        "label": "Best Available",
+        "perPersonPerDay": { "localTransport": 1000, "food": 2500, "stay": 6000, "entryFees": 0 },
+        "roundTripFromDhaka": 20000,
+        "roundTripMode": "Return flight to Cox's Bazar + ship cabin",
+        "notes": "The island has no true 5-star hotels. This means the best sea-view resort, a private cabin on the ship and good seafood meals."
+      }
+    ],
+    "entryFees": [
+      { "place": "Saint Martin's Island (beaches)", "local": 0, "foreigner": 0, "note": "No separate entry fee in recent seasons, but the online travel pass is mandatory. Any fee is usually included in the ship ticket — check." },
+      { "place": "Chhera Dwip", "local": 0, "foreigner": 0, "note": "Free, day visits only. Protected area — no overnight stays." },
+      { "place": "BIWTA jetty, Cox's Bazar", "local": 0, "foreigner": 0, "note": "Any terminal charge is usually included in the ship ticket (approx.)." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Local family cottages",
+      "tier": "Budget",
+      "area": "Near the jetty / main bazar",
+      "pricePerNight": { "min": 1000, "max": 2000 },
+      "why": "Simple rooms run by island families. Cheap and walkable to the bazar and North Beach.",
+      "bookingTip": "Power is from solar or a generator and may only run in the evening. Ask before booking."
+    },
+    {
+      "name": "Eco-cottages on the West Beach",
+      "tier": "Budget",
+      "area": "West Beach (Paschim Beach)",
+      "pricePerNight": { "min": 1500, "max": 3000 },
+      "why": "Bamboo-and-thatch cottages under coconut palms, steps from the best sunset spot."
+    },
+    {
+      "name": "Blue Marine Resort",
+      "tier": "Mid-range",
+      "area": "Near the jetty / North Beach",
+      "pricePerNight": { "min": 3500, "max": 7000 },
+      "why": "One of the island's larger, more established resorts, with a restaurant and attached bathrooms."
+    },
+    {
+      "name": "Samudra Bilas",
+      "tier": "Mid-range",
+      "area": "West Beach",
+      "pricePerNight": { "min": 3000, "max": 6000 },
+      "why": "The seaside house built by the famous writer Humayun Ahmed, now rented out as guest rooms. Quiet, with direct beach views.",
+      "bookingTip": "Very popular — book as soon as you have your ship date."
+    },
+    {
+      "name": "Prasad Paradise Resort",
+      "tier": "Luxury",
+      "area": "West side of the island",
+      "pricePerNight": { "min": 6000, "max": 12000 },
+      "why": "One of the most comfortable resorts on the island, with sea-view rooms and an on-site restaurant. Not 5-star, but the best available."
+    },
+    {
+      "name": "Sayeman Beach Resort (before/after the ship)",
+      "tier": "Luxury",
+      "area": "Kolatoli, Cox's Bazar",
+      "pricePerNight": { "min": 14000, "max": 25000 },
+      "why": "If overnight stays on the island are not allowed, base yourself here and do a day trip. Sea-view infinity pool and easy access to the jetty."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Fresh Fish BBQ",
+        "localName": "মাছের বারবিকিউ",
+        "description": "Pick a fish (rupchanda, surma, red snapper) at an evening stall in the bazar and it is grilled with spices. Prices are by size or weight.",
+        "priceRange": { "min": 300, "max": 1200 }
+      },
+      {
+        "name": "Lobster & Crab",
+        "localName": "লবস্টার / কাঁকড়া",
+        "description": "Cooked masala-style or grilled. Prices are by weight, so ask first.",
+        "priceRange": { "min": 800, "max": 3000 }
+      },
+      {
+        "name": "Green Coconut",
+        "localName": "ডাব",
+        "description": "The island is covered in coconut palms. Cold daab water is the best drink in the heat — and safe, because it is opened in front of you.",
+        "priceRange": { "min": 60, "max": 120 }
+      },
+      {
+        "name": "Rupchanda Fry with Rice & Bhorta",
+        "localName": "রূপচাঁদা ভাজা, ভাত, ভর্তা",
+        "description": "Silver pomfret fried with turmeric and chilli, served with rice, dal and mashed vegetable bhorta. A simple, filling lunch.",
+        "priceRange": { "min": 250, "max": 700 }
+      },
+      {
+        "name": "Shutki (Dried Fish)",
+        "localName": "শুঁটকি",
+        "description": "Fish dried on racks along the shore. Try it as a spicy bhuna, or buy a packet to take home.",
+        "priceRange": { "min": 150, "max": 400 },
+        "spicy": true
+      }
+    ],
+    "spots": [
+      { "name": "Main bazar restaurants", "area": "Near the jetty", "knownFor": "Rice, fish curry, dal and bhorta thali", "hygiene": "Good" },
+      { "name": "Evening BBQ stalls", "area": "Bazar area near the jetty", "knownFor": "Pick-your-own fish, crab and lobster grilled to order", "hygiene": "Street" },
+      { "name": "Resort restaurants (Blue Marine, Prasad Paradise)", "area": "Island resorts", "knownFor": "Cleaner kitchens, set menus and seafood", "hygiene": "Good" }
+    ],
+    "safetyTips": [
+      "Drink only sealed bottled water. Island tap and well water is not safe for visitors.",
+      "Agree on the price per kg and the cooking charge BEFORE the fish goes on the grill.",
+      "Eat seafood that is cooked through, and freshly grilled rather than reheated.",
+      "Bring some snacks and ORS ('Orsaline'). Choice and supplies on the island are limited."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Permits",
+      "severity": "critical",
+      "items": [
+        "Rules change every season. Always check the latest government (Ministry of Environment / BIWTA / Cox's Bazar district) notice before booking.",
+        "In recent seasons: open only about November to January, a cap of around 2,000 visitors a day, an online travel pass with QR code required, and in some months day trips only (no overnight stays).",
+        "Carry your passport (foreigners) or NID (locals). Your ID is checked against the travel pass at the jetty.",
+        "Never try to reach the island on fishing trawlers or speedboats. It is illegal for tourists and dangerous on the open sea."
+      ]
+    },
+    {
+      "category": "Customs",
+      "severity": "critical",
+      "items": [
+        "No single-use plastic. Bring a refillable bottle and take your rubbish back to the mainland.",
+        "Do not touch, break or collect coral, shells, starfish or rocks. Fines apply.",
+        "No loud music, bonfires, barbecues or bright lights on the beach at night — sea turtles come ashore to nest.",
+        "Chhera Dwip is a protected area: no camping, no overnight stays, and no motorised vehicles on the beach."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "warning",
+      "items": [
+        "Coral rocks are sharp. Wear sandals or water shoes in the water and on the rocky shores.",
+        "Check tide times before walking to Chhera Dwip. The rising tide cuts it off from the main island.",
+        "Swim only in calm, sandy spots, never alone and never after dark. There are no lifeguards.",
+        "Ships are cancelled when cyclone or storm signals are raised. Keep a spare day in your plan.",
+        "The Myanmar border is close. Do not go near the Naf River border area or follow anyone offering 'border tours'."
+      ]
+    },
+    {
+      "category": "Dress Code",
+      "severity": "info",
+      "items": [
+        "The island is a conservative fishing community. Most locals swim fully clothed.",
+        "Women: a T-shirt and shorts or leggings over swimwear attracts the least attention.",
+        "Ask before photographing people, especially women and children."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "Mobile data (Grameenphone, Robi) works on most of the island but can be slow.",
+        "Electricity is mostly solar or generator power, often only at certain hours. Bring a power bank.",
+        "Do not rely on ATMs or cards on the island. Bring enough cash from Cox's Bazar."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Saint Martin's Island, Teknaf, Bangladesh",
+    "lat": 20.6237,
+    "lng": 92.3234,
+    "zoom": 13
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Ship from Cox's Bazar & West Beach Sunset",
+      "activities": [
+        { "time": "6:00 AM", "activity": "CNG from your Cox's Bazar hotel to the BIWTA jetty at Nuniachhara. Show your travel pass and board the ship.", "tip": "Bring water, snacks, sunscreen and seasickness tablets for the 6–7 hr ride." },
+        { "time": "1:00–2:00 PM", "activity": "Arrive at the island jetty. Easy-bike or walk to your cottage, then a late seafood lunch at the bazar." },
+        { "time": "Evening", "activity": "Walk to the West Beach for sunset over the open sea.", "tip": "Turn off torches near the waterline after dark to protect nesting turtles." },
+        { "time": "Night", "activity": "Fish BBQ dinner and a quiet look at the stars." }
+      ],
+      "overnight": "Saint Martin's Island cottage (if overnight stays are allowed)"
+    },
+    {
+      "day": 2,
+      "title": "Chhera Dwip & Cycling the Island",
+      "activities": [
+        { "time": "Early morning", "activity": "Walk or cycle south along the beach to Chhera Dwip at low tide. Rock pools, coral stones and the southern tip of Bangladesh.", "tip": "Check the tide table with your hotel the night before. Start back before the tide turns." },
+        { "time": "Midday", "activity": "Back for lunch and rest in the shade — the midday sun is very strong." },
+        { "time": "Afternoon", "activity": "Rent a bicycle and ride round the rest of the island: Golachipa, the coconut groves and the North Beach." },
+        { "time": "Evening", "activity": "Green coconut at sunset and an early night." }
+      ],
+      "overnight": "Saint Martin's Island cottage"
+    },
+    {
+      "day": 3,
+      "title": "Morning Swim & Ship Back",
+      "activities": [
+        { "time": "Morning", "activity": "Swim or snorkel-look in a calm sandy spot near the West or North Beach. Buy shutki or coconut snacks as gifts." },
+        { "time": "~3:00 PM", "activity": "Board the return ship at the island jetty (check the exact time on your ticket)." },
+        { "time": "Night", "activity": "Arrive in Cox's Bazar around 9–10 PM. Stay overnight or take a night bus back to Dhaka.", "tip": "If overnight stays on the island are not allowed this season, do Day 1 and Day 3 as a single day trip and stay in Cox's Bazar." }
+      ],
+      "overnight": "Cox's Bazar hotel / night bus to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

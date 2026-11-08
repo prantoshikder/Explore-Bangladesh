@@ -1,0 +1,484 @@
+{
+  "slug": "sreemangal",
+  "name": "Sreemangal",
+  "localName": "শ্রীমঙ্গল",
+  "tagline": "Tea capital of Bangladesh — rolling gardens & Lawachara rainforest.",
+  "division": "Sylhet",
+  "district": "Moulvibazar",
+  "tripTypes": ["Tea Gardens", "Forest"],
+  "difficulty": "Easy",
+  "budgetLevel": "Shoestring",
+  "idealDuration": "2 days",
+  "cover": {
+    "src": "/images/destinations/sreemangal.jpg",
+    "alt": "Rows of tea bushes under tall shade trees in a Sreemangal tea garden",
+    "caption": "Tea garden, Sreemangal",
+    "credit": {
+      "author": "Kritzolina",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tea_gardens_in_Sreemangal_06.jpg"
+    }
+  },
+  "coverGradient": "from-lime-600 via-green-500 to-emerald-300",
+  "coverEmoji": "🍃",
+
+  "overview": {
+    "intro": "Sreemangal is a small, relaxed town in Moulvibazar district known as the 'Tea Capital of Bangladesh'. It is surrounded by low hills covered with tea bushes and tall shade trees, and many gardens start just 1–3 km from town. A short ride away is Lawachara National Park, a patch of tropical rainforest where you can see hoolock gibbons, the only ape in Bangladesh. Add the famous seven-layer tea, winter birdwatching at Baikka Beel and quiet eco-resorts, and it is one of the most peaceful and affordable trips in the country. It is also on the main Dhaka–Sylhet railway line, so it is very easy to reach.",
+    "highlights": [
+      "Walk or cycle through endless rows of tea bushes",
+      "Spot hoolock gibbons in Lawachara National Park (early morning is best)",
+      "Seven-layer tea at Nilkantha Tea Cabin",
+      "Winter birdwatching from the watchtower at Baikka Beel",
+      "Khasia village and betel-leaf gardens at Magurchhara",
+      "Day trip to Madhabkunda, one of Bangladesh's best-known waterfalls"
+    ],
+    "bestTimeSummary": "Oct – Mar (dry trails, cool air, winter birds)",
+    "seasons": [
+      {
+        "name": "Winter (Peak)",
+        "months": "Nov – Feb",
+        "weather": "Dry, cool and sunny with misty mornings. Trails at Lawachara are dry and migratory birds fill Baikka Beel. Tea plucking slows down, so the bushes look trimmed.",
+        "tempC": "10–25°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Spring",
+        "months": "Mar – Apr",
+        "weather": "Warm days and the first tea plucking of the year ('first flush'), with fresh light-green leaves. Occasional evening storms.",
+        "tempC": "18–32°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Monsoon",
+        "months": "May – Sep",
+        "weather": "Frequent heavy rain, but the gardens are at their greenest and tea pickers are busy. Forest trails are muddy and leeches are common.",
+        "tempC": "24–32°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Autumn",
+        "months": "Oct",
+        "weather": "Rain eases, everything is still lush and crowds are low. A great time for Lawachara and the gardens.",
+        "tempC": "20–31°C",
+        "verdict": "Best"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "Sreemangal is on the Dhaka–Sylhet railway line. The easiest way there is an intercity train (about 5 hrs, scenic, recommended). Buses take about 4–5 hours, and a private car gives you the most freedom. The town is small. The station is in the centre, and most eco-resorts are 3–10 km out on the Lawachara (Kamalganj) or Radhanagar roads.",
+    "distanceFromDhaka": "~190 km by road",
+    "routes": [
+      {
+        "id": "train",
+        "label": "By Train (Recommended)",
+        "recommended": true,
+        "totalTime": "5–6 hrs",
+        "totalCost": { "min": 500, "max": 1600 },
+        "steps": [
+          {
+            "title": "Get to Kamalapur or Biman Bandar (Airport) Railway Station",
+            "description": "Sylhet-bound trains start at Kamalapur, Dhaka's main station, and also stop at Biman Bandar (Airport) station. Take an Uber/Pathao car to whichever is closer.",
+            "mode": "ride-share",
+            "duration": "30–90 min",
+            "cost": { "min": 200, "max": 700 }
+          },
+          {
+            "title": "Board a Sylhet-bound train and get off at Sreemangal",
+            "description": "Parabat Express (early morning) and Joyantika Express (late morning) are the best choices; they stop at Sreemangal on the way to Sylhet. When booking, choose 'Srimangal' as your destination station.",
+            "mode": "train",
+            "duration": "~5 hrs",
+            "cost": { "min": 280, "max": 640 },
+            "tip": "The night train (Upaban Express) reaches Sreemangal at about 3 AM. Only take it if your hotel has agreed to receive you then."
+          },
+          {
+            "title": "Arrive at Sreemangal Railway Station",
+            "description": "A small, friendly station right in the town centre. Rickshaws, easy-bikes and CNGs wait outside.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "Easy-bike or CNG to your hotel or resort",
+            "description": "Town hotels are a few minutes away. Resorts on the Lawachara or Radhanagar roads take 10–25 minutes. Agree the fare first.",
+            "mode": "easy-bike",
+            "duration": "5–25 min",
+            "cost": { "min": 30, "max": 300 },
+            "tip": "Many resorts offer a station pickup. Ask when you book."
+          }
+        ]
+      },
+      {
+        "id": "bus",
+        "label": "By Bus (Cheapest by road)",
+        "totalTime": "5–6 hrs",
+        "totalCost": { "min": 650, "max": 1500 },
+        "steps": [
+          {
+            "title": "Go to the bus company's counter",
+            "description": "Buses to Sreemangal leave from company counters in Sayedabad, Fakirapool/Arambagh and Mohakhali. Some Sylhet buses also stop at Sreemangal — check when you buy.",
+            "mode": "ride-share",
+            "duration": "30–60 min",
+            "cost": { "min": 200, "max": 500 }
+          },
+          {
+            "title": "Coach to Sreemangal",
+            "description": "Hanif, Shyamoli and other operators run AC and non-AC coaches. The road goes via the Dhaka–Sylhet highway and then turns off towards Sreemangal.",
+            "mode": "non-ac-bus",
+            "duration": "~4 hrs (longer in traffic)",
+            "cost": { "min": 450, "max": 900 },
+            "tip": "Tell the supervisor you are going to 'Srimangal town' so they drop you at the right stop."
+          },
+          {
+            "title": "Rickshaw or easy-bike to your hotel",
+            "description": "Buses stop in the town centre, close to the station and Station Road hotels.",
+            "mode": "rickshaw",
+            "duration": "5–15 min",
+            "cost": { "min": 30, "max": 100 }
+          }
+        ]
+      },
+      {
+        "id": "car",
+        "label": "By Private Car (Most flexible)",
+        "totalTime": "4–5 hrs",
+        "totalCost": { "min": 4000, "max": 7000 },
+        "steps": [
+          {
+            "title": "Hire a car with driver in Dhaka",
+            "description": "Book a car with driver through your hotel, a travel agency or an app with an intercity option. A one-way trip costs approx. BDT 8,000–12,000 per car (up to 4 people), so per person it is about half that if two share.",
+            "mode": "ride-share",
+            "duration": "~4–5 hrs",
+            "cost": { "min": 4000, "max": 7000 },
+            "tip": "Leave Dhaka before 7 AM to avoid the worst of the traffic."
+          },
+          {
+            "title": "Lunch break on the highway",
+            "description": "Drivers usually stop at a highway food court around Bhairab or Ashuganj for tea and a meal.",
+            "mode": "walk",
+            "duration": "30 min"
+          },
+          {
+            "title": "Drive straight to your resort",
+            "description": "A car lets you go straight to an out-of-town eco-resort and keep the same driver for Lawachara, Baikka Beel or Madhabkunda the next day (agree a daily rate).",
+            "mode": "ride-share",
+            "duration": "10–30 min"
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "train",
+        "name": "Parabat Express",
+        "departFrom": "Kamalapur Railway Station (also stops at Biman Bandar / Airport station)",
+        "duration": "~5 hrs to Sreemangal (early morning departure)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 280, "max": 280 }, "note": "Non-AC padded seat. Approx. fare." },
+          { "name": "Snigdha", "price": { "min": 535, "max": 535 }, "note": "AC chair car. Best value. Approx. fare." },
+          { "name": "AC Seat", "price": { "min": 640, "max": 640 }, "note": "AC compartment seat. Approx. fare." }
+        ],
+        "bookingTip": "You arrive around late morning, in time for an afternoon in the tea gardens. Book on eticket.railway.gov.bd (foreigners can register with a passport). Sales open 10 days ahead."
+      },
+      {
+        "mode": "train",
+        "name": "Joyantika Express",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~5–5.5 hrs (late morning departure)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 280, "max": 280 }, "note": "Approx. fare." },
+          { "name": "Snigdha", "price": { "min": 535, "max": 535 }, "note": "Approx. fare." }
+        ],
+        "bookingTip": "Arrives in the afternoon. A good back-up if Parabat is sold out."
+      },
+      {
+        "mode": "train",
+        "name": "Upaban Express (overnight)",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~5–6 hrs (night departure, arrives around 3 AM)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 280, "max": 280 }, "note": "Approx. fare." },
+          { "name": "AC Berth", "price": { "min": 960, "max": 960 }, "note": "Approx. fare. You will not get much sleep before arriving." }
+        ],
+        "bookingTip": "Better for the return trip to Dhaka (night train, arrive early morning) than for getting here."
+      },
+      {
+        "mode": "ac-bus",
+        "name": "Hanif / Shyamoli and other operators (AC)",
+        "departFrom": "Sayedabad, Fakirapool/Arambagh or Mohakhali counters",
+        "duration": "~4–5 hrs",
+        "classes": [
+          { "name": "AC Seat", "price": { "min": 700, "max": 1000 }, "note": "Approx." }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com, or at the counter a day ahead. Fewer AC buses run to Sreemangal than to Sylhet."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "Hanif / Shyamoli and local operators (Non-AC)",
+        "departFrom": "Sayedabad Bus Terminal & Fakirapool",
+        "duration": "~4–5 hrs",
+        "classes": [{ "name": "Non-AC Seat", "price": { "min": 450, "max": 600 }, "note": "Crowded and makes more stops. Keep valuables on your lap." }],
+        "bookingTip": "Cheapest option. Buses leave often from early morning to night."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Sreemangal Railway Station",
+        "to": "Town hotels (Station Road / Moulvibazar Road)",
+        "mode": "rickshaw",
+        "duration": "5–10 min",
+        "cost": { "min": 30, "max": 80 },
+        "note": "Town hotels are close. Easy-bikes cost about the same."
+      },
+      {
+        "from": "Sreemangal town",
+        "to": "Lawachara National Park",
+        "mode": "cng",
+        "duration": "15–20 min",
+        "cost": { "min": 300, "max": 500 },
+        "note": "Return fare with waiting time, per vehicle. The park is about 8 km out on the Kamalganj road."
+      },
+      {
+        "from": "Sreemangal town",
+        "to": "Baikka Beel (via Barogangina)",
+        "mode": "cng",
+        "duration": "45–60 min",
+        "cost": { "min": 800, "max": 1200 },
+        "note": "Return fare with waiting. The road is rough in parts and muddy after rain — check with your driver."
+      },
+      {
+        "from": "Sreemangal town",
+        "to": "Madhabkunda Waterfall (Barlekha)",
+        "mode": "ride-share",
+        "duration": "~2 hrs each way",
+        "cost": { "min": 3500, "max": 5000 },
+        "note": "Approx. day rate for a car with driver, return. Cheaper but slower: bus to Kanthaltoli, then a CNG (approx. BDT 300–500 return) to the eco-park."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices were checked for the 2025–26 season and are approximate. Resorts fill up and raise prices on Friday–Saturday, winter holidays and Eid. Weekdays are much cheaper and quieter.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 400, "food": 500, "stay": 800, "entryFees": 100 },
+        "roundTripFromDhaka": 600,
+        "roundTripMode": "Shovan Chair train or non-AC bus",
+        "notes": "Town guesthouse, local restaurants, walking in the gardens and shared CNGs or easy-bikes."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 1000, "food": 1200, "stay": 3500, "entryFees": 300 },
+        "roundTripFromDhaka": 1100,
+        "roundTripMode": "Snigdha (AC) train or AC bus",
+        "notes": "Eco-resort or cottage near Lawachara, a guide for the forest and a reserved CNG for sightseeing."
+      },
+      {
+        "id": "luxury",
+        "label": "Luxury Resort",
+        "perPersonPerDay": { "localTransport": 2500, "food": 3000, "stay": 12000, "entryFees": 500 },
+        "roundTripFromDhaka": 10000,
+        "roundTripMode": "Private car with driver (2 people sharing)",
+        "notes": "5-star tea resort with pools and golf, private car every day, and resort dining."
+      }
+    ],
+    "entryFees": [
+      { "place": "Lawachara National Park", "local": 50, "foreigner": 500, "note": "Approx. Check at the gate. A local guide costs approx. BDT 300–600 extra for 1–3 hours." },
+      { "place": "Tea gardens", "local": 0, "foreigner": 0, "note": "Free for most roadside gardens. Some private estates ask you to get permission at the gate." },
+      { "place": "Baikka Beel", "local": 30, "foreigner": 30, "note": "Approx. BDT 20–50 per person; may vary." },
+      { "place": "Madhabkunda Eco Park", "local": 50, "foreigner": 50, "note": "Approx. BDT 30–50. Foreigners may be charged more." },
+      { "place": "Nilkantha Tea Cabin", "local": 0, "foreigner": 0, "note": "No entry fee — you just pay for your tea." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Town guesthouses and hotels on Station Road",
+      "tier": "Budget",
+      "area": "Sreemangal town centre",
+      "pricePerNight": { "min": 800, "max": 1800 },
+      "why": "Simple rooms a short walk from the station and restaurants. Good for a cheap base if you plan to explore by CNG.",
+      "bookingTip": "Ask to see the room first. Check that there is a mosquito net or working AC."
+    },
+    {
+      "name": "Village homestays and cottages near Radhanagar",
+      "tier": "Budget",
+      "area": "Radhanagar (3–5 km from town)",
+      "pricePerNight": { "min": 1500, "max": 3000 },
+      "why": "Small family-run cottages among the tea gardens and close to Lawachara. Quieter than town, with home-cooked food.",
+      "bookingTip": "Book by phone or WhatsApp and confirm the exact location — there is little to eat nearby after dark."
+    },
+    {
+      "name": "Tea Resort & Museum",
+      "tier": "Mid-range",
+      "area": "Bhanugach Road",
+      "pricePerNight": { "min": 3500, "max": 7000 },
+      "why": "Bungalows set inside a tea estate, run by the Bangladesh Tea Board, with a small museum on the history of tea.",
+      "bookingTip": "Weekends fill early. Book well ahead for Thursday–Saturday."
+    },
+    {
+      "name": "Eco-resorts on the Lawachara (Kamalganj) road",
+      "tier": "Mid-range",
+      "area": "Between town and Lawachara",
+      "pricePerNight": { "min": 4000, "max": 9000 },
+      "why": "Several cottage-style eco-resorts among the hills and gardens, a few minutes from the national park. Most have a restaurant and can arrange guides and transport.",
+      "bookingTip": "Compare recent reviews on Google Maps or booking apps. Ask whether breakfast and station pickup are included."
+    },
+    {
+      "name": "Dusai Resort & Spa",
+      "tier": "Luxury",
+      "area": "Moulvibazar Road, near Sreemangal",
+      "pricePerNight": { "min": 10000, "max": 20000 },
+      "why": "A quiet hillside resort with a pool and spa, surrounded by tea and forest."
+    },
+    {
+      "name": "Grand Sultan Tea Resort & Golf",
+      "tier": "Luxury",
+      "area": "Radhanagar, Sreemangal",
+      "pricePerNight": { "min": 18000, "max": 35000 },
+      "why": "The biggest luxury resort in the area: 5-star rooms, several pools, a golf course and restaurants, all set among tea gardens."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Seven-Layer Tea",
+        "localName": "সাত রঙের চা",
+        "description": "A glass of tea with up to seven separate coloured layers, made by carefully pouring liquids of different sweetness and density. Invented in Sreemangal. The recipe is kept secret!",
+        "priceRange": { "min": 70, "max": 120 }
+      },
+      {
+        "name": "Fresh Local Tea",
+        "localName": "চা",
+        "description": "Strong, fresh tea made with leaves from the surrounding gardens. Try it plain (raw tea) or with milk and sugar at any roadside stall.",
+        "priceRange": { "min": 10, "max": 30 }
+      },
+      {
+        "name": "Tea-Leaf Bhorta",
+        "localName": "চা পাতা ভর্তা",
+        "description": "Young tea leaves mashed with onion, chilli and mustard oil, eaten with rice. A local twist on the classic Bengali bhorta.",
+        "priceRange": { "min": 40, "max": 100 },
+        "spicy": true
+      },
+      {
+        "name": "Haor Fish Curry",
+        "localName": "হাওরের মাছের তরকারি",
+        "description": "Fresh river and wetland fish from Hail Haor, cooked in a light curry. Ask what is fresh today.",
+        "priceRange": { "min": 150, "max": 400 }
+      },
+      {
+        "name": "Local Pineapple & Lemon",
+        "localName": "আনারস / লেবু",
+        "description": "Moulvibazar is famous for sweet pineapples (summer) and fragrant lemons. Buy whole fruit and cut it yourself.",
+        "priceRange": { "min": 30, "max": 100 }
+      }
+    ],
+    "spots": [
+      { "name": "Nilkantha Tea Cabin", "area": "Ramnagar, on the edge of town", "knownFor": "The original seven-layer tea and many other flavoured teas", "hygiene": "Good" },
+      { "name": "Local restaurants on Station Road / Moulvibazar Road", "area": "Town centre", "knownFor": "Bengali rice meals, bhortas, fish curry and paratha breakfasts", "hygiene": "Good" },
+      { "name": "Grand Sultan Tea Resort restaurants", "area": "Radhanagar", "knownFor": "Buffets, Bangladeshi and international dishes", "hygiene": "Excellent" },
+      { "name": "Tea stalls near Lawachara gate", "area": "Kamalganj road", "knownFor": "Tea, biscuits and snacks before or after a forest walk", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "Drink only sealed bottled water (check the cap seal).",
+      "Eat a proper dinner in town or at your resort — outside town, places close early.",
+      "Avoid cut fruit and raw salads from stalls if you have a sensitive stomach.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline'), sold at every pharmacy for about BDT 10."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Customs",
+      "severity": "warning",
+      "items": [
+        "Tea estates are private workplaces. Stay on the paths, ask at the gate before entering a private estate, and never pick leaves.",
+        "Ask before photographing tea pickers, Khasia or Manipuri villagers. Many tea workers are poorly paid — be respectful and do not treat them as a 'sight'.",
+        "Public displays of affection are frowned upon."
+      ]
+    },
+    {
+      "category": "Safety",
+      "severity": "critical",
+      "items": [
+        "Do NOT walk along the railway track through Lawachara. It is a busy main line and trains are fast and quiet in the forest.",
+        "Hire a local guide for Lawachara's longer trails. You will see far more wildlife and will not get lost.",
+        "Return from the forest and gardens before dark. Paths are unlit and there is little phone signal.",
+        "At Madhabkunda, do not climb the rocks near the falls — they are very slippery."
+      ]
+    },
+    {
+      "category": "Health",
+      "severity": "warning",
+      "items": [
+        "Leeches are common on forest and garden paths in the rainy season (May–Oct). Wear long trousers and closed shoes; salt or a lighter removes them.",
+        "Use insect repellent, especially at dawn and dusk.",
+        "Carry water and a hat — there is little shade between the tea bushes."
+      ]
+    },
+    {
+      "category": "Dress Code",
+      "severity": "info",
+      "items": [
+        "Dress modestly in town and villages: cover shoulders and knees.",
+        "Wear muted colours in Lawachara; bright colours and noise scare wildlife away."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "Good 4G in town. Signal is patchy inside Lawachara, at Baikka Beel and in some tea estates.",
+        "There are ATMs in town, but resorts outside town may only accept cash or mobile payment. Carry enough cash."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Sreemangal, Moulvibazar",
+    "lat": 24.3065,
+    "lng": 91.7296,
+    "zoom": 12
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrive & Tea Gardens",
+      "activities": [
+        { "time": "Morning", "activity": "Take the early Parabat Express from Dhaka. Watch the tea gardens appear outside the window as you get close." },
+        { "time": "Midday", "activity": "Arrive at Sreemangal, check in and have a Bengali rice lunch in town." },
+        { "time": "Afternoon", "activity": "Walk or take an easy-bike through the tea estates on the edge of town and visit the Bangladesh Tea Research Institute (BTRI) area.", "tip": "Ask at the gate before entering a private estate, and stay on the paths." },
+        { "time": "Evening", "activity": "Seven-layer tea at Nilkantha Tea Cabin, then dinner in town." }
+      ],
+      "overnight": "Town hotel or eco-resort"
+    },
+    {
+      "day": 2,
+      "title": "Lawachara Rainforest",
+      "activities": [
+        { "time": "6:30 AM", "activity": "CNG to Lawachara National Park. Hire a local guide at the gate and walk the 1-hour or 3-hour trail to look for hoolock gibbons.", "tip": "Go early and stay quiet. The gibbons call loudly in the morning, which helps you find them." },
+        { "time": "10:30 AM", "activity": "Visit Magurchhara Khasia village nearby to see betel-leaf (paan) gardens.", "tip": "Ask before taking photos of people and homes." },
+        { "time": "Afternoon", "activity": "Lunch and a rest at your resort. Later, visit the Tea Resort & Museum on Bhanugach Road." },
+        { "time": "Evening", "activity": "Sunset over the tea gardens, then an early night if you are going to Baikka Beel tomorrow." }
+      ],
+      "overnight": "Town hotel or eco-resort"
+    },
+    {
+      "day": 3,
+      "title": "Baikka Beel (or Madhabkunda) & Departure",
+      "activities": [
+        { "time": "6:00 AM", "activity": "CNG to Baikka Beel for sunrise. Climb the watchtower and watch migratory ducks and waterbirds (Nov–Feb).", "tip": "Bring binoculars. Outside winter, there are far fewer birds." },
+        { "time": "Alternative", "activity": "In the rainy season, hire a car for a full-day trip to Madhabkunda Waterfall (about 2 hours each way) instead." },
+        { "time": "Afternoon", "activity": "Back in town. Buy packets of local tea as gifts." },
+        { "time": "Evening / Night", "activity": "Take an afternoon train, a bus or the night train back to Dhaka." }
+      ],
+      "overnight": "Train / bus to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

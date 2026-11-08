@@ -1,0 +1,502 @@
+{
+  "slug": "sylhet-jaflong-ratargul",
+  "name": "Sylhet (Jaflong & Ratargul)",
+  "localName": "সিলেট",
+  "tagline": "Crystal-clear rivers at Jaflong & Bangladesh's only freshwater swamp forest.",
+  "division": "Sylhet",
+  "district": "Sylhet",
+  "tripTypes": ["River", "Forest", "Hills"],
+  "difficulty": "Easy",
+  "budgetLevel": "Moderate",
+  "idealDuration": "2–3 days",
+  "cover": {
+    "src": "/images/destinations/sylhet-jaflong-ratargul.jpg",
+    "alt": "Trees standing in still green water at Ratargul swamp forest, reflected on the surface",
+    "caption": "Ratargul swamp forest",
+    "credit": {
+      "author": "S M Mahfuzul Islam Rahat",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ratargul_Swamp_Forest,_Sylhet.jpg"
+    }
+  },
+  "coverGradient": "from-cyan-700 via-teal-500 to-emerald-300",
+  "coverEmoji": "🛶",
+
+  "overview": {
+    "intro": "Sylhet is a green, hilly corner of north-east Bangladesh, right below the Meghalaya hills of India. The city itself is busy but friendly, and it is the spiritual home of the Sufi saint Shah Jalal. The real draw is the countryside around it: clear rivers flowing over stones at Jaflong, Bisnakandi and Sada Pathor, the turquoise water of Lalakhal, and Ratargul, a freshwater swamp forest you explore by small wooden boat. Stay in Sylhet city and do each place as a half-day or full-day trip. Note that the famous seven-layer tea is from Sreemangal, about 2 hours south, not from Sylhet itself.",
+    "highlights": [
+      "Boat ride between flooded trees at Ratargul swamp forest (best Jul–Oct)",
+      "Jaflong — the Piyain river, stone beds and views of the Dawki bridge in India",
+      "Lalakhal — turquoise-blue river water, bluest in winter",
+      "Bisnakandi & Sada Pathor — clear streams over stones at the foot of the Meghalaya hills",
+      "Hazrat Shah Jalal Dargah — the 14th-century saint's shrine in the city",
+      "Sylheti food: shatkora beef, akhni and dozens of bhortas at Zindabazar restaurants"
+    ],
+    "bestTimeSummary": "Jul – Oct for Ratargul & full rivers; Nov – Feb for clear water & dry roads",
+    "seasons": [
+      {
+        "name": "Monsoon",
+        "months": "Jun – Sep",
+        "weather": "Very wet — Sylhet is one of the rainiest places in Bangladesh. Ratargul is flooded and at its best, and the hills are deep green. But flash floods can close roads and rivers can rise fast. Watch the forecast.",
+        "tempC": "25–32°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Post-monsoon",
+        "months": "Oct – Nov",
+        "weather": "Rain eases, skies clear and the rivers are still full. Ratargul usually still has water in October. The best all-round time.",
+        "tempC": "18–30°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Winter",
+        "months": "Dec – Feb",
+        "weather": "Dry, cool and sunny. Jaflong and Lalakhal water is clearest and bluest. Ratargul is mostly dry, so skip it. Foggy mornings are common.",
+        "tempC": "12–25°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Pre-monsoon",
+        "months": "Mar – May",
+        "weather": "Hot and humid, with sudden thunderstorms (kalbaishakhi). Rivers are low, Ratargul is dry, and early flash floods can start in April–May.",
+        "tempC": "22–33°C",
+        "verdict": "Avoid"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "Three easy ways from Dhaka: an intercity train (about 7 hrs, scenic, recommended), an AC bus (about 5–6 hrs, more if traffic is bad) or a 45-minute domestic flight to Osmani International Airport. Stay in Sylhet city (Zindabazar or Dargah Gate area) and visit Jaflong, Ratargul, Bisnakandi and Lalakhal as day trips by CNG or hired car.",
+    "distanceFromDhaka": "~240 km by road",
+    "routes": [
+      {
+        "id": "train",
+        "label": "By Train (Recommended)",
+        "recommended": true,
+        "totalTime": "7–8 hrs",
+        "totalCost": { "min": 700, "max": 2250 },
+        "steps": [
+          {
+            "title": "Get to Kamalapur or Biman Bandar (Airport) Railway Station",
+            "description": "All Sylhet trains start at Kamalapur, Dhaka's main station, and also stop at Biman Bandar (Airport) station. Take an Uber/Pathao car to whichever is closer.",
+            "mode": "ride-share",
+            "duration": "30–90 min",
+            "cost": { "min": 200, "max": 700 },
+            "tip": "Biman Bandar station is a short walk across the footbridge from the airport terminal — handy if you land in Dhaka and go straight to Sylhet."
+          },
+          {
+            "title": "Board an intercity train to Sylhet",
+            "description": "Four main intercity trains run daily: Parabat Express (early morning), Joyantika Express (late morning), Kalni Express (afternoon) and Upaban Express (overnight). The line passes tea gardens and the Lawachara forest near Sreemangal.",
+            "mode": "train",
+            "duration": "~7 hrs",
+            "cost": { "min": 375, "max": 1290 },
+            "tip": "Book on eticket.railway.gov.bd as soon as sales open (10 days ahead). Weekend and holiday seats go within minutes."
+          },
+          {
+            "title": "Arrive at Sylhet Railway Station",
+            "description": "The station is on the south bank of the Surma river. The hotel and restaurant areas (Zindabazar, Dargah Gate) are across the bridge on the north side.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "CNG to your hotel",
+            "description": "Say 'Zindabazar' or 'Dargah Gate' and show the hotel name. Agree on the fare BEFORE you get in.",
+            "mode": "cng",
+            "duration": "15–25 min",
+            "cost": { "min": 150, "max": 250 },
+            "tip": "The price is for the whole CNG (up to 3 people), not per person."
+          }
+        ]
+      },
+      {
+        "id": "bus",
+        "label": "By Bus (Fastest by road)",
+        "totalTime": "6–8 hrs",
+        "totalCost": { "min": 1000, "max": 2400 },
+        "steps": [
+          {
+            "title": "Go to the bus company's counter",
+            "description": "Sylhet buses leave from each company's own counter (a small ticket office), mostly in Sayedabad, Fakirapool/Arambagh and Mohakhali. Your ticket shows the exact address.",
+            "mode": "ride-share",
+            "duration": "30–60 min",
+            "cost": { "min": 200, "max": 500 }
+          },
+          {
+            "title": "AC or non-AC coach to Sylhet",
+            "description": "Buses run through the day and night. AC operators include Green Line, Ena, Hanif, Shyamoli and London Express. The road is a highway most of the way, but traffic near Dhaka can add 1–2 hours.",
+            "mode": "ac-bus",
+            "duration": "5–6 hrs (longer in traffic)",
+            "cost": { "min": 700, "max": 1700 },
+            "tip": "Morning departures avoid the worst of the evening traffic jams leaving Dhaka."
+          },
+          {
+            "title": "Get off at your company's Sylhet counter",
+            "description": "Most premium buses stop at their own counters around Humayun Rashid Chattar or Kadamtali, near the Surma bridge. Ask the supervisor which stop is closest to Zindabazar.",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "CNG or rickshaw to your hotel",
+            "description": "Zindabazar and Dargah Gate are 10–20 minutes away.",
+            "mode": "cng",
+            "duration": "10–20 min",
+            "cost": { "min": 100, "max": 200 }
+          }
+        ]
+      },
+      {
+        "id": "flight",
+        "label": "By Air (Fastest)",
+        "totalTime": "2.5–3.5 hrs door to door",
+        "totalCost": { "min": 3800, "max": 9000 },
+        "steps": [
+          {
+            "title": "Domestic Terminal, Hazrat Shahjalal International Airport (DAC)",
+            "description": "Arrive 1 hour before departure. Foreigners need their passport, locals their NID.",
+            "mode": "walk",
+            "duration": "1 hr check-in"
+          },
+          {
+            "title": "Flight DAC → ZYL (Osmani International Airport)",
+            "description": "Biman Bangladesh and US-Bangla fly several times a day; other domestic airlines also serve the route at times. Check current schedules.",
+            "mode": "flight",
+            "duration": "~45 min",
+            "cost": { "min": 3500, "max": 8000 },
+            "tip": "Flights in the monsoon are sometimes delayed by heavy rain. Leave a buffer if you have a connecting international flight."
+          },
+          {
+            "title": "CNG or car from Osmani Airport to the city",
+            "description": "The airport is about 8 km north of the city centre. CNGs wait outside; ride-share apps also work.",
+            "mode": "cng",
+            "duration": "20–30 min",
+            "cost": { "min": 300, "max": 500 }
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "train",
+        "name": "Parabat Express",
+        "departFrom": "Kamalapur Railway Station (also stops at Biman Bandar / Airport station)",
+        "duration": "~7 hrs (early morning departure)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 375, "max": 375 }, "note": "Non-AC padded seat. Approx. fare." },
+          { "name": "Snigdha", "price": { "min": 720, "max": 720 }, "note": "AC chair car. Best value. Approx. fare." },
+          { "name": "AC Seat", "price": { "min": 860, "max": 860 }, "note": "AC compartment seat. Approx. fare." }
+        ],
+        "bookingTip": "The most popular daytime train — you arrive in Sylhet around early afternoon. Book on eticket.railway.gov.bd (foreigners can register with a passport)."
+      },
+      {
+        "mode": "train",
+        "name": "Joyantika Express / Kalni Express",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~7–8 hrs (late morning / afternoon departures)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 375, "max": 375 }, "note": "Approx. fare." },
+          { "name": "Snigdha", "price": { "min": 720, "max": 720 }, "note": "Approx. fare." }
+        ],
+        "bookingTip": "Good back-ups if Parabat is sold out. Kalni arrives in the evening, so book your hotel in advance."
+      },
+      {
+        "mode": "train",
+        "name": "Upaban Express (overnight)",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~8 hrs (night departure, early-morning arrival)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 375, "max": 375 }, "note": "Approx. fare." },
+          { "name": "Snigdha", "price": { "min": 720, "max": 720 }, "note": "Approx. fare." },
+          { "name": "AC Berth", "price": { "min": 1290, "max": 1290 }, "note": "Lie-flat sleeper. Saves a hotel night. Approx. fare." }
+        ],
+        "bookingTip": "Berths are limited and sell out first. Ask your hotel about early check-in, as you arrive around dawn."
+      },
+      {
+        "mode": "ac-bus",
+        "name": "Green Line / Ena / Hanif / Shyamoli / London Express",
+        "departFrom": "Sayedabad, Fakirapool/Arambagh or Mohakhali counters",
+        "duration": "5–6 hrs (can be 7–8 hrs in traffic)",
+        "classes": [
+          { "name": "Non-AC Seat", "price": { "min": 600, "max": 800 }, "note": "Cheapest, but more stops and less comfort." },
+          { "name": "AC Economy", "price": { "min": 1000, "max": 1300 } },
+          { "name": "AC Business (2+1 seats)", "price": { "min": 1400, "max": 1800 } }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com, or at the counter a day ahead."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman Bangladesh / US-Bangla (and others seasonally)",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~45 min",
+        "classes": [{ "name": "Economy", "price": { "min": 3500, "max": 8000 }, "note": "Approx. Prices jump on Thursday evenings and holidays." }],
+        "bookingTip": "Book on the airline's website or GoZayaan / ShareTrip. Book 2+ weeks ahead for the lowest fares."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Sylhet Railway Station / bus counters",
+        "to": "Zindabazar / Dargah Gate hotels",
+        "mode": "cng",
+        "duration": "15–25 min",
+        "cost": { "min": 150, "max": 250 },
+        "note": "Price is per vehicle (up to 3 people). Fix the fare before boarding."
+      },
+      {
+        "from": "Sylhet city",
+        "to": "Jaflong (and Lalakhal via Sarighat on the same road)",
+        "mode": "ride-share",
+        "duration": "1.5–2 hrs each way",
+        "cost": { "min": 1500, "max": 5000 },
+        "note": "A reserved CNG for the day costs approx. BDT 1,500–2,500 return; a car or microbus with driver approx. BDT 3,500–5,000. Local buses (approx. BDT 80–150) are cheapest but slow. Boats at Jaflong (approx. BDT 500–1,500) and Lalakhal (approx. BDT 1,200–2,500) are extra, per boat."
+      },
+      {
+        "from": "Sylhet city",
+        "to": "Ratargul (Motorghat boat point)",
+        "mode": "cng",
+        "duration": "1–1.5 hrs each way",
+        "cost": { "min": 1000, "max": 1500 },
+        "note": "Return fare including waiting time. At Motorghat, hire a small wooden boat (4–5 people) for approx. BDT 750–1,200, a rate set by the local committee."
+      },
+      {
+        "from": "Sylhet city",
+        "to": "Bisnakandi (via Hadarpar bazar)",
+        "mode": "cng",
+        "duration": "1.5–2 hrs each way",
+        "cost": { "min": 1500, "max": 2500 },
+        "note": "Return fare. From Hadarpar, an engine boat to Bisnakandi takes 30–45 minutes and costs approx. BDT 1,000–2,000 per boat return, including waiting."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices were checked for the 2025–26 season and are approximate. Eid holidays and long weekends push hotel and car prices up 20–40%. Boat prices are per boat, so they get much cheaper in a group.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 600, "food": 600, "stay": 1000, "entryFees": 100 },
+        "roundTripFromDhaka": 750,
+        "roundTripMode": "Shovan Chair train or non-AC bus",
+        "notes": "Simple hotel near Dargah Gate, local restaurants, local buses or a shared CNG to the sights, and sharing boats with other travellers."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 1500, "food": 1300, "stay": 3500, "entryFees": 200 },
+        "roundTripFromDhaka": 1500,
+        "roundTripMode": "Snigdha (AC) train or AC bus",
+        "notes": "3-star city hotel with breakfast, a reserved CNG or car for each day trip, and your own boat at each spot."
+      },
+      {
+        "id": "luxury",
+        "label": "Luxury Resort",
+        "perPersonPerDay": { "localTransport": 3000, "food": 3000, "stay": 10000, "entryFees": 300 },
+        "roundTripFromDhaka": 9000,
+        "roundTripMode": "Return flight",
+        "notes": "Hill resort on the edge of the city, private car with driver every day, and hotel dining."
+      }
+    ],
+    "entryFees": [
+      { "place": "Ratargul Swamp Forest", "local": 50, "foreigner": 50, "note": "Approx. Foreigners may be charged a higher rate; check at the counter. Boat hire extra." },
+      { "place": "Jaflong", "local": 0, "foreigner": 0, "note": "Free. Boat hire extra." },
+      { "place": "Bisnakandi / Sada Pathor", "local": 0, "foreigner": 0, "note": "Free. Boat hire from Hadarpar / Bholaganj extra." },
+      { "place": "Lalakhal", "local": 0, "foreigner": 0, "note": "Free. Boat hire from Sarighat extra." },
+      { "place": "Hazrat Shah Jalal Dargah", "local": 0, "foreigner": 0, "note": "Free. Donations welcome." }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Budget hotels around Dargah Gate",
+      "tier": "Budget",
+      "area": "Dargah Gate",
+      "pricePerNight": { "min": 1000, "max": 2000 },
+      "why": "Dozens of simple hotels a short walk from the shrine, with fan or AC rooms. Easy to find a CNG for day trips.",
+      "bookingTip": "Ask to see the room and check the water and AC before you pay. Thursday nights are busy with pilgrims."
+    },
+    {
+      "name": "Guesthouses in Zindabazar / Ambarkhana",
+      "tier": "Budget",
+      "area": "Zindabazar",
+      "pricePerNight": { "min": 1200, "max": 2500 },
+      "why": "Central, close to the best restaurants and shopping, and well connected to the Jaflong and Ratargul roads.",
+      "bookingTip": "Call or WhatsApp to book directly; it is often cheaper than booking apps."
+    },
+    {
+      "name": "Hotel Noorjahan Grand",
+      "tier": "Mid-range",
+      "area": "Dargah Gate",
+      "pricePerNight": { "min": 5000, "max": 9000 },
+      "why": "Well-run 3-star hotel next to the shrine, with clean rooms, breakfast and staff who can arrange cars for day trips."
+    },
+    {
+      "name": "Hotel Star Pacific",
+      "tier": "Mid-range",
+      "area": "East Dargah Gate",
+      "pricePerNight": { "min": 5000, "max": 9000 },
+      "why": "Modern rooms, a rooftop restaurant and a central location. A safe choice for first-timers."
+    },
+    {
+      "name": "Rose View Hotel",
+      "tier": "Luxury",
+      "area": "Shahjalal Upashahar",
+      "pricePerNight": { "min": 9000, "max": 16000 },
+      "why": "Long-established upscale city hotel with a pool, several restaurants and a quiet residential location."
+    },
+    {
+      "name": "Grand Sylhet Hotel & Resort",
+      "tier": "Luxury",
+      "area": "Airport road, near the city",
+      "pricePerNight": { "min": 12000, "max": 25000 },
+      "why": "Large resort-style 5-star hotel with pools and green views, close to Osmani Airport."
+    },
+    {
+      "name": "Nazimgarh Resort",
+      "tier": "Luxury",
+      "area": "Khadimnagar, on the city's edge",
+      "pricePerNight": { "min": 14000, "max": 28000 },
+      "why": "Boutique hill resort among tea gardens and forest. Peaceful, with a pool and good food. Popular with foreign visitors."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Shatkora Beef",
+        "localName": "সাতকরা গরুর মাংস",
+        "description": "Sylhet's signature curry: beef slow-cooked with shatkora, a thick-skinned local citrus that gives a sour, fragrant flavour. Eat it with plain rice.",
+        "priceRange": { "min": 250, "max": 450 },
+        "spicy": true
+      },
+      {
+        "name": "Akhni",
+        "localName": "আখনি",
+        "description": "Sylheti spiced rice cooked with beef or chicken. Lighter than biryani and a favourite at weddings and Fridays.",
+        "priceRange": { "min": 150, "max": 300 }
+      },
+      {
+        "name": "Bhorta Platter",
+        "localName": "ভর্তা",
+        "description": "Small piles of mashed vegetables, fish or lentils mixed with mustard oil, onion and chilli. Restaurants like Panshi serve 20 or more kinds. Pick a few and eat them with rice.",
+        "priceRange": { "min": 30, "max": 80 }
+      },
+      {
+        "name": "Shidol Shutki Bhorta",
+        "localName": "শিদল শুঁটকি ভর্তা",
+        "description": "A very strong fermented-fish paste mashed with chilli — loved by locals, a challenge for visitors. Try a tiny bit first!",
+        "priceRange": { "min": 50, "max": 150 },
+        "spicy": true
+      },
+      {
+        "name": "Chunga Pitha",
+        "localName": "চুঙ্গা পিঠা",
+        "description": "Sticky rice cooked inside a bamboo tube over a fire, then peeled out and eaten with jaggery or curry. Mostly a winter snack.",
+        "priceRange": { "min": 100, "max": 200 }
+      }
+    ],
+    "spots": [
+      { "name": "Panshi Restaurant", "area": "Zindabazar", "knownFor": "Huge bhorta selection, shatkora beef, fish curries — always busy", "hygiene": "Good" },
+      { "name": "Pach Bhai Restaurant", "area": "Zindabazar", "knownFor": "Cheap, fast Bengali meals, bhortas and curries", "hygiene": "Good" },
+      { "name": "Palki Restaurant", "area": "Zindabazar", "knownFor": "Bengali set meals and akhni in a calmer dining room", "hygiene": "Good" },
+      { "name": "Dargah Gate street stalls", "area": "Dargah Gate", "knownFor": "Tea, singara, jilapi and evening snacks", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "Drink only sealed bottled water (check the cap seal), especially on day trips where shops are few.",
+      "Carry water and snacks to Ratargul, Bisnakandi and Lalakhal — food upstream is limited and basic.",
+      "Avoid raw salads and cut fruit at riverside stalls if you have a sensitive stomach.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline'), sold at every pharmacy for about BDT 10."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Safety",
+      "severity": "critical",
+      "items": [
+        "Jaflong, Bisnakandi, Sada Pathor and Lalakhal are right on the India border. NEVER cross the border markers or walk into Indian territory — it is illegal and Indian border guards patrol the area.",
+        "Flash floods can arrive within hours after heavy rain in the Meghalaya hills (especially Apr–Sep). If locals or boatmen say the water is rising, leave at once.",
+        "Do not swim in the rivers. Currents at Jaflong and Bisnakandi are strong and drownings happen every year. Wear a life jacket on boats and ask for one if it is not offered.",
+        "Agree on all boat and CNG prices, including waiting time, before you start."
+      ]
+    },
+    {
+      "category": "Permits",
+      "severity": "warning",
+      "items": [
+        "No permit is needed for Jaflong, Ratargul, Bisnakandi, Lalakhal or Sada Pathor.",
+        "Carry your passport (or a copy) on day trips. Border Guard Bangladesh (BGB) may check IDs near the border.",
+        "Taking stones from Jaflong, Bisnakandi or Sada Pathor is not allowed."
+      ]
+    },
+    {
+      "category": "Dress Code",
+      "severity": "warning",
+      "items": [
+        "At Shah Jalal Dargah, wear long trousers or a long skirt and cover your shoulders. Women should cover their head.",
+        "Remove your shoes before entering the shrine area. Women may not be allowed into the inner tomb area — follow the signs.",
+        "Sylhet is fairly conservative. Modest clothing everywhere attracts less attention. Pack quick-dry clothes for river spots."
+      ]
+    },
+    {
+      "category": "Health",
+      "severity": "info",
+      "items": [
+        "Bring insect repellent. Mosquitoes are common, and leeches appear on wet paths in the rainy season.",
+        "At Ratargul, keep your hands inside the boat — snakes sometimes rest on branches.",
+        "Wear sandals that can get wet; the river stones are slippery."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "Good 4G in Sylhet city. Signal is weaker at Ratargul and upstream at Bisnakandi and Lalakhal, and near the border your phone may pick up an Indian network — turn off data roaming.",
+        "ATMs and card payments work in the city. Carry cash for CNGs, boats and stalls."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Zindabazar, Sylhet",
+    "lat": 24.8949,
+    "lng": 91.8687,
+    "zoom": 10
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrive & Shah Jalal Dargah",
+      "activities": [
+        { "time": "Morning", "activity": "Take the early Parabat Express from Dhaka and enjoy the tea-garden views after Sreemangal." },
+        { "time": "Afternoon", "activity": "Arrive in Sylhet, check in near Zindabazar or Dargah Gate and have a late lunch at Panshi (try shatkora beef and a few bhortas)." },
+        { "time": "Evening", "activity": "Visit Hazrat Shah Jalal Dargah: the shrine, the sacred fish pond and the pigeons.", "tip": "Dress modestly and keep your shoes in a bag. Thursday evenings are the liveliest." },
+        { "time": "Night", "activity": "Walk around Zindabazar and book a CNG or car for tomorrow through your hotel." }
+      ],
+      "overnight": "Sylhet city hotel"
+    },
+    {
+      "day": 2,
+      "title": "Lalakhal & Jaflong",
+      "activities": [
+        { "time": "7:30 AM", "activity": "Leave early by reserved CNG or car on the Sylhet–Tamabil road." },
+        { "time": "8:30 AM", "activity": "Stop at Sarighat and take a 2–3 hour engine-boat trip up the turquoise Lalakhal river.", "tip": "Agree the boat price and how far upstream you will go before boarding." },
+        { "time": "12:30 PM", "activity": "Continue to Jaflong. Lunch at a simple local restaurant near the river." },
+        { "time": "2:00 PM", "activity": "Walk down to the Piyain river, take a boat across, and visit a Khasia village with betel-leaf gardens.", "tip": "Stay well away from the border markers." },
+        { "time": "Evening", "activity": "Drive back to Sylhet before dark. Dinner at Pach Bhai or Palki." }
+      ],
+      "overnight": "Sylhet city hotel"
+    },
+    {
+      "day": 3,
+      "title": "Ratargul (or Bisnakandi) & Departure",
+      "activities": [
+        { "time": "7:30 AM", "activity": "CNG to Motorghat (1–1.5 hrs) and a quiet 1-hour wooden-boat ride through Ratargul swamp forest. Climb the watchtower.", "tip": "Ratargul is only worth it from about July to October. In winter, go to Bisnakandi via Hadarpar or Sada Pathor via Bholaganj instead." },
+        { "time": "1:00 PM", "activity": "Back in the city for lunch and a last look around. Buy shatkora pickle or Sylheti tea as gifts." },
+        { "time": "Evening / Night", "activity": "Take the afternoon or night train, a bus or an evening flight back to Dhaka.", "tip": "Want seven-layer tea? That is a Sreemangal speciality — break your trip there on the way back." }
+      ],
+      "overnight": "Train / bus to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}

@@ -1,0 +1,509 @@
+{
+  "slug": "coxs-bazar",
+  "name": "Cox's Bazar",
+  "localName": "কক্সবাজার",
+  "tagline": "The world's longest unbroken natural sea beach — 120 km of golden sand.",
+  "division": "Chattogram",
+  "district": "Cox's Bazar",
+  "tripTypes": ["Beach"],
+  "difficulty": "Easy",
+  "budgetLevel": "Moderate",
+  "idealDuration": "3–4 days",
+  "cover": {
+    "src": "/images/destinations/coxs-bazar.jpg",
+    "alt": "Crowds on Cox's Bazar beach watching the orange sun set over the Bay of Bengal",
+    "caption": "Sunset on the main beach",
+    "credit": {
+      "author": "CAPTAIN RAJU",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunsets_(Cox%27s_Bazar)_in_2025.02.jpg"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/destinations/coxs-bazar-twilight.jpg",
+      "alt": "Calm sea and pink-purple twilight sky over Cox's Bazar beach",
+      "caption": "Twilight after sunset",
+      "credit": {
+        "author": "Thomas Faraday",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cox%27s_Bazar_sea_Beach_(evening_sunset).jpg"
+      }
+    }
+  ],
+  "coverGradient": "from-sky-500 via-cyan-500 to-amber-300",
+  "coverEmoji": "🏖️",
+
+  "overview": {
+    "intro": "Cox's Bazar is Bangladesh's most popular holiday destination, a beach town on the Bay of Bengal with roughly 120 km of continuous sandy coastline. The town itself is busy and full of hotels, but a short drive south along the scenic Marine Drive takes you to quieter beaches such as Himchari and Inani. It is very easy to reach, has hotels for every budget, and is the best 'first trip' in Bangladesh for a foreign visitor.",
+    "highlights": [
+      "Sunset at Laboni / Sugandha Beach",
+      "Marine Drive — 80 km coastal road with hills on one side and sea on the other",
+      "Himchari waterfall & viewpoint",
+      "Inani Beach — coral stones and calm water",
+      "Ramu Buddhist temples & the 100 ft reclining Buddha",
+      "Fresh seafood at the beach-side markets"
+    ],
+    "bestTimeSummary": "November – March (dry, sunny, calm sea)",
+    "seasons": [
+      {
+        "name": "Winter (Peak)",
+        "months": "Nov – Feb",
+        "weather": "Dry, sunny, pleasant breeze. Calm sea, safe for swimming. Hotels are busiest in late December.",
+        "tempC": "16–28°C",
+        "verdict": "Best"
+      },
+      {
+        "name": "Spring / Pre-monsoon",
+        "months": "Mar – May",
+        "weather": "Hot and humid. Occasional storms in May, and cyclone risk rises in late April–May.",
+        "tempC": "24–33°C",
+        "verdict": "Good"
+      },
+      {
+        "name": "Monsoon",
+        "months": "Jun – Sep",
+        "weather": "Heavy rain and rough sea. Swimming is often banned (red flags). Big hotel discounts, and the sea looks dramatic.",
+        "tempC": "25–31°C",
+        "verdict": "Avoid"
+      },
+      {
+        "name": "Autumn",
+        "months": "Oct",
+        "weather": "Rain is tapering off and crowds are low. Good value, but check the cyclone forecast.",
+        "tempC": "23–31°C",
+        "verdict": "Good"
+      }
+    ]
+  },
+
+  "howToReach": {
+    "summary": "There are three ways to get there from Dhaka: a direct train (about 9 hrs, scenic, recommended), an overnight bus (about 10–12 hrs, cheapest) or a 1-hour domestic flight (fastest). The beach hotel area, called Kolatoli, is 5–7 km from the railway station and the airport.",
+    "distanceFromDhaka": "~400 km",
+    "routes": [
+      {
+        "id": "train",
+        "label": "By Train (Recommended)",
+        "recommended": true,
+        "totalTime": "9–10 hrs",
+        "totalCost": { "min": 900, "max": 2700 },
+        "steps": [
+          {
+            "title": "Get to Kamalapur Railway Station (Dhaka)",
+            "description": "Kamalapur is Dhaka's main station. From the airport (Hazrat Shahjalal International), take an Uber/Pathao car (45–90 min, depending on traffic). Alternatively, take the Dhaka Metro Rail to Motijheel and then a short rickshaw ride. Note: the Cox's Bazar trains also stop at Biman Bandar (Airport) Railway Station, which is right across the road from the airport.",
+            "mode": "ride-share",
+            "duration": "45–90 min",
+            "cost": { "min": 350, "max": 800 },
+            "tip": "Coming from the airport? Board at 'Biman Bandar' station instead. It is a 5-minute walk across the footbridge from the terminal."
+          },
+          {
+            "title": "Board the Cox's Bazar Express or Parjatak Express",
+            "description": "Two daily intercity trains run non-stop-style to Cox's Bazar. The Cox's Bazar Express usually departs late at night, so you sleep on board and arrive in the morning. The Parjatak Express leaves early in the morning and arrives in the afternoon.",
+            "mode": "train",
+            "duration": "~8.5–9 hrs",
+            "cost": { "min": 695, "max": 2383 },
+            "tip": "Tickets sell out quickly. Book on eticket.railway.gov.bd exactly when sales open, 10 days before travel."
+          },
+          {
+            "title": "Arrive at Cox's Bazar Iconic Railway Station",
+            "description": "This is a modern, shell-shaped station on the edge of town (Jhilongja). Outside, there are queues of CNGs and battery auto-rickshaws (easy-bikes).",
+            "mode": "walk",
+            "duration": "5 min"
+          },
+          {
+            "title": "CNG to your hotel in Kolatoli / Sugandha",
+            "description": "Show the driver your hotel name and say 'Kolatoli' or 'Sugandha Point'. Agree on the fare BEFORE you sit down.",
+            "mode": "cng",
+            "duration": "15–25 min",
+            "cost": { "min": 200, "max": 350 },
+            "tip": "Fair price is around BDT 250 for the whole CNG (up to 3 people), not per person."
+          }
+        ]
+      },
+      {
+        "id": "bus",
+        "label": "By Overnight Bus (Cheapest)",
+        "totalTime": "10–12 hrs",
+        "totalCost": { "min": 900, "max": 2800 },
+        "steps": [
+          {
+            "title": "Go to the bus company's counter",
+            "description": "Long-distance buses in Bangladesh leave from each company's own 'counter' (a small ticket office), not from a single central station. Popular counters are in Arambagh, Fakirapool, Sayedabad and Kalabagan. Your ticket shows the exact counter address.",
+            "mode": "ride-share",
+            "duration": "30–60 min",
+            "cost": { "min": 200, "max": 600 }
+          },
+          {
+            "title": "Overnight coach to Cox's Bazar",
+            "description": "Most buses leave between 9 PM and 11 PM and arrive early in the morning. AC buses (Green Line, Shyamoli NR, Hanif, Saint Martin Hyundai) have reclining seats. Some offer sleeper berths.",
+            "mode": "ac-bus",
+            "duration": "10–12 hrs",
+            "cost": { "min": 1000, "max": 2500 },
+            "tip": "Pick an AC 'business class' bus if it is your first time, because they make fewer stops."
+          },
+          {
+            "title": "Get off at Kolatoli (not the main bus terminal)",
+            "description": "Most premium buses continue past the town's main bus terminal to their Kolatoli counters, right in the hotel zone. Confirm this when you buy your ticket.",
+            "mode": "walk",
+            "duration": "5–10 min"
+          },
+          {
+            "title": "Rickshaw or easy-bike to your hotel",
+            "description": "From the Kolatoli counters, most hotels are less than 1.5 km away.",
+            "mode": "rickshaw",
+            "duration": "5–15 min",
+            "cost": { "min": 50, "max": 150 }
+          }
+        ]
+      },
+      {
+        "id": "flight",
+        "label": "By Air (Fastest)",
+        "totalTime": "3–4 hrs door to door",
+        "totalCost": { "min": 5000, "max": 12000 },
+        "steps": [
+          {
+            "title": "Domestic Terminal, Hazrat Shahjalal International Airport (DAC)",
+            "description": "Domestic flights depart from the domestic terminal, which is next to the international one. Arrive 1 hour before departure. You need your passport (foreigners) or NID (locals).",
+            "mode": "walk",
+            "duration": "1 hr check-in"
+          },
+          {
+            "title": "Flight DAC → CXB",
+            "description": "Biman Bangladesh, US-Bangla, Novoair and Air Astra fly several times a day.",
+            "mode": "flight",
+            "duration": "~1 hr",
+            "cost": { "min": 4500, "max": 11000 },
+            "tip": "Sit on the right-hand side (seat F) when flying south for coastline views on approach."
+          },
+          {
+            "title": "CNG from Cox's Bazar Airport to the beach hotels",
+            "description": "The airport is in town. Kolatoli is only about 5 km away.",
+            "mode": "cng",
+            "duration": "10–15 min",
+            "cost": { "min": 150, "max": 250 }
+          }
+        ]
+      }
+    ],
+    "transportOptions": [
+      {
+        "mode": "train",
+        "name": "Cox's Bazar Express (Train #814 / #813)",
+        "departFrom": "Kamalapur Railway Station (also stops at Biman Bandar / Airport station)",
+        "duration": "~8.5 hrs (overnight)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 695, "max": 695 }, "note": "Non-AC padded seat. Basic but OK." },
+          { "name": "Snigdha", "price": { "min": 1325, "max": 1325 }, "note": "AC chair car. Best value." },
+          { "name": "AC Seat", "price": { "min": 1590, "max": 1590 }, "note": "AC compartment seat." },
+          { "name": "AC Berth", "price": { "min": 2383, "max": 2383 }, "note": "Lie-flat sleeper. Best for overnight." }
+        ],
+        "bookingTip": "Book at eticket.railway.gov.bd (foreigners can register with a passport). Sales open 10 days ahead."
+      },
+      {
+        "mode": "train",
+        "name": "Parjatak Express (Train #816 / #815)",
+        "departFrom": "Kamalapur Railway Station",
+        "duration": "~8.5 hrs (daytime)",
+        "classes": [
+          { "name": "Shovan Chair", "price": { "min": 695, "max": 695 } },
+          { "name": "Snigdha", "price": { "min": 1325, "max": 1325 } },
+          { "name": "AC Seat", "price": { "min": 1590, "max": 1590 } }
+        ],
+        "bookingTip": "Daytime ride with views of the Chattogram hills. Great if you don't want to travel overnight."
+      },
+      {
+        "mode": "ac-bus",
+        "name": "Green Line / Shyamoli NR / Hanif / Saint Martin Hyundai",
+        "departFrom": "Arambagh, Fakirapool, Sayedabad or Kalabagan counters",
+        "duration": "10–12 hrs",
+        "classes": [
+          { "name": "AC Economy", "price": { "min": 1400, "max": 1800 } },
+          { "name": "AC Business (2+1 seats)", "price": { "min": 2000, "max": 2500 } },
+          { "name": "AC Sleeper", "price": { "min": 2500, "max": 3000 } }
+        ],
+        "bookingTip": "Book online at shohoz.com or bdtickets.com, or at the counter a day ahead."
+      },
+      {
+        "mode": "non-ac-bus",
+        "name": "S. Alam / Eagle / Hanif (Non-AC)",
+        "departFrom": "Sayedabad Bus Terminal & Arambagh",
+        "duration": "11–13 hrs",
+        "classes": [{ "name": "Non-AC Seat", "price": { "min": 900, "max": 1200 }, "note": "Crowded and makes many stops. Only for experienced travellers." }],
+        "bookingTip": "Cheapest option, but the least comfortable. Keep your valuables on your lap."
+      },
+      {
+        "mode": "flight",
+        "name": "Biman / US-Bangla / Novoair / Air Astra",
+        "departFrom": "Hazrat Shahjalal Int'l Airport — Domestic Terminal",
+        "duration": "~1 hr",
+        "classes": [{ "name": "Economy", "price": { "min": 4500, "max": 11000 }, "note": "Prices rise sharply on Thursday evenings and holidays." }],
+        "bookingTip": "Book on the airline's website or GoZayaan / ShareTrip. Book 2+ weeks ahead for the lowest fares."
+      }
+    ],
+    "lastMile": [
+      {
+        "from": "Cox's Bazar Iconic Railway Station",
+        "to": "Kolatoli / Sugandha Beach hotels",
+        "mode": "cng",
+        "duration": "15–25 min",
+        "cost": { "min": 200, "max": 350 },
+        "note": "Price is per vehicle (up to 3 people). Fix the fare before boarding."
+      },
+      {
+        "from": "Cox's Bazar Airport",
+        "to": "Kolatoli / Sugandha Beach hotels",
+        "mode": "cng",
+        "duration": "10–15 min",
+        "cost": { "min": 150, "max": 250 },
+        "note": "Many mid-range and luxury hotels offer free airport pickup. Ask when booking."
+      },
+      {
+        "from": "Hotel zone (Kolatoli)",
+        "to": "Laboni / Sugandha beach points",
+        "mode": "rickshaw",
+        "duration": "5–10 min",
+        "cost": { "min": 30, "max": 80 },
+        "note": "Short hops inside town. Walking along the beach also works."
+      },
+      {
+        "from": "Kolatoli",
+        "to": "Himchari & Inani (Marine Drive)",
+        "mode": "cng",
+        "duration": "30–60 min",
+        "cost": { "min": 1200, "max": 2000 },
+        "note": "Reserve a CNG or jeep for a half or full day (return trip with waiting time). Open-top jeeps cost BDT 2,500–3,500."
+      }
+    ]
+  },
+
+  "budget": {
+    "disclaimer": "Prices were checked for the 2025–26 season. Peak dates (Dec 15 – Jan 5, Eid holidays) can be 30–50% higher.",
+    "tiers": [
+      {
+        "id": "budget",
+        "label": "Budget Backpacker",
+        "perPersonPerDay": { "localTransport": 300, "food": 700, "stay": 900, "entryFees": 100 },
+        "roundTripFromDhaka": 1800,
+        "roundTripMode": "Non-AC train (Shovan Chair) or non-AC bus",
+        "notes": "Guesthouse with fan/AC, local restaurants, shared rides."
+      },
+      {
+        "id": "midRange",
+        "label": "Mid-Range Comfort",
+        "perPersonPerDay": { "localTransport": 700, "food": 1500, "stay": 3000, "entryFees": 200 },
+        "roundTripFromDhaka": 3500,
+        "roundTripMode": "Snigdha (AC) train or AC bus",
+        "notes": "Sea-view 3-star hotel, seafood dinners, reserved CNG to Marine Drive."
+      },
+      {
+        "id": "luxury",
+        "label": "Luxury Resort",
+        "perPersonPerDay": { "localTransport": 1500, "food": 3500, "stay": 9000, "entryFees": 300 },
+        "roundTripFromDhaka": 14000,
+        "roundTripMode": "Return flight",
+        "notes": "5-star beach resort, private car, fine dining."
+      }
+    ],
+    "entryFees": [
+      { "place": "Main beaches (Laboni, Sugandha, Kolatoli)", "local": 0, "foreigner": 0, "note": "Free, open 24 hrs" },
+      { "place": "Himchari National Park (waterfall)", "local": 30, "foreigner": 500, "note": "Approximate. Fees are revised often." },
+      { "place": "Radiant Fish World (aquarium)", "local": 300, "foreigner": 300 },
+      { "place": "Ramu Buddhist temples", "local": 0, "foreigner": 0, "note": "Donations welcome" }
+    ]
+  },
+
+  "stay": [
+    {
+      "name": "Hotel Coral Reef",
+      "tier": "Budget",
+      "area": "Kolatoli Road",
+      "pricePerNight": { "min": 1500, "max": 2500 },
+      "why": "Clean AC rooms, a 5-minute walk to the beach, and staff used to foreign guests.",
+      "bookingTip": "Call or WhatsApp to book directly; it is often cheaper than booking apps."
+    },
+    {
+      "name": "Guesthouses in Jhautola / Kolatoli lanes",
+      "tier": "Budget",
+      "area": "Kolatoli",
+      "pricePerNight": { "min": 1000, "max": 1800 },
+      "why": "Lots of small guesthouses. Good if you are flexible and want to compare rooms in person.",
+      "bookingTip": "Ask to see the room and check that the water and AC work before paying."
+    },
+    {
+      "name": "Long Beach Hotel",
+      "tier": "Mid-range",
+      "area": "Kolatoli",
+      "pricePerNight": { "min": 7000, "max": 11000 },
+      "why": "Reliable 4-star chain hotel with a pool and breakfast, close to Sugandha Point."
+    },
+    {
+      "name": "Hotel The Cox Today",
+      "tier": "Mid-range",
+      "area": "Kolatoli",
+      "pricePerNight": { "min": 7500, "max": 12000 },
+      "why": "Large rooms, a rooftop pool and a good buffet. Popular with families."
+    },
+    {
+      "name": "Sayeman Beach Resort",
+      "tier": "Luxury",
+      "area": "Marine Drive, Kolatoli",
+      "pricePerNight": { "min": 14000, "max": 25000 },
+      "why": "The original 1964 landmark hotel, fully rebuilt, with a sea-view infinity pool."
+    },
+    {
+      "name": "Royal Tulip Sea Pearl Beach Resort",
+      "tier": "Luxury",
+      "area": "Inani (25 km south)",
+      "pricePerNight": { "min": 15000, "max": 30000 },
+      "why": "A self-contained resort on quiet Inani beach, with a water park and private beach access."
+    },
+    {
+      "name": "Mermaid Beach Resort",
+      "tier": "Luxury",
+      "area": "Pechar Dwip, Marine Drive",
+      "pricePerNight": { "min": 12000, "max": 22000 },
+      "why": "Eco-style cottages hidden among palm trees. Very peaceful, good for couples."
+    }
+  ],
+
+  "food": {
+    "dishes": [
+      {
+        "name": "Rupchanda Fry",
+        "localName": "রূপচাঁদা ভাজা",
+        "description": "Silver pomfret, marinated in turmeric and chilli and shallow-fried. The signature dish of Cox's Bazar.",
+        "priceRange": { "min": 300, "max": 800 }
+      },
+      {
+        "name": "Lobster & Crab",
+        "localName": "লবস্টার / কাঁকড়া",
+        "description": "Pick a live one at the beach-side restaurants and it is cooked to order (masala or grilled). Prices are by weight.",
+        "priceRange": { "min": 800, "max": 3000 }
+      },
+      {
+        "name": "Shutki (Dried Fish) Bhuna",
+        "localName": "শুঁটকি ভুনা",
+        "description": "A pungent, spicy dried-fish curry and a local favourite. Try a small portion first!",
+        "priceRange": { "min": 150, "max": 300 },
+        "spicy": true
+      },
+      {
+        "name": "Rakhine Noodles & Pickles",
+        "localName": "রাখাইন খাবার",
+        "description": "Food of the Buddhist Rakhine community, who are of Burmese origin. Try it around the Burmese Market.",
+        "priceRange": { "min": 100, "max": 250 }
+      },
+      {
+        "name": "Fresh Daab (Green Coconut)",
+        "localName": "ডাব",
+        "description": "Natural electrolyte drink sold all along the beach. Safe, because the vendor opens it in front of you.",
+        "priceRange": { "min": 80, "max": 150 }
+      }
+    ],
+    "spots": [
+      { "name": "Poushee Restaurant", "area": "Kolatoli Road", "knownFor": "Classic Bengali thali, fish curries", "hygiene": "Good" },
+      { "name": "Jhaubon Restaurant", "area": "Kolatoli Road", "knownFor": "Seafood platters, Bangla breakfast", "hygiene": "Good" },
+      { "name": "Mermaid Café", "area": "Laboni Point", "knownFor": "Beachfront dining, continental & seafood", "hygiene": "Excellent" },
+      { "name": "Sugandha Point seafood stalls", "area": "Sugandha Beach", "knownFor": "Live-pick crab & lobster, BBQ", "hygiene": "Street" }
+    ],
+    "safetyTips": [
+      "Drink only sealed bottled water (check that the cap seal is intact).",
+      "At seafood stalls, agree on the price per kg and the cooking charge BEFORE they cook.",
+      "Avoid raw salads and cut fruit from street stalls if you have a sensitive stomach.",
+      "Carry oral rehydration salts (ORS, called 'Orsaline'), sold at every pharmacy for about BDT 10."
+    ]
+  },
+
+  "rules": [
+    {
+      "category": "Safety",
+      "severity": "critical",
+      "items": [
+        "Swim ONLY between the yellow-and-red lifeguard flags at Laboni, Sugandha or Kolatoli. Rip currents are strong and drownings happen every year.",
+        "A red flag means NO swimming, and it is common during the monsoon (June–September).",
+        "Do not go into the sea after sunset or during low tide near channels (guli).",
+        "Agree on all prices (horse rides, photographers, beach chairs) before you use them."
+      ]
+    },
+    {
+      "category": "Dress Code",
+      "severity": "warning",
+      "items": [
+        "Bangladesh is a conservative Muslim-majority country. Most locals swim fully clothed.",
+        "Women: swimwear with a T-shirt or shorts on top attracts the least attention. Bikinis are fine inside resort pools.",
+        "Cover your shoulders and knees when you visit Ramu temples, and remove your shoes."
+      ]
+    },
+    {
+      "category": "Customs",
+      "severity": "info",
+      "items": [
+        "Locals may ask foreigners for selfies. It is friendly curiosity, and it is fine to politely say no.",
+        "Public displays of affection are frowned upon.",
+        "Ask before photographing women or the fishermen's families."
+      ]
+    },
+    {
+      "category": "Permits",
+      "severity": "info",
+      "items": [
+        "No permit is needed for Cox's Bazar town, Marine Drive or Inani.",
+        "Teknaf and the Rohingya camp area (south of Ukhia) have checkpoints. Foreigners need prior permission to enter the camps."
+      ]
+    },
+    {
+      "category": "Connectivity",
+      "severity": "info",
+      "items": [
+        "Excellent 4G (Grameenphone, Robi, Banglalink) across town and Marine Drive.",
+        "ATMs and card payments work at mid-range and luxury hotels. Carry cash for CNGs and stalls."
+      ]
+    }
+  ],
+
+  "map": {
+    "embedQuery": "Sugandha Point Beach, Cox's Bazar",
+    "lat": 21.4272,
+    "lng": 91.9702,
+    "zoom": 12
+  },
+
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrive & Beach Sunset",
+      "activities": [
+        { "time": "Morning", "activity": "Arrive by overnight train or bus. Check in, freshen up and have breakfast (paratha and egg)." },
+        { "time": "Afternoon", "activity": "Rest during the midday heat. Late lunch: Rupchanda fry at Poushee." },
+        { "time": "Evening", "activity": "Walk from Sugandha to Laboni Beach for sunset. Browse the Burmese Market for souvenirs.", "tip": "Sunset is around 5:30 PM in winter. Get there 30 minutes early." },
+        { "time": "Night", "activity": "Seafood BBQ at the Sugandha stalls." }
+      ],
+      "overnight": "Kolatoli hotel"
+    },
+    {
+      "day": 2,
+      "title": "Marine Drive: Himchari & Inani",
+      "activities": [
+        { "time": "8:00 AM", "activity": "Reserve a CNG or open jeep for the day (BDT 1,500–3,000) and drive south on Marine Drive." },
+        { "time": "9:00 AM", "activity": "Himchari: climb the stairs to the hilltop viewpoint and see the small waterfall." },
+        { "time": "11:00 AM", "activity": "Inani Beach: coral-stone shore with calm, clear water. Swim if the flags allow it.", "tip": "Go at low tide to see the coral stones." },
+        { "time": "2:00 PM", "activity": "Lunch at a Marine Drive resort café." },
+        { "time": "Evening", "activity": "Optional stop at the Pechar Dwip paddy fields at golden hour on the way back." }
+      ],
+      "overnight": "Kolatoli hotel"
+    },
+    {
+      "day": 3,
+      "title": "Ramu Temples & Departure",
+      "activities": [
+        { "time": "Morning", "activity": "CNG to Ramu (about 45 min): visit the 100-ft reclining Buddha and the century-old wooden temples (kyang).", "tip": "Shoulders and knees covered, shoes off." },
+        { "time": "Afternoon", "activity": "Back to town. Last swim and buy dried fish (shutki) or Burmese pickles as gifts." },
+        { "time": "Evening / Night", "activity": "Catch the night train or bus back to Dhaka, or an evening flight." }
+      ],
+      "overnight": "Train / bus to Dhaka"
+    }
+  ],
+
+  "lastVerified": "2026-10-01"
+}
