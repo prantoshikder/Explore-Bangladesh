@@ -2,7 +2,7 @@
  * ============================================================================
  *  Spots — Group G: Khulna division
  * ============================================================================
- *  Districts covered: Satkhira, Jashore, Jhenaidah, Magura, Narail, Chuadanga, Meherpur, Khulna, Kushtia
+ *  Districts covered: Satkhira, Jashore, Jhenaidah, Magura, Narail, Chuadanga, Meherpur, Khulna, Kushtia, Bagerhat
  *
  *  Prices are in BDT and approximate — fees and fares change often.
  *  Photos live in photos-g.ts (looked up by slug); Bangla text in bn/group-g.ts.
@@ -181,6 +181,49 @@ export const SPOTS_G: Spot[] = [
       "Combine with a walk around Khulna University nearby.",
     ],
     map: { lat: 22.8045, lng: 89.5375 },
+  },
+  {
+    slug: "masjidkur-mosque",
+    name: "Masjidkur Mosque, Koyra",
+    localName: "মসজিদকুঁড় মসজিদ",
+    district: "Khulna",
+    upazila: "Koyra",
+    division: "Khulna",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "A nine-domed Sultanate-period brick mosque in a Koyra village, close to the edge of the Sundarbans.",
+    description: [
+      "Masjidkur Mosque stands in Amadi village in Koyra upazila, in the far south of Khulna district. It is believed to date from the Bengal Sultanate period, probably the 15th century, and local tradition links its building to followers of Khan Jahan Ali, the saint-builder of Bagerhat. No foundation inscription has been found, so the exact date is not known.",
+      "The name is usually explained by its discovery: the mosque was found buried under earth and dug out. It is a square brick building with nine low domes, carried inside on four stone pillars, in the same style as the Nine Dome Mosque in Bagerhat. Traces of terracotta decoration survive on the walls.",
+      "It is now a protected monument of the Department of Archaeology and is still used for prayer. It is a quiet, rural site — worth the trip if you are interested in Khan Jahan-style architecture or are heading towards Koyra and the Sundarbans.",
+    ],
+    highlights: [
+      "Nine domes on four stone pillars inside",
+      "Old brick walls with traces of terracotta",
+      "Khan Jahan-style Sultanate architecture far from the tourist trail",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Khulna",
+        detail: "Bus via the Padma Bridge (about 4–5 hours, approx. ৳600–1,200) or train to Khulna.",
+        mode: "ac-bus",
+      },
+      {
+        title: "From Khulna to Amadi, Koyra",
+        detail: "Koyra-bound bus from Sonadanga bus stand, about 3–4 hours, approx. ৳150–250. Get off near Amadi and take an easy-bike to the mosque; ask for \"Masjidkur\".",
+        mode: "non-ac-bus",
+      },
+    ],
+    bestTime: "November – February.",
+    timeNeeded: "30–60 minutes",
+    entryFee: "Free",
+    openingHours: "Daylight hours; avoid prayer times, especially Friday midday.",
+    tips: [
+      "Dress modestly; women should cover their head.",
+      "Remove shoes before entering and ask before photographing inside or people at prayer.",
+      "Roads in Koyra can be rough in the monsoon — go in the dry season.",
+    ],
+    map: { lat: 22.4789, lng: 89.2855 },
   },
 
   /* ------------------------------- Satkhira ------------------------------- */
@@ -719,6 +762,48 @@ export const SPOTS_G: Spot[] = [
     ],
     map: { lat: 23.6835, lng: 89.2435 },
   },
+  {
+    slug: "miyar-dalan",
+    name: "Miyar Dalan, Muraridaha",
+    localName: "মিয়ার দালান",
+    district: "Jhenaidah",
+    upazila: "Jhenaidah Sadar",
+    division: "Khulna",
+    categories: ["Heritage", "River"],
+    difficulty: "Easy",
+    summary: "A crumbling early-19th-century zamindar mansion on the Nabaganga, a short ride from Jhenaidah town.",
+    description: [
+      "Miyar Dalan is an old zamindar house in Muraridaha village, on the north bank of the Nabaganga river about 3 km from the centre of Jhenaidah town. A rhyming Bangla inscription on the main gate records that work began in the Bengali year 1229 and the building was finished in 1236 — roughly the 1820s.",
+      "The two-storey facade still shows its colonial-era ornament: Corinthian-style columns, arched doorways with plaster fanlights and decorated window hoods, now peeling to reveal the brick beneath. Locally it is also called Selim Chowdhury's house, after the man said to have bought it around 1947, and stories tell of a tunnel that once ran from the house under the river.",
+      "It is in poor repair and unprotected, so treat it as an atmospheric ruin rather than a museum. Combine it with a walk along the Nabaganga.",
+    ],
+    highlights: [
+      "Ornate, weathered facade with columns and arched doorways",
+      "Rhyming inscription on the gate dating the building",
+      "Riverside setting on the Nabaganga",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Jhenaidah",
+        detail: "Take a Jhenaidah-bound bus from Gabtoli or via the Padma Bridge, about 4–5 hours, approx. ৳500–800.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Jhenaidah town",
+        detail: "Easy-bike or rickshaw towards Arappur and Muraridaha, about 10–15 minutes, approx. ৳30–60. Ask for \"Miyar Dalan\".",
+        mode: "easy-bike",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "45 minutes",
+    entryFee: "Free",
+    openingHours: "Daylight hours; people may live in or use parts of the building — respect their privacy.",
+    tips: [
+      "Do not enter rooms or climb stairs that look unsafe.",
+      "Ask before photographing people who live or work there.",
+    ],
+    map: { lat: 23.5622, lng: 89.1850 },
+  },
 
   /* ------------------------------- Narail -------------------------------- */
   {
@@ -806,6 +891,92 @@ export const SPOTS_G: Spot[] = [
       "Combine with the S. M. Sultan Memorial Complex on the same afternoon.",
     ],
     map: { lat: 23.1690, lng: 89.5080 },
+  },
+  {
+    slug: "lohagara-jor-bangla-temple",
+    name: "Jor Bangla Temple, Raygram (Lohagara)",
+    localName: "জোড় বাংলা মন্দির, নড়াইল",
+    district: "Narail",
+    upazila: "Lohagara",
+    division: "Khulna",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "An overgrown 18th-century twin-roofed brick temple by the Nabaganga — a protected ruin for heritage lovers.",
+    description: [
+      "This small jor-bangla temple stands in Raygram village on the bank of the Nabaganga river in Lohagara upazila. \"Jor-bangla\" means two curved, hut-shaped (do-chala) roofs joined side by side — a style typical of Bengal's late-medieval brick temples.",
+      "Historians believe it was built in the time of Raja Sitaram Ray, by Ramshankar, a younger brother of Menahati, one of Sitaram's commanders. A Shiva temple beside it, thought to be of the same date, carries an inscription placing it around 1724.",
+      "Today it is a ruin: tree roots grip the roof and the arched entrance is half-broken, though it is listed as a protected monument by the Department of Archaeology. Come for the atmosphere and the history, not for a restored site.",
+    ],
+    highlights: [
+      "Rare jor-bangla (twin-roofed) temple form",
+      "Brick arches gripped by tree roots",
+      "Link to Raja Sitaram Ray's era (early 18th century)",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Lohagara",
+        detail: "Take a Narail or Jashore-bound bus via the Padma Bridge and Kalna Bridge to Lohagara, about 3–4 hours, approx. ৳400–600.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Lohagara to Raygram",
+        detail: "Easy-bike or CNG to Raygram village, then ask locals for the \"jor bangla mondir\", approx. ৳50–150.",
+        mode: "easy-bike",
+      },
+    ],
+    bestTime: "November – February.",
+    timeNeeded: "30–60 minutes",
+    entryFee: "Free",
+    openingHours: "Open access in daylight.",
+    tips: [
+      "Do not climb on the walls — the structure is fragile.",
+      "Wear closed shoes; the ground is overgrown, so watch for snakes in the wet season.",
+      "If any part is used for worship, remove shoes and ask before taking photos.",
+    ],
+    map: { lat: 23.1900, lng: 89.6600 },
+  },
+  {
+    slug: "arunima-eco-park",
+    name: "Arunima Eco Park, Kalia",
+    localName: "অরুনিমা ইকোপার্ক",
+    district: "Narail",
+    upazila: "Kalia",
+    division: "Khulna",
+    categories: ["Lake", "Forest"],
+    difficulty: "Easy",
+    summary: "A green, 50-acre eco park and resort of ponds, a lake and shady trees in rural Kalia — good for birds and a slow day out.",
+    description: [
+      "Arunima Eco Park lies in Panipara village in Kalia upazila, in the south-east of Narail district near the Gopalganj border. It has been laid out on roughly 50 acres of village land, with a lake, many small ponds, lawns and dense stands of trees.",
+      "It is privately run as a resort (also known as Arunima Resort & Golf Club), with cottages, a restaurant and picnic spots, but the grounds themselves feel more like a quiet village park than a theme park. Birdwatchers come for the waterbirds and woodland birds around the ponds.",
+      "It works well as a half-day or overnight escape, and pairs with S. M. Sultan's home and the Chitra river in Narail town.",
+    ],
+    highlights: [
+      "Lake and ponds fringed with trees",
+      "Birdwatching in the early morning",
+      "Cottages and picnic spots for a slow overnight stay",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka",
+        detail: "Take a Gopalganj or Narail-bound bus via the Padma Bridge, about 3–4 hours, approx. ৳400–600. Ask to get off at the nearest stop for Kalia / Arunima.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "To the park",
+        detail: "Reserved CNG or easy-bike to Arunima Eco Park in Panipara, about 20–40 minutes, approx. ৳200–400.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – February; early morning for birds.",
+    timeNeeded: "3–4 hours, or an overnight stay",
+    entryFee: "A small entry fee is usually charged (approx.; cottage and food prices extra — check locally)",
+    openingHours: "Daytime; overnight only for resort guests.",
+    tips: [
+      "Book cottages in advance for winter weekends.",
+      "Carry mosquito repellent if staying after dusk.",
+      "Gopalganj town nearby has more hotels and food options.",
+    ],
+    map: { lat: 23.0752, lng: 89.7132 },
   },
 
   /* ------------------------------ Meherpur -------------------------------- */
@@ -1145,5 +1316,133 @@ export const SPOTS_G: Spot[] = [
       "Check train times at Alamdanga station if you want a train in your photo.",
     ],
     map: { lat: 23.7560, lng: 88.9440 },
+  },
+  {
+    slug: "thakurpur-jame-mosque",
+    name: "Thakurpur (Pirganj) Jame Mosque",
+    localName: "ঠাকুরপুর জামে মসজিদ",
+    district: "Chuadanga",
+    upazila: "Chuadanga Sadar",
+    division: "Khulna",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "An old, brightly painted village mosque near Chuadanga town, wrapped in local legends of a saint and of jinn.",
+    description: [
+      "Thakurpur Jame Mosque, now usually called Pirganj Jame Mosque, stands in Thakurpur village beside the Chuadanga–Jhenaidah road, about 2 km from Chuadanga town. It is listed among the district's heritage sites, though no reliable record of when the original building was put up survives.",
+      "Local elders link the place to a Sufi saint, Hazrat Afu Shah, who is said to have settled here in the late 17th century. Many villagers also call it the \"jinn's mosque\", after a popular story that it was built in a single night — a legend rather than history.",
+      "Repeated repairs have given it a cheerful look: green side domes, a gilded central dome and a tiled minaret-like tower. It is a short, easy stop if you are passing between Chuadanga and Jhenaidah.",
+    ],
+    highlights: [
+      "Green and gold domes with a tiled central tower",
+      "Local legends of a saint and a mosque \"built in one night\"",
+      "Easy roadside stop just outside Chuadanga town",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Chuadanga",
+        detail: "Take a train towards Khulna that stops at Chuadanga, or a Chuadanga-bound bus from Gabtoli, about 5–7 hours, approx. ৳450–800.",
+        mode: "train",
+      },
+      {
+        title: "From Chuadanga town",
+        detail: "Easy-bike or rickshaw along the Jhenaidah road to Thakurpur / Pirganj, about 10–15 minutes, approx. ৳20–50.",
+        mode: "easy-bike",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Daylight hours; avoid prayer times, especially Friday midday.",
+    tips: [
+      "Dress modestly; women should cover their head.",
+      "Remove shoes before entering and ask before photographing inside.",
+    ],
+    map: { lat: 23.6350, lng: 88.8700 },
+  },
+  {
+    slug: "carew-and-co-darshana",
+    name: "Carew & Co Sugar Mill and Distillery, Darshana",
+    localName: "কেরু অ্যান্ড কোম্পানি, দর্শনা",
+    district: "Chuadanga",
+    upazila: "Damurhuda",
+    division: "Khulna",
+    categories: ["Heritage"],
+    difficulty: "Easy",
+    summary: "A historic British-era sugar mill and Bangladesh's only state distillery, set in a huge leafy compound near the border.",
+    description: [
+      "Carew & Co at Darshana, near the India border in Damurhuda upazila, is one of the best-known industrial landmarks of south-west Bangladesh. The business traces its roots to a distillery started by British entrepreneurs in the 19th century; the company was formed in its present shape in 1938 and nationalised after independence.",
+      "Today it is a government-run sugar mill with the country's only state-owned distillery, inside a very large compound of cane fields, staff quarters, old red-brick factory sheds, tall chimneys and shady gardens around a colonial-era rest house. A small grave of two company dogs, Simba and Biddy, is a quirky local curiosity.",
+      "Visitors can usually walk the open grounds and see the mill buildings from outside; the factory floor and distillery need permission. During the crushing season (roughly winter) the whole area smells of molasses and is busy with cane carts.",
+    ],
+    highlights: [
+      "Old brick factory sheds and tall chimneys",
+      "Colonial-era rest house and gardens",
+      "Cane carts and crushing-season bustle in winter",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Darshana",
+        detail: "Take a train towards Khulna that stops at Darshana, or a Chuadanga / Darshana-bound bus from Gabtoli, about 5–7 hours, approx. ৳450–850.",
+        mode: "train",
+      },
+      {
+        title: "From Darshana bus stand or station",
+        detail: "Easy-bike or rickshaw to the Carew & Co gate, about 5–10 minutes, approx. ৳20–50.",
+        mode: "easy-bike",
+      },
+    ],
+    bestTime: "December – March, during the cane-crushing season.",
+    timeNeeded: "1–2 hours",
+    entryFee: "Free for the grounds (approx.; factory visits need permission)",
+    openingHours: "Daytime; access to buildings depends on the mill authority.",
+    tips: [
+      "Ask at the gate before entering and do not photograph security staff or restricted areas.",
+      "Darshana is also a land-port town — carry ID near the border.",
+    ],
+    map: { lat: 23.5301, lng: 88.8002 },
+  },
+
+  /* ------------------------------- Bagerhat ------------------------------- */
+  {
+    slug: "kodla-math",
+    name: "Kodla Math (Ayodhya Math)",
+    localName: "কোদলা মঠ",
+    district: "Bagerhat",
+    upazila: "Bagerhat Sadar",
+    division: "Khulna",
+    categories: ["Heritage"],
+    difficulty: "Easy",
+    summary: "A tall, slender 17th-century brick tower-memorial by the Bhairab river, with richly moulded brickwork.",
+    description: [
+      "Kodla Math, also called Ayodhya Math, stands in Kodla (Ayodhya) village about 8 km north of Bagerhat town, on the east bank of the Bhairab river. It is believed to date from around the 17th century and is a protected monument of the Department of Archaeology.",
+      "The math is a square, tower-like brick structure about 18 m tall, its walls stepped into ribs and niches in the tall rekha style seen in Odisha's temples. A short, partly readable inscription above the southern doorway suggests it was raised by a Brahmin. The most popular local account says Raja Pratapaditya built it as a memorial to his court scholar, Abilamba Saraswati — so it is thought to be a memorial rather than a temple to a deity.",
+      "It sits in a neat fenced lawn among coconut and betel-nut palms. It makes an easy, very different addition to a day at Bagerhat's mosques.",
+    ],
+    highlights: [
+      "Soaring rekha-style brick tower about 18 m high",
+      "Finely stepped and niched brickwork",
+      "Partly readable old inscription over the doorway",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Bagerhat",
+        detail: "Take a Bagerhat-bound bus via the Padma Bridge, about 4–5 hours, approx. ৳550–900.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Bagerhat town",
+        detail: "Reserved CNG or easy-bike north towards Jatrapur and then on to Kodla village, about 30–40 minutes, approx. ৳300–500 return.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – February.",
+    timeNeeded: "45 minutes",
+    entryFee: "Free",
+    openingHours: "Daylight hours; the gate is usually open.",
+    tips: [
+      "Combine with the Sixty Dome Mosque and Khan Jahan Ali's tomb for a full Bagerhat day.",
+      "Morning light shows the brick relief best.",
+    ],
+    map: { lat: 22.7420, lng: 89.7724 },
   },
 ];

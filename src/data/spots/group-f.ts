@@ -2,7 +2,7 @@
  * ============================================================================
  *  Spots — Group F: Chattogram, Sylhet & Mymensingh divisions
  * ============================================================================
- *  Districts covered: Feni, Noakhali, Lakshmipur, Brahmanbaria, Cumilla, Chandpur, Habiganj, Sunamganj, Jamalpur, Sherpur, Mymensingh, Netrokona
+ *  Districts covered: Feni, Noakhali, Lakshmipur, Khagrachari, Brahmanbaria, Cumilla, Chandpur, Habiganj, Sunamganj, Jamalpur, Sherpur, Mymensingh, Netrokona, Sylhet, Moulvibazar
  *
  *  Prices are in BDT and approximate — fees and fares change often.
  *  Photos live in photos-f.ts (looked up by slug); Bangla text in bn/group-f.ts.
@@ -238,6 +238,99 @@ export const SPOTS_F: Spot[] = [
     ],
     map: { lat: 22.9389, lng: 91.105 },
   },
+  {
+    slug: "gandhi-ashram-jayag",
+    name: "Gandhi Ashram & Gandhi Memorial Museum",
+    localName: "গান্ধী আশ্রম ও গান্ধী স্মৃতি জাদুঘর",
+    district: "Noakhali",
+    upazila: "Sonaimuri",
+    division: "Chattogram",
+    categories: ["Heritage"],
+    difficulty: "Easy",
+    summary: "The village ashram at Jayag linked to Gandhi's 1946–47 peace mission in Noakhali, with a small memorial museum.",
+    description: [
+      "In late 1946 Mahatma Gandhi came to Noakhali after deadly communal riots and spent about four months walking from village to village on a peace mission. In January 1947 he stayed at Jayag, where the local zamindar and barrister Hemanta Kumar Ghosh later gave his property to a trust that became the Gandhi Ashram Trust.",
+      "Today the ashram is a quiet, tree-shaded compound with a pond at the entrance. The trust still runs schools, training and village development work, following Gandhian ideas of non-violence and self-help.",
+      "The Gandhi Memorial Museum, opened in 2000 and renovated in 2021, has a few rooms of photographs from the Noakhali tour, letters, and items linked to Gandhi's stay. It is a small but moving stop for anyone interested in the history of the subcontinent.",
+    ],
+    highlights: [
+      "Photographs and items from Gandhi's 1946–47 Noakhali peace mission",
+      "Quiet ashram grounds with old trees and a pond",
+      "A living trust still running village development work",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Sonaimuri / Chowmuhani",
+        detail: "Bus from Sayedabad towards Noakhali; get off at Sonaimuri or Chowmuhani. About 4–5 hours, approx. ৳450–800.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "To Jayag",
+        detail: "CNG or easy-bike to Jayag Bazar and the Gandhi Ashram. About 20–40 minutes, approx. ৳100–300.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "1–1.5 hours",
+    entryFee: "Small ticket fee for the museum (approx.; check at the counter)",
+    openingHours: "Daytime hours; opening days can vary, so check locally before going.",
+    tips: [
+      "Combine with Bajra Shahi Mosque, which is on the same side of the district.",
+      "The ashram is a working institution — keep noise down and ask before photographing staff or students.",
+      "Photography rules inside the museum may vary; ask at the ticket counter.",
+    ],
+    map: { lat: 23.0640, lng: 91.0110 },
+  },
+  {
+    slug: "hatiya-island",
+    name: "Hatiya Island",
+    localName: "হাতিয়া দ্বীপ",
+    district: "Noakhali",
+    upazila: "Hatiya",
+    division: "Chattogram",
+    categories: ["Island", "River"],
+    difficulty: "Moderate",
+    summary: "A large, rural island at the mouth of the Meghna, reached by launch or sea-truck — fishing ghats, chars and big river views.",
+    description: [
+      "Hatiya is one of the largest islands of Bangladesh, lying where the Meghna River meets the Bay of Bengal. It is a whole upazila of Noakhali, with paddy fields, villages, markets and the small main town of Oskhali, and it is the gateway to Nijhum Dwip in the south.",
+      "Most visitors come for the journey and the river life: overnight launches from Dhaka, crowded ghats where fishing trawlers land hilsa, newly formed chars and planted mangrove along the shore. The northern coast has been eaten away by river erosion for more than a century, while new land keeps rising elsewhere.",
+      "Facilities are simple, with a few basic hotels in Oskhali. Many travellers spend a night on Hatiya on the way to or from Nijhum Dwip.",
+    ],
+    highlights: [
+      "Overnight launch trip down the Meghna from Dhaka",
+      "Busy fishing ghats and hilsa trawlers",
+      "Huge river views and newly formed chars",
+      "Gateway to Nijhum Dwip",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka by launch",
+        detail: "Overnight launch from Sadarghat to Tamaruddin ghat, Hatiya. About 12–14 hours, approx. ৳400–600 deck or ৳1,500–3,000 cabin.",
+        mode: "launch",
+      },
+      {
+        title: "Via Noakhali",
+        detail: "Bus from Dhaka to Noakhali (Sonapur), CNG to Chairman Ghat, then a sea-truck, trawler or speedboat to Nolchira ghat on Hatiya. About 1–2 hours on the water, approx. ৳150–500 depending on the boat.",
+        mode: "speedboat",
+      },
+      {
+        title: "On the island",
+        detail: "CNG or motorbike between Nolchira, Tamaruddin, Oskhali and Moktaria ghat, approx. ৳100–700 depending on distance.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – February. Avoid the monsoon and cyclone season, when river crossings can be rough.",
+    timeNeeded: "1–2 days (often combined with Nijhum Dwip)",
+    entryFee: "Free",
+    openingHours: "Open all the time; boat and launch times depend on tides and weather.",
+    tips: [
+      "Check launch and sea-truck times the day before — they change with tides and weather.",
+      "Do not cross in small boats during storm warnings.",
+      "Carry cash; ATMs and card payment are limited.",
+      "Hatiya is conservative and rural — dress modestly.",
+    ],
+    map: { lat: 22.4000, lng: 91.1000 },
+  },
 
   /* ---------------------------- Brahmanbaria ---------------------------- */
   {
@@ -367,6 +460,50 @@ export const SPOTS_F: Spot[] = [
       "Go early so you can get back to Brahmanbaria before dark.",
     ],
     map: { lat: 24.1307, lng: 91.1683 },
+  },
+  {
+    slug: "titas-river",
+    name: "Titas River",
+    localName: "তিতাস নদী",
+    district: "Brahmanbaria",
+    upazila: "Brahmanbaria Sadar",
+    division: "Chattogram",
+    categories: ["River"],
+    difficulty: "Easy",
+    summary: "The river made famous by the novel and film \"A River Called Titas\", with boat rides, riverside ghats and Bhadra boat races.",
+    description: [
+      "The Titas is a branch of the Meghna that winds for roughly 100 km through Brahmanbaria district, past Brahmanbaria town, before rejoining the Meghna near Nabinagar. For generations fishing and boat communities have lived along its banks.",
+      "It is best known through literature: Adwaita Mallabarman's novel \"Titash Ekti Nadir Naam\" (A River Called Titas) tells the story of a fishing community on its banks, and Ritwik Ghatak turned it into a celebrated film in 1973.",
+      "In the monsoon and after, the river is full and wide, and a hired boat ride at sunset is the best way to see it. Traditional boat races are held on the Titas around the Bangla month of Bhadra (August – September) and draw large crowds. In the dry season parts of the river silt up and shrink.",
+    ],
+    highlights: [
+      "Sunset boat ride on the river",
+      "Riverside ghats and fishing boats",
+      "Traditional boat races in Bhadra (August – September)",
+      "The setting of \"A River Called Titas\"",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Brahmanbaria",
+        detail: "Train from Kamalapur or Airport station to Brahmanbaria (about 2.5–3 hours, approx. ৳150–400), or bus from Sayedabad (about 2.5–3 hours, approx. ৳250–400).",
+        mode: "train",
+      },
+      {
+        title: "To the riverside",
+        detail: "Rickshaw or easy-bike from Brahmanbaria town to a Titas ghat, then hire a country boat for an hour or two, approx. ৳300–800 per boat depending on time and season.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "July – October, when the river is full; Bhadra for the boat races.",
+    timeNeeded: "2–3 hours",
+    entryFee: "Free (boat hire extra)",
+    openingHours: "Open all the time; boat rides are best in daylight and at sunset.",
+    tips: [
+      "Agree the boat fare and duration before setting off.",
+      "Boat race days are crowded — arrive early to find a spot on the bank.",
+      "Small boats rarely carry life jackets; avoid going out in rough weather.",
+    ],
+    map: { lat: 23.9600, lng: 91.1000 },
   },
 
   /* ------------------------------ Chandpur ------------------------------ */
@@ -539,6 +676,96 @@ export const SPOTS_F: Spot[] = [
       "Check the weather in the monsoon — storms build quickly over the estuary.",
     ],
     map: { lat: 22.6105, lng: 90.988 },
+  },
+  {
+    slug: "tita-khan-mosque",
+    name: "Tita Khan Jame Mosque",
+    localName: "তিতা খাঁ জামে মসজিদ",
+    district: "Lakshmipur",
+    upazila: "Lakshmipur Sadar",
+    division: "Chattogram",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "An old three-domed mosque in the heart of Lakshmipur town, believed to be around 300 years old.",
+    description: [
+      "Tita Khan Jame Mosque stands in the busy market area of Lakshmipur town. It is believed to be around 300 years old and is one of the best-known old mosques in the district; local tradition links it with a saint who settled here, but its exact date and builder are not recorded.",
+      "The original prayer hall has three domes with minarets at the corners. Over time the mosque has been repaired and extended, and the front is now covered in patterned tiles and mosaic, with arched doorways facing the street.",
+      "It is still the main mosque for many people in town, so it is busy at prayer times, especially for Friday prayers. A short visit fits easily into a trip to Dalal Bazar or the Meghna riverside.",
+    ],
+    highlights: [
+      "Old three-domed prayer hall with corner minarets",
+      "Tile and mosaic decoration on the front",
+      "Lively town-centre setting near the market",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Lakshmipur",
+        detail: "Bus from Sayedabad to Lakshmipur. About 4–5 hours, approx. ৳400–700.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "In Lakshmipur town",
+        detail: "Rickshaw or easy-bike from the bus stand to the mosque near the town market. About 10 minutes, approx. ৳20–50.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "All year; October – March is most comfortable.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid going inside during prayer times.",
+    tips: [
+      "Dress modestly and remove your shoes before entering.",
+      "Women should carry a scarf and ask before entering the prayer hall.",
+      "Avoid Friday midday (Jumma), when the mosque and street are very crowded.",
+    ],
+    map: { lat: 22.9440, lng: 90.8300 },
+  },
+
+  /* ---------------------------- Khagrachari ----------------------------- */
+  {
+    slug: "shantipur-aranya-kutir",
+    name: "Shantipur Aranya Kutir",
+    localName: "শান্তিপুর অরণ্য কুটির",
+    district: "Khagrachari",
+    upazila: "Panchhari",
+    division: "Chattogram",
+    categories: ["Religious", "Forest"],
+    difficulty: "Easy",
+    summary: "A forest Buddhist monastery in Panchhari with a giant seated Buddha statue and a calm, wooded setting.",
+    description: [
+      "Shantipur Aranya Kutir is a Buddhist forest monastery in Panchhari upazila, about 25 km from Khagrachari town. Monks live and meditate here in simple huts (kutir) spread through a large area of protected forest, and it is one of the most important Buddhist pilgrimage places in the Chittagong Hill Tracts.",
+      "Its best-known sight is a very large seated Buddha statue, often described as one of the biggest in Bangladesh. Around it are prayer halls, statues of revered monks and shaded paths through the trees.",
+      "The monastery is busiest during Buddhist festivals and the Kathin Chibar Dan robe-offering season after the monsoon, when thousands of devotees arrive. At dawn, monks walk in long lines to collect alms from villagers.",
+    ],
+    highlights: [
+      "The giant seated Buddha statue",
+      "Quiet forest paths and meditation huts",
+      "Monks' morning alms round",
+      "Kathin Chibar Dan festival after the monsoon",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Khagrachari",
+        detail: "Direct bus from Sayedabad, Kalabagan or Arambagh to Khagrachari town, about 7–8 hours, approx. ৳700–1,200.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Khagrachari town",
+        detail: "CNG or chander gari to Panchhari and on to Shantipur, about 1 hour, approx. ৳600–1,200 reserved. Local buses also run to Panchhari.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March; October – November for Kathin Chibar Dan.",
+    timeNeeded: "1–2 hours",
+    entryFee: "Free (donations welcome)",
+    openingHours: "Open daily; visitors may be asked to stay away around midday (approx. 11:00–13:30) while monks eat and observe rituals.",
+    tips: [
+      "Dress modestly, covering shoulders and knees, and remove shoes where asked.",
+      "Keep your voice low — this is a place of meditation.",
+      "Do not climb on or pose disrespectfully with Buddha statues.",
+      "Ask before photographing monks, and never touch a monk's alms bowl.",
+    ],
+    map: { lat: 23.2950, lng: 91.8800 },
   },
 
   /* ------------------------------- Cumilla ------------------------------ */
@@ -766,6 +993,101 @@ export const SPOTS_F: Spot[] = [
     ],
     map: { lat: 24.1045, lng: 91.6205 },
   },
+  {
+    slug: "shankarpasha-shahi-mosque",
+    name: "Shankarpasha Shahi Mosque (Uchail Mosque)",
+    localName: "উচাইল শংকরপাশা শাহী মসজিদ",
+    district: "Habiganj",
+    upazila: "Habiganj Sadar",
+    division: "Sylhet",
+    categories: ["Heritage", "Religious"],
+    difficulty: "Easy",
+    summary: "A Sultanate-era brick mosque near Habiganj town, covered in fine terracotta panels and still used for prayer.",
+    description: [
+      "The Shankarpasha Shahi Mosque, also called the Uchail Mosque, stands in Uchail Shankarpasha village a short way from Habiganj town. It dates from the Bengal Sultanate period, around the reign of Sultan Alauddin Husain Shah at the turn of the 16th century, and is one of the oldest buildings in the district.",
+      "The mosque is built of thin red bricks. A large dome covers the prayer hall and smaller domes cover the front verandah. The outer walls are decorated with rows of terracotta panels, arched niches and carved bands, and thick corner towers frame the building.",
+      "It is a protected monument and still a working village mosque. Most visitors come for an hour to look at the brickwork and terracotta, often combined with other sights around Habiganj.",
+    ],
+    highlights: [
+      "Sultanate-era brick mosque around 500 years old",
+      "Terracotta panels and carved niches on the outer walls",
+      "Large main dome with thick corner towers",
+      "Quiet village setting close to Habiganj town",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Habiganj",
+        detail: "Bus from Sayedabad or Mohakhali to Habiganj (about 4 hours, approx. ৳450–650), or a Sylhet-bound train to Shayestaganj (about 4 hours, approx. ৳300–600).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Habiganj town or Shayestaganj",
+        detail: "CNG or easy-bike to Uchail Shankarpasha. About 20–40 minutes, approx. ৳150–400 reserved.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "45–60 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid going inside during prayer times.",
+    tips: [
+      "Dress modestly and take off your shoes before entering the mosque.",
+      "Women should carry a scarf and ask before entering the prayer hall.",
+      "Do not climb on the old walls or touch the terracotta panels.",
+      "Avoid Friday midday (Jumma) if you want to look around quietly.",
+    ],
+    map: { lat: 24.3023, lng: 91.3588 },
+  },
+  {
+    slug: "bithangal-akhra",
+    name: "Bithangal Akhra",
+    localName: "বিথঙ্গল আখড়া",
+    district: "Habiganj",
+    upazila: "Baniachong",
+    division: "Sylhet",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Moderate",
+    summary: "An old Vaishnava monastery on the edge of the haor in Baniachong, reached by boat for much of the year.",
+    description: [
+      "Bithangal Akhra is a Vaishnava Hindu monastery (akhra) in Bithangal village, Baniachong upazila. It is believed to have been founded in the 16th century by the saint Ramkrishna Goswami, and it is one of the best-known Vaishnava centres in the Sylhet region.",
+      "The akhra is a quiet complex of white temple buildings with curved roofs, courtyards and rooms where monks and devotees have stayed for generations. It is said to have once housed 120 Vaishnava monks. Devotional singing (kirtan) is part of daily life here, and religious festivals bring many pilgrims.",
+      "The village sits on the edge of the wide haor wetlands. In the monsoon the area is surrounded by water and the trip in by boat is part of the experience; in the dry months it can be reached by road.",
+    ],
+    highlights: [
+      "White temple buildings with curved roofs and tiled courtyards",
+      "Peaceful Vaishnava atmosphere and devotional singing",
+      "Boat ride across the haor in the monsoon",
+      "Festival days, when pilgrims gather from across the region",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Habiganj",
+        detail: "Bus from Sayedabad or Mohakhali to Habiganj (about 4 hours, approx. ৳450–650).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Habiganj town to Baniachong",
+        detail: "CNG to Baniachong, about 45–60 minutes, approx. ৳80–150 shared or more reserved.",
+        mode: "cng",
+      },
+      {
+        title: "From Baniachong to Bithangal",
+        detail: "In the dry season, CNG or motorbike by road (ask locally for the current route). In the monsoon, hire a boat across the haor, approx. ৳800–2,000 per boat depending on size and time.",
+        mode: "speedboat",
+      },
+    ],
+    bestTime: "July – October to see the haor full of water; November – March for easier road access.",
+    timeNeeded: "Half day (including travel from Baniachong)",
+    entryFee: "Free (donations welcome)",
+    openingHours: "Open daily from morning to evening.",
+    tips: [
+      "Remove your shoes before entering the temple buildings.",
+      "Dress modestly and ask before photographing monks, devotees or rituals.",
+      "In the monsoon, agree the boat fare before starting and avoid crossing in bad weather.",
+      "Facilities are basic — carry water and snacks.",
+    ],
+    map: { lat: 24.4463, lng: 91.2461 },
+  },
 
   /* ------------------------------ Sunamganj ----------------------------- */
   {
@@ -858,6 +1180,50 @@ export const SPOTS_F: Spot[] = [
       "Combine with Barikka Tila, Niladri Lake and Tanguar Haor in one trip.",
     ],
     map: { lat: 25.165, lng: 91.209 },
+  },
+  {
+    slug: "pagla-mosque-sunamganj",
+    name: "Pagla Jame Mosque (Raypur Boro Mosque)",
+    localName: "পাগলা জামে মসজিদ",
+    district: "Sunamganj",
+    upazila: "Shantiganj",
+    division: "Sylhet",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "A grand three-domed mosque with tall ornamented minarets beside the Mahasingh River at Pagla Bazar.",
+    description: [
+      "Pagla Jame Mosque, known locally as Raypur Boro Mosque, stands in Raypur village near Pagla Bazar in Shantiganj (formerly Dakshin Sunamganj) upazila, beside the Sylhet–Sunamganj highway and the Mahasingh River. It is one of the most admired mosques in the Sylhet region.",
+      "It was built in the first half of the 20th century by a local businessman, Yasin Mirza; construction is said to have taken well over a decade. The building is two storeys high, with three domes and slender minarets topped by small domed pavilions. The walls are decorated with coloured tiles, arches and balconies.",
+      "It is still an active mosque, with a wide open ground in front. Travellers between Sylhet and Sunamganj often stop here for a short visit.",
+    ],
+    highlights: [
+      "Three decorated domes and tall ornamented minarets",
+      "Two-storey arched facade with balconies and tilework",
+      "Setting beside the Mahasingh River",
+      "Easy stop on the Sylhet–Sunamganj road",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Sunamganj",
+        detail: "Bus from Sayedabad or Mohakhali towards Sunamganj; ask to get off at Pagla Bazar. About 6 hours, approx. ৳700–1,000.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Sunamganj town or Sylhet",
+        detail: "Local bus or CNG to Pagla Bazar, then walk a few minutes to the mosque. About 30 minutes from Sunamganj or 1–1.5 hours from Sylhet, approx. ৳50–150 by bus.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "All year; October – March is most comfortable.",
+    timeNeeded: "30–45 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid going inside during prayer times.",
+    tips: [
+      "Dress modestly and remove your shoes before entering.",
+      "Women should carry a scarf and ask before entering the prayer hall.",
+      "Avoid Friday midday (Jumma) if you want to look around quietly.",
+    ],
+    map: { lat: 24.9281, lng: 91.4519 },
   },
 
   /* ------------------------------- Sherpur ------------------------------ */
@@ -1564,5 +1930,50 @@ export const SPOTS_F: Spot[] = [
       "Go early in the morning for still water and reflections.",
     ],
     map: { lat: 24.2975, lng: 91.8738 },
+  },
+  {
+    slug: "madhabpur-jora-mandap",
+    name: "Madhabpur Jora Mandap (Manipuri Rash Leela)",
+    localName: "মাধবপুর জোড়ামণ্ডপ",
+    district: "Moulvibazar",
+    upazila: "Kamalganj",
+    division: "Sylhet",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "The Manipuri temple ground near Madhabpur where the all-night Maha Rash Leela dance is held every November.",
+    description: [
+      "Kamalganj upazila is home to one of the largest Manipuri communities in Bangladesh. At Shibbazar in Madhabpur stands the Jora Mandap, a group of temple pavilions of the Bishnupriya Manipuri Vaishnava community, dedicated to Radha and Krishna.",
+      "The Jora Mandap is best known for the Maha Rash Leela festival on the full-moon night of Kartik (usually in November). Dancers in shining cylindrical skirts and veils perform the Rash Leela through the night, telling the story of Radha, Krishna and the gopis. The tradition here goes back to the mid-19th century, and a large fair fills the fields around the temple.",
+      "On ordinary days the temple is quiet and visitors can see the mandaps and the Manipuri villages nearby. Madhabpur Lake and Lawachara forest are close, so it fits easily into a Sreemangal trip.",
+    ],
+    highlights: [
+      "All-night Maha Rash Leela dance on the Kartik full moon",
+      "Traditional Manipuri costumes and devotional music",
+      "Festival fair with Manipuri handloom and food stalls",
+      "Manipuri villages near Madhabpur Lake",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Sreemangal",
+        detail: "Sylhet-bound train to Sreemangal (about 4.5–5 hours, approx. ৳300–700) or bus (about 4–5 hours, approx. ৳500–900).",
+        mode: "train",
+      },
+      {
+        title: "From Sreemangal or Kamalganj",
+        detail: "CNG via Kamalganj to Madhabpur and Shibbazar. About 45–60 minutes from Sreemangal, approx. ৳500–1,000 reserved; on festival nights shared transport runs late but is crowded.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November, for the Maha Rash Leela on the Kartik full moon; October – March otherwise.",
+    timeNeeded: "1 hour (or a full night during the festival)",
+    entryFee: "Free",
+    openingHours: "Temple grounds open daily in daytime; the festival runs from afternoon through the night.",
+    tips: [
+      "Remove your shoes near the mandaps and dress modestly.",
+      "Do not use flash or walk across the dance area during the performance.",
+      "Festival nights are very crowded — keep valuables safe and plan your return transport in advance.",
+      "Check the exact festival date each year, as it follows the lunar calendar.",
+    ],
+    map: { lat: 24.3300, lng: 91.8200 },
   },
 ];

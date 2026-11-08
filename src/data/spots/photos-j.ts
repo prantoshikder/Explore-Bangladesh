@@ -21,4 +21,19 @@ export const PHOTOS_J: Record<string, Photo> = {
   "char-kukri-mukri": p("char-kukri-mukri.jpg", "A calm green creek winding between mangrove trees at Char Kukri Mukri", "Char Kukri Mukri", "Munmun.13", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Chor.Kukri-Mukri.2.jpg"),
   // Barguna
   "tengragiri-wildlife-sanctuary": p("tengragiri-wildlife-sanctuary.jpg", "Exposed mangrove roots on muddy ground at the edge of Tengragiri forest", "Tengragiri mangrove forest", "Mohammad samiun islam", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:20190612_161146_%E0%A6%9F%E0%A7%87%E0%A6%82%E0%A6%B0%E0%A6%BE%E0%A6%97%E0%A6%BF%E0%A6%B0%E0%A6%BF_%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A3%E0%A7%80_%E0%A6%85%E0%A6%AD%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0%E0%A6%A3%E0%A7%8D%E0%A6%AF%E0%A5%A4.jpg"),
+  // Patuakhali
+  "payra-bridge": p("payra-bridge.jpg", "Aerial evening view of the lit-up Payra Bridge stretching across the wide river", "Payra Bridge at Lebukhali", "Abdur Rahman Saikat", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Payra_Bridge_Patuakhali.jpg"),
+  // Jhalokathi
+  "khanbari-mosque-complex": p("khanbari-mosque-complex.jpg", "Three weathered white single-domed mosques with ornate plaster panels standing side by side", "Khanbari Old Jame Mosque Complex, Rajapur", "Dr. Emdadul Hoque Mamun", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Khanbari_Old_Jami_Mosque,_Jhalakathi.jpg"),
+  "saturia-zamindar-bari": p("saturia-zamindar-bari.jpg", "Roofless red-brick ruins of Saturia Zamindar Bari surrounded by trees and plants", "Saturia Zamindar Bari, Rajapur", "Dr. Emdadul Hoque Mamun", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Saturia_Zamindar_Bari,_Jhalokathi_(65).jpg"),
+  // Bhola
+  "nizam-hasina-mosque": p("nizam-hasina-mosque.jpg", "Entrance of the Nizam-Hasina Foundation Mosque under a pyramid-shaped stone frame with a patterned dome above", "Nizam-Hasina Foundation Mosque, Bhola", "Md Arif bd", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Nizam_hasina_foundation_mosqe.jpg"),
+  "jakob-tower": p("jakob-tower.jpg", "Tall curved white Jakob Tower with a glass dome on top against a pink evening sky", "Jakob Tower, Char Fasson", "Syfullah Nabil", "CC BY 4.0", "https://commons.wikimedia.org/wiki/File:Jakob_Watch_Tower.jpg"),
+  "meghna-shahbazpur-tulatuli": p("meghna-shahbazpur-tulatuli.jpg", "A white tourist boat anchored on the calm, misty Meghna beside a grassy bank at Tulatuli", "Meghna at Tulatuli, Bhola", "Nurunnaby Chowdhury (Hasive)", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Shahbazpur_Meghna_Tourist_Spot,_Tulatuli,_Bhola_(14).jpg"),
+  // Barguna
+  "bibi-chini-mosque": p("bibi-chini-mosque.jpg", "Square red-brick Bibi Chini Mosque with a single dome on a grassy mound", "Bibi Chini Shahi Mosque, Betagi", "Farhan Al Mostakim", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:%E0%A6%AC%E0%A6%BF%E0%A6%AC%E0%A6%BF_%E0%A6%9A%E0%A6%BF%E0%A6%A8%E0%A6%BF_%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A7%80_%E0%A6%AE%E0%A6%B8%E0%A6%9C%E0%A6%BF%E0%A6%A6.jpg"),
+  // Pirojpur
+  "momin-mosque": p("momin-mosque.jpg", "Carved wooden front wall of Momin Mosque with latticed panels, a carved door and wooden shutters", "Momin Mosque, Mathbaria", "Farhan Al Mostakim", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:%E0%A6%AE%E0%A6%AE%E0%A6%BF%E0%A6%A8_%E0%A6%AE%E0%A6%B8%E0%A6%9C%E0%A6%BF%E0%A6%A6_%E0%A6%AE%E0%A6%A0%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE.jpg"),
+  // Barguna
+  "nidrar-char": p("nidrar-char.jpg", "Keora trees and mangrove breathing roots on green, waterlogged ground at Nidrar Char", "Nidrar Char, Taltoli", "Rifat R", "CC0", "https://commons.wikimedia.org/wiki/File:%E0%A6%A8%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0_%E0%A6%9A%E0%A6%B0_%E0%A7%AA.webp"),
 };

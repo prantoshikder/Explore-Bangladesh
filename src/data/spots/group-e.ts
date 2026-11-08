@@ -4,7 +4,8 @@
  * ============================================================================
  *  Districts covered: Narsingdi, Manikganj, Munshiganj, Tangail, Kishoreganj,
  *  Faridpur, Gopalganj, Madaripur, Rajbari, Shariatpur, plus extra spots for
- *  Gazipur, Narayanganj and Dhaka.
+ *  Gazipur, Narayanganj and Dhaka — and extra spots for Mymensingh, Jamalpur,
+ *  Netrokona and Sherpur (Mymensingh division).
  *
  *  Prices are in BDT and approximate — fees and fares change often.
  *  Photos live in photos-e.ts (looked up by slug); Bangla text in bn/group-e.ts.
@@ -1620,6 +1621,49 @@ export const SPOTS_E: Spot[] = [
     ],
     map: { lat: 23.7790, lng: 89.7520 },
   },
+  {
+    slug: "godar-bazar-padma",
+    name: "Godar Bazar Padma Riverside",
+    localName: "গোদার বাজার পদ্মার পাড়",
+    district: "Rajbari",
+    upazila: "Rajbari Sadar",
+    division: "Dhaka",
+    categories: ["River"],
+    difficulty: "Easy",
+    summary: "Rajbari town's own Padma riverbank — a local favourite for wide views and evening sunsets.",
+    description: [
+      "Godar Bazar is a riverside area on the Padma at the edge of Rajbari town. It is the place where people from the town come to sit by the water, watch boats pass and see the sun go down over the huge river.",
+      "The bank has been strengthened with blocks against erosion, and in the evenings families, friends and tea sellers gather along it. Small boats can usually be hired for a short trip on the river.",
+      "The Padma is powerful here and erosion has repeatedly eaten into the bank — an earlier recreation centre was lost to the river — so facilities change from year to year. It is a simple, local spot rather than a developed park.",
+    ],
+    highlights: [
+      "Sunset over the wide Padma",
+      "Short boat rides from the bank",
+      "Evening tea and snacks with local crowds",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Rajbari",
+        detail: "Bus from Gabtoli or Sayedabad to Rajbari town, about 3.5–5 hours depending on the route, approx. ৳350–600.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Rajbari town",
+        detail: "Take a rickshaw or easy-bike to Godar Bazar, about 10–20 minutes, approx. ৳30–80.",
+        mode: "easy-bike",
+      },
+    ],
+    bestTime: "October – March; late afternoon for the sunset.",
+    timeNeeded: "1–2 hours",
+    entryFee: "Free (boat rides extra, approx. ৳50–300)",
+    openingHours: "Open access; best in the late afternoon and evening.",
+    tips: [
+      "Keep away from the edge of eroding banks, especially in the monsoon.",
+      "Agree the boat fare first and avoid boats without life jackets in rough weather.",
+      "Weekends and Eid holidays get crowded.",
+    ],
+    map: { lat: 23.7800, lng: 89.6500 },
+  },
 
   /* ----------------------------- Shariatpur ------------------------------ */
   {
@@ -1706,6 +1750,49 @@ export const SPOTS_E: Spot[] = [
       "During the urs it is very crowded — keep valuables safe.",
     ],
     map: { lat: 23.3250, lng: 90.5100 },
+  },
+  {
+    slug: "dhanuka-manasa-bari",
+    name: "Dhanuka Manasa Bari",
+    localName: "ধানুকা মনসা বাড়ি",
+    district: "Shariatpur",
+    upazila: "Shariatpur Sadar",
+    division: "Dhaka",
+    categories: ["Heritage", "Religious"],
+    difficulty: "Easy",
+    summary: "Crumbling brick temples of an old Brahmin family's home, hidden inside Shariatpur town.",
+    description: [
+      "Manasa Bari stands in Dhanuka, within Shariatpur town. It was the family home of Mayurbhatta, a Sanskrit scholar and poet, and the house takes its name from the snake goddess Manasa — local tradition says the goddess appeared in a family member's dream and asked to be worshipped here.",
+      "Estimates of its age vary: some accounts say around 500 years, while the style of the buildings points to roughly the late 1500s or early 1600s. About five structures survive — Kali, Durga and Manasa temples, a nahabat khana (music gallery) and a two-storey building once used as a Sanskrit school.",
+      "The buildings are in poor condition, with moss, ferns and trees growing from the old brick and terracotta. That decay is also part of the atmosphere: it is a quiet, photogenic ruin rather than a restored monument.",
+    ],
+    highlights: [
+      "Curved-roof brick temple with faded terracotta panels",
+      "Arched brick façades overgrown with ferns",
+      "The old Sanskrit school building",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Shariatpur",
+        detail: "Bus from Jatrabari or Gulistan across the Padma Bridge to Shariatpur, about 2–3 hours, approx. ৳250–400.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "In Shariatpur town",
+        detail: "Take a rickshaw or easy-bike to Dhanuka (behind the police superintendent's office), about 10 minutes, approx. ৳20–50.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30–60 minutes",
+    entryFee: "Free",
+    openingHours: "Open in daylight hours; ask the family living nearby before entering.",
+    tips: [
+      "The walls are fragile — don't climb on them or pull at plants.",
+      "Some shrines may still be used for worship; remove shoes and be respectful.",
+      "Wear closed shoes; the ground can be damp and overgrown.",
+    ],
+    map: { lat: 23.2090, lng: 90.3500 },
   },
 
   /* ------------------------------- Gazipur ------------------------------- */
@@ -2301,5 +2388,358 @@ export const SPOTS_E: Spot[] = [
       "Traffic in Old Dhaka is heavy — a rickshaw is often quickest.",
     ],
     map: { lat: 23.7199, lng: 90.4196 },
+  },
+
+  /* ----------------------------- Mymensingh ------------------------------ */
+  {
+    slug: "boro-kali-bari-mymensingh",
+    name: "Boro Kali Bari, Mymensingh",
+    localName: "বড় কালীবাড়ি, ময়মনসিংহ",
+    district: "Mymensingh",
+    upazila: "Mymensingh Sadar",
+    division: "Mymensingh",
+    categories: ["Religious"],
+    difficulty: "Easy",
+    summary: "One of Mymensingh's oldest and busiest Kali temples, at its liveliest on Kali Puja night.",
+    description: [
+      "Boro Kali Bari (the 'big Kali temple') is one of the best-known Hindu temples in Mymensingh town, a short rickshaw ride from the town centre. It is dedicated to the goddess Kali.",
+      "Devotees believe the temple goes back about 300 years. Local tradition says the goddess was first worshipped in a small hut under a banyan tree before a proper temple was built. The temple has been renovated several times, and painted relief panels of scenes from the Hindu epics line the wall at the entrance.",
+      "On ordinary evenings it is a calm neighbourhood temple. During Kali Puja, and also Durga Puja, it fills with worshippers, lamps and decorated pandals, and sweet stalls set up nearby.",
+    ],
+    highlights: [
+      "The painted relief panels along the entrance wall",
+      "Evening puja with bells and lamps",
+      "Kali Puja night, with decorated pandals and big crowds",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Mymensingh",
+        detail: "Bus from Mohakhali, or a train from Kamalapur to Mymensingh Junction, about 2.5–4 hours, approx. ৳250–450.",
+        mode: "train",
+      },
+      {
+        title: "From Mymensingh town",
+        detail: "Take a rickshaw or easy-bike to Boro Kali Bari, about 10–15 minutes, approx. ৳30–60.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "All year; October – November for Durga Puja and Kali Puja.",
+    timeNeeded: "30–60 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily from morning to night; evening puja usually after sunset.",
+    tips: [
+      "Remove your shoes before entering the shrine area.",
+      "Dress modestly and ask before photographing worshippers or the deity.",
+      "Kali Puja night is very crowded — keep valuables safe.",
+    ],
+    map: { lat: 24.7553, lng: 90.4142 },
+  },
+
+  /* ------------------------------ Jamalpur ------------------------------- */
+  {
+    slug: "shah-jamal-mazar",
+    name: "Hazrat Shah Jamal's Mazar",
+    localName: "হযরত শাহ জামাল (রহ.)-এর মাজার",
+    district: "Jamalpur",
+    upazila: "Jamalpur Sadar",
+    division: "Mymensingh",
+    categories: ["Religious"],
+    difficulty: "Easy",
+    summary: "The shrine of the Sufi saint whose name Jamalpur town is said to carry.",
+    description: [
+      "This is the shrine (mazar) of Hazrat Shah Jamal, a Sufi saint who, according to tradition, came to this region from Yemen in the time of the Mughal emperor Akbar, in the late 16th century. The town of Jamalpur — once called Singhjani — is said to be named after him.",
+      "The mazar sits in the town near Station Road. An arched gateway in bright orange tiles, with a blue signboard above, leads into a courtyard with the tomb and a mosque beside it.",
+      "Devotees come every day to pray and make offerings, and the yearly Urs (death anniversary gathering) draws large crowds from across the district.",
+    ],
+    highlights: [
+      "The tiled gateway and the saint's tomb",
+      "Quiet prayer time in the courtyard",
+      "The annual Urs, when the shrine is at its busiest",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Jamalpur",
+        detail: "Bus from Mohakhali, or a train from Kamalapur to Jamalpur Town station, about 4–5 hours, approx. ৳350–550.",
+        mode: "train",
+      },
+      {
+        title: "From Jamalpur station",
+        detail: "Take a rickshaw or easy-bike to the mazar, about 5–10 minutes, approx. ৳20–50.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "All year; November – February is most comfortable.",
+    timeNeeded: "30–60 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; busiest after prayers and on Thursday evenings.",
+    tips: [
+      "Remove your shoes before entering the shrine area.",
+      "Dress modestly; women should cover their heads.",
+      "Avoid visiting during Friday prayers and ask before taking photos.",
+    ],
+    map: { lat: 24.9392, lng: 89.9364 },
+  },
+  {
+    slug: "doyamoyee-mandir",
+    name: "Doyamoyee Temple",
+    localName: "দয়াময়ী মন্দির",
+    district: "Jamalpur",
+    upazila: "Jamalpur Sadar",
+    division: "Mymensingh",
+    categories: ["Religious"],
+    difficulty: "Easy",
+    summary: "Jamalpur town's best-known Hindu temple, with an eye-catching pink façade.",
+    description: [
+      "Doyamoyee Temple is an old Hindu temple in the centre of Jamalpur town, dedicated to the goddess Doyamoyee. It is the most important temple for the town's Hindu community.",
+      "The long pink façade facing the street is hard to miss, with carved pillars, small spires and arched niches. Inside is a courtyard with the main shrine and smaller altars.",
+      "It is usually calm during the day. During Durga Puja and other festivals the temple is decorated and crowded with worshippers and visitors.",
+    ],
+    highlights: [
+      "The ornate pink street façade",
+      "Evening aarti in the temple courtyard",
+      "Durga Puja decorations and crowds",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Jamalpur",
+        detail: "Bus from Mohakhali, or a train from Kamalapur to Jamalpur Town station, about 4–5 hours, approx. ৳350–550.",
+        mode: "train",
+      },
+      {
+        title: "From Jamalpur station",
+        detail: "Take a rickshaw or easy-bike to the temple, about 10 minutes, approx. ৳20–50.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "All year; September – October for Durga Puja.",
+    timeNeeded: "30–60 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily from morning to evening.",
+    tips: [
+      "Remove your shoes before entering the temple.",
+      "Dress modestly and ask before photographing worshippers or the deity.",
+      "Combine with Shah Jamal's mazar, also in town.",
+    ],
+    map: { lat: 24.9231, lng: 89.9499 },
+  },
+  {
+    slug: "kamalpur-war-memorial",
+    name: "Kamalpur War Memorial",
+    localName: "কামালপুর স্মৃতিসৌধ",
+    district: "Jamalpur",
+    upazila: "Bakshiganj",
+    division: "Mymensingh",
+    categories: ["Heritage"],
+    difficulty: "Easy",
+    summary: "A memorial at Dhanua Kamalpur, scene of some of the hardest fighting of the 1971 Liberation War.",
+    description: [
+      "Kamalpur, in Bakshiganj upazila near the Meghalaya border, was a heavily fortified Pakistani army camp in 1971 and one of the most important battlefields of the Liberation War in this region. Freedom fighters attacked it several times; sector commander Abu Taher lost a leg in fighting here in November 1971.",
+      "After a long siege, Kamalpur was freed on 4 December 1971, and the day is still marked each year as Kamalpur Free Day. The memorial at Dhanua Kamalpur was built in 1999 to honour those who died.",
+      "The monument is a white, open sculpture with a red sun disc, set in a small fenced garden and backed by murals of the war. It is a quiet place for a short stop, and fits easily with a trip to Lauchapra in the same upazila.",
+    ],
+    highlights: [
+      "The white memorial with its red sun disc",
+      "Liberation War murals around the site",
+      "Kamalpur Free Day ceremonies on 4 December",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Jamalpur / Bakshiganj",
+        detail: "Bus from Mohakhali to Jamalpur (about 4–5 hours, approx. ৳400–600) or train from Kamalapur to Jamalpur. Some buses continue to Bakshiganj.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Bakshiganj",
+        detail: "CNG or easy-bike to Dhanua Kamalpur, about 20–30 minutes, approx. ৳100–300.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – February; 4 December for Kamalpur Free Day.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily in daylight hours.",
+    tips: [
+      "This is a memorial — keep your voice down and don't climb on the monument.",
+      "Remove shoes if asked before stepping onto the altar area.",
+      "Combine with Lauchapra for a half-day trip in Bakshiganj.",
+    ],
+    map: { lat: 25.2778, lng: 89.8596 },
+  },
+
+  /* ------------------------------ Netrokona ------------------------------ */
+  {
+    slug: "shah-sultan-rumi-mazar",
+    name: "Shah Sultan Rumi's Mazar, Madanpur",
+    localName: "হযরত শাহ সুলতান রুমী (রহ.)-এর মাজার, মদনপুর",
+    district: "Netrokona",
+    upazila: "Netrokona Sadar",
+    division: "Mymensingh",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "The village shrine of a Sufi saint traditionally counted among the first to settle in Bengal.",
+    description: [
+      "Madanpur, a village a short drive south of Netrokona town, holds the shrine of Shah Sultan Qamar ad-Din Rumi. According to tradition he arrived here in 1053 CE with his teacher and a group of disciples, which would make him one of the earliest Sufis to settle in Bengal.",
+      "The tomb sits under a white dome in an open, pillared pavilion, surrounded by tall coloured flags. The Shah Sultan Jame Mosque stands next to the shrine.",
+      "Pilgrims visit throughout the year, and the shrine gets busy around the annual Urs. The village setting is peaceful and green.",
+    ],
+    highlights: [
+      "The domed tomb pavilion with its prayer flags",
+      "Shah Sultan Jame Mosque beside the shrine",
+      "A quiet village setting close to Netrokona town",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Netrokona",
+        detail: "Bus from Mohakhali, or a train from Kamalapur to Netrokona, about 4–5 hours, approx. ৳350–500.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Netrokona town",
+        detail: "Take a CNG or easy-bike to Madanpur, about 20–30 minutes, approx. ৳50–200.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – March, when village roads are dry.",
+    timeNeeded: "1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily; busiest on Thursday evenings and during the Urs.",
+    tips: [
+      "Remove your shoes before entering the shrine.",
+      "Dress modestly; women should cover their heads.",
+      "Ask before photographing pilgrims, and avoid prayer times at the mosque.",
+    ],
+    map: { lat: 24.8044, lng: 90.7524 },
+  },
+  {
+    slug: "lengura-kalmakanda",
+    name: "Lengura Hills & River, Kalmakanda",
+    localName: "লেংগুরা, কলমাকান্দা",
+    district: "Netrokona",
+    upazila: "Kalmakanda",
+    division: "Mymensingh",
+    categories: ["Hills", "River"],
+    difficulty: "Moderate",
+    summary: "Low green hills and a sandy river at the Meghalaya border, with a moving martyrs' graveyard.",
+    description: [
+      "Lengura is a border union in Kalmakanda upazila, in the far north of Netrokona, where the plains meet the forested Garo hills of Meghalaya. Rivers come down from the hills here, with wide sandy beds in the dry season.",
+      "The best-known stop is the graveyard of seven freedom fighters killed in 1971 (Saat Shahid Mazar), at the foot of a hill close to the border. From the small hills nearby you get views of the river winding below and the higher hills across the border.",
+      "It is a rural, little-developed area with Garo and other ethnic communities living around it. Roads are rough in places, so most people come for a day trip from Netrokona or Kalmakanda.",
+    ],
+    highlights: [
+      "River views from the low hills near the border",
+      "The graveyard of seven 1971 martyrs",
+      "The forested Meghalaya hills on the horizon",
+      "Garo villages along the way",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Netrokona",
+        detail: "Bus from Mohakhali, or a train from Kamalapur to Netrokona, about 4–5 hours, approx. ৳350–500.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Netrokona to Lengura",
+        detail: "CNG or bus to Kalmakanda, then a CNG or hired motorbike to Lengura, about 1.5–2.5 hours in total, approx. ৳300–800.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – March; the hills are greenest just after the monsoon.",
+    timeNeeded: "Half a day",
+    entryFee: "Free",
+    openingHours: "Open access; travel in daylight.",
+    tips: [
+      "Do not cross or approach the border fence — follow BGB instructions.",
+      "Carry water and snacks; shops are few.",
+      "Be respectful at the martyrs' graves and ask before photographing local people.",
+    ],
+    map: { lat: 25.1444, lng: 90.7873 },
+  },
+
+  /* ------------------------------- Sherpur ------------------------------- */
+  {
+    slug: "ghagra-khan-bari-mosque",
+    name: "Ghagra Khan Bari Mosque",
+    localName: "ঘাগড়া খান বাড়ি জামে মসজিদ",
+    district: "Sherpur",
+    upazila: "Jhenaigati",
+    division: "Mymensingh",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "A small, weathered single-domed Mughal mosque from the early 1600s, still used for prayer.",
+    description: [
+      "Ghagra Khan Bari Mosque stands in Ghagra Laskar village in Jhenaigati upazila, on the road between Sherpur town and the Garo hills. An inscription at the door gives a date of 1028 AH (about 1618–19 CE), making it one of the oldest buildings in the district.",
+      "It is a compact Mughal-style mosque with a single large dome, small corner turrets and thick walls of brick and lime. The plaster panels and the mihrab inside carry faded floral decoration.",
+      "The mosque is protected by the Department of Archaeology and is still used for daily prayers. It is small, so a visit is short — but it is easy to combine with Gajni or Madhutila on the way to the hills.",
+    ],
+    highlights: [
+      "The single great dome and corner turrets",
+      "Faded floral plasterwork around the door and mihrab",
+      "An easy stop on the way to the Garo hills",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Sherpur",
+        detail: "Bus from Mohakhali to Sherpur, about 4–5 hours, approx. ৳400–550.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Sherpur town",
+        detail: "Take a CNG or easy-bike towards Jhenaigati and ask for Ghagra Khan Bari, about 20–30 minutes, approx. ৳50–200.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "November – March.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid the five daily prayer times.",
+    tips: [
+      "Remove your shoes before stepping onto the mosque platform.",
+      "Dress modestly; women should ask locally before going inside.",
+      "It is an active mosque — keep quiet and ask before photographing worshippers.",
+    ],
+    map: { lat: 25.1127, lng: 90.0371 },
+  },
+  {
+    slug: "mai-saheba-mosque",
+    name: "Mai Saheba Jame Mosque",
+    localName: "মাইসাহেবা জামে মসজিদ",
+    district: "Sherpur",
+    upazila: "Sherpur Sadar",
+    division: "Mymensingh",
+    categories: ["Religious"],
+    difficulty: "Easy",
+    summary: "Sherpur town's landmark mosque, with tall white minarets and a long local history.",
+    description: [
+      "Mai Saheba Jame Mosque stands in the heart of Sherpur town, just south of Sherpur Government College. Its roots go back to the late 18th century, and it was formally founded in 1861.",
+      "Local accounts say a Muktagachha zamindar gave land for the mosque and the preacher Mir Abdul Baki oversaw it. After his death his wife, Salemun Nesa Bibi, looked after the mosque. People called her 'Mai Saheba' out of respect, and the mosque took her name.",
+      "The mosque has been rebuilt and enlarged over the years. Today it is a large white building with two tall minarets, domes and an arched gateway, and thousands gather here for Friday prayers.",
+    ],
+    highlights: [
+      "Two tall white minarets above the town centre",
+      "The arched gateway and domed prayer hall",
+      "Friday prayers, when the mosque and street fill up",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Sherpur",
+        detail: "Bus from Mohakhali to Sherpur, about 4–5 hours, approx. ৳400–550.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "In Sherpur town",
+        detail: "Take a rickshaw or easy-bike from the bus stand, about 5–10 minutes, approx. ৳20–50.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "All year; November – February is most comfortable.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid the five daily prayer times, especially Friday midday.",
+    tips: [
+      "Remove your shoes before entering the prayer hall.",
+      "Dress modestly; women should ask locally about access to the prayer area.",
+      "Photograph the exterior freely, but ask before taking pictures inside.",
+    ],
+    map: { lat: 25.0202, lng: 90.0129 },
   },
 ];

@@ -377,6 +377,49 @@ export const SPOTS_H: Spot[] = [
     ],
     map: { lat: 24.4805, lng: 89.1468 },
   },
+  {
+    slug: "joykali-temple-natore",
+    name: "Sri Sri Joykali Temple, Natore",
+    localName: "শ্রীশ্রী জয়কালী মাতার মন্দির",
+    district: "Natore",
+    upazila: "Natore Sadar",
+    division: "Rajshahi",
+    categories: ["Religious"],
+    difficulty: "Easy",
+    summary: "A Kali temple about 300 years old in Natore's Lalbazar, rebuilt in recent years and busy at every puja.",
+    description: [
+      "The Joykali Temple stands in Lalbazar, in the middle of Natore town. It is believed to have been founded about 300 years ago, in the early 18th century, by Dayaram Roy — the powerful dewan of the Natore Raj and founder of the Dighapatia Raj family.",
+      "The old temple was rebuilt in recent years with a grant from the Government of India. Today it has a bright red-and-white front with richly carved doors and a wide covered courtyard where devotees gather.",
+      "It is one of the town's main Hindu shrines. On ordinary days it is calm; during Kali Puja, Durga Puja and other festivals it fills with worshippers, offerings, lamps and music.",
+    ],
+    highlights: [
+      "Carved doors and colourful front of the rebuilt temple",
+      "Evening aarti with bells and lamps",
+      "Kali Puja and Durga Puja celebrations",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Natore",
+        detail: "Intercity train toward Rajshahi or the north, stopping at Natore (about 4–5 hours, approx. ৳350–1,000), or bus (about 4–5 hours, approx. ৳500–1,000).",
+        mode: "train",
+      },
+      {
+        title: "From Natore town",
+        detail: "Rickshaw or easy-bike to Lalbazar, about 5–10 minutes from the town centre, approx. ৳20–40.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "All year; October – November for Durga Puja and Kali Puja.",
+    timeNeeded: "30 minutes – 1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily from morning to evening; festival nights run late.",
+    tips: [
+      "Remove your shoes before entering the temple area.",
+      "Dress modestly and ask before photographing worshippers or the inner shrine.",
+      "Easy to combine with Natore Rajbari in the same town.",
+    ],
+    map: { lat: 24.4120, lng: 88.9870 },
+  },
 
   /* ------------------------------- Naogaon ------------------------------- */
   {
@@ -597,6 +640,50 @@ export const SPOTS_H: Spot[] = [
     ],
     map: { lat: 24.8156, lng: 88.1381 },
   },
+  {
+    slug: "tahkhana-complex",
+    name: "Tahkhana Complex",
+    localName: "তাহখানা",
+    district: "Chapai Nawabganj",
+    upazila: "Shibganj",
+    division: "Rajshahi",
+    categories: ["Heritage", "Religious"],
+    difficulty: "Easy",
+    summary: "A 17th-century Mughal retreat beside a big pond in old Gaur, with a three-domed mosque and a saint's tomb.",
+    description: [
+      "Tahkhana ('cool building' in Persian) is a Mughal-era complex in the Firozpur area of old Gaur. By tradition it was built in the mid-17th century by Shah Shuja, the Mughal governor of Bengal, for his spiritual guide, the saint Shah Niamatullah Wali.",
+      "Three main buildings survive: the Tahkhana itself, a brick building on the west bank of a large pond that is thought to have been a retreat or rest house; a three-domed mosque with slender corner towers; and the domed tomb of Shah Niamatullah, considered the first Mughal tomb in Bangladesh.",
+      "The tomb and mosque are still visited by devotees. The quiet complex, the wide pond with its stone steps and the old trees make it a pleasant stop on a tour of the Gaur ruins.",
+    ],
+    highlights: [
+      "Three-domed Shah Niamatullah Mosque",
+      "Tomb of the saint Shah Niamatullah Wali",
+      "Mughal Tahkhana building beside the large pond",
+      "Easy to combine with Choto Sona Mosque",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka",
+        detail: "Direct bus to Chapai Nawabganj (about 6–7 hours, approx. ৳700–1,200), or train to Rajshahi and on by bus.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Chapai Nawabganj town",
+        detail: "Bus toward Sona Masjid / Shibganj (about 35 km), about 1 hour, approx. ৳60–100, then a short easy-bike ride; a reserved CNG is approx. ৳700–1,000.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March; June for mango season.",
+    timeNeeded: "1 hour",
+    entryFee: "Free",
+    openingHours: "Daylight hours; avoid prayer times at the mosque.",
+    tips: [
+      "Dress modestly and take off your shoes at the mosque and the tomb.",
+      "Women should bring a scarf; ask before photographing people at prayer.",
+      "This is a border area — carry ID.",
+    ],
+    map: { lat: 24.8440, lng: 88.1410 },
+  },
 
   /* ------------------------------- Joypurhat ----------------------------- */
   {
@@ -641,6 +728,49 @@ export const SPOTS_H: Spot[] = [
       "Go in a group, and return before dark.",
     ],
     map: { lat: 25.2056, lng: 89.0031 },
+  },
+  {
+    slug: "gopinathpur-temple",
+    name: "Gopinathpur Temple",
+    localName: "গোপীনাথপুর মন্দির",
+    district: "Joypurhat",
+    upazila: "Akkelpur",
+    division: "Rajshahi",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "An old Hindu temple of Gopinath (Krishna) in Akkelpur, famous for its colourful gate and the big Dol Purnima fair.",
+    description: [
+      "Gopinathpur Temple is a Hindu temple dedicated to Gopinath, a form of Krishna, in a village a few kilometres east of Akkelpur town. By local tradition its origins go back about 500 years, to the time of the Bengal sultans; the present buildings were largely rebuilt in the early 20th century after earthquake damage.",
+      "You enter through a brightly painted gateway topped with figures of gods, lions and winged angels. Inside the courtyard stands the main shrine with a tall, stepped tower, along with smaller shrines and shady trees.",
+      "It is best known for the Dol Purnima (Holi) fair held every spring, one of the oldest and largest rural fairs in the region, which draws devotees and traders from far away and once had a famous horse market.",
+    ],
+    highlights: [
+      "Colourful sculpted entrance gate",
+      "Main shrine with a tall stepped tower",
+      "Dol Purnima fair in spring",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Akkelpur",
+        detail: "Intercity train toward the north-west stopping at Akkelpur or Joypurhat (about 5–7 hours, approx. ৳450–1,100), or bus to Joypurhat (about 5–6 hours, approx. ৳600–1,000).",
+        mode: "train",
+      },
+      {
+        title: "From Akkelpur town",
+        detail: "Easy-bike or CNG east to Gopinathpur (about 6–7 km), about 20–30 minutes, approx. ৳150–300 reserved.",
+        mode: "easy-bike",
+      },
+    ],
+    bestTime: "October – March; February – March for the Dol Purnima fair.",
+    timeNeeded: "1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily from morning to evening.",
+    tips: [
+      "Remove your shoes before entering the shrine area.",
+      "Dress modestly and ask before photographing worshippers or the inner shrine.",
+      "The fair days are very crowded — keep valuables safe.",
+    ],
+    map: { lat: 24.9640, lng: 89.0950 },
   },
 
   /* --------------------------------- Pabna ------------------------------- */
@@ -729,6 +859,92 @@ export const SPOTS_H: Spot[] = [
       "Ask permission before going into the grounds.",
     ],
     map: { lat: 24.0078, lng: 89.2406 },
+  },
+  {
+    slug: "jor-bangla-temple-pabna",
+    name: "Jor Bangla Temple (Gopinath Temple)",
+    localName: "জোড় বাংলা মন্দির",
+    district: "Pabna",
+    upazila: "Pabna Sadar",
+    division: "Rajshahi",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "A rare twin-roofed brick temple covered in terracotta, tucked into a quiet neighbourhood of Pabna town.",
+    description: [
+      "The Jor Bangla Temple, also called the Gopinath Temple, stands in the south-east of Pabna town. It has no inscription, but local tradition says it was built in the mid-18th century by Brajamohan Krori, a revenue officer of the Nawab of Murshidabad.",
+      "Its shape is unusual: two curved hut-style roofs (do-chala) are joined side by side, the 'jor bangla' style of Bengali temple building. The front has three arched openings, and the walls are decorated with fine terracotta panels of flowers, figures and patterns.",
+      "It is a protected monument and one of the best surviving temples of its kind in Bangladesh. The temple stands on a raised plinth in a small green compound, and a visit takes only a short time.",
+    ],
+    highlights: [
+      "Twin curved roofs in the jor bangla style",
+      "Terracotta panels on the front and pillars",
+      "Three-arched entrance on a raised plinth",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Pabna",
+        detail: "Direct bus to Pabna, about 4–5 hours, approx. ৳500–900.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "Within Pabna town",
+        detail: "Rickshaw or easy-bike to the Jor Bangla Temple, about 10–15 minutes from the town centre, approx. ৳30–60.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Daylight hours; the compound gate may be locked — ask the caretaker.",
+    tips: [
+      "Take off your shoes if you step onto the temple platform.",
+      "Don't touch or lean on the terracotta panels — they are fragile.",
+      "Combine with Tarash Bhaban in the same town.",
+    ],
+    map: { lat: 24.0030, lng: 89.2450 },
+  },
+  {
+    slug: "chatmohar-shahi-mosque",
+    name: "Chatmohar Shahi Mosque",
+    localName: "চাটমোহর শাহী মসজিদ",
+    district: "Pabna",
+    upazila: "Chatmohar",
+    division: "Rajshahi",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "A three-domed brick mosque from Emperor Akbar's time, still used for daily prayers in Chatmohar town.",
+    description: [
+      "Chatmohar Shahi Mosque was built around 1581–82, during the reign of the Mughal emperor Akbar, under Masum Khan Kabuli — a rebel commander who for a time made Chatmohar his base.",
+      "It is a solid rectangular brick building with three round domes in a row, thick walls and arched doorways, its plain walls framed by shallow rectangular panels. The Department of Archaeology restored it from ruin in the 1980s and it is now a protected monument.",
+      "The mosque is still in daily use, and its quiet courtyard sits in the middle of Chatmohar town, a short trip from Pabna.",
+    ],
+    highlights: [
+      "Three domes of a 16th-century Mughal-era mosque",
+      "Thick brick walls and arched doorways",
+      "Still an active place of prayer",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Chatmohar",
+        detail: "Bus to Chatmohar or Pabna (about 4–5 hours, approx. ৳500–900), or train to Chatmohar station on the Ishwardi line.",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Pabna town",
+        detail: "Bus or CNG to Chatmohar (about 35 km), about 1 hour, approx. ৳60–100 by bus or ৳600–900 for a reserved CNG.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid visiting during prayer times, especially Friday midday.",
+    tips: [
+      "Dress modestly; women should cover their hair and may be asked to stay outside the prayer hall.",
+      "Take off your shoes before entering the prayer area.",
+      "Ask before photographing people praying.",
+    ],
+    map: { lat: 24.2330, lng: 89.2830 },
   },
 
   /* ------------------------------- Sirajganj ----------------------------- */
@@ -860,5 +1076,48 @@ export const SPOTS_H: Spot[] = [
       "Combine with Hatikumrul temple, about 20 minutes west.",
     ],
     map: { lat: 24.3942, lng: 89.7319 },
+  },
+  {
+    slug: "shahzadpur-mosque",
+    name: "Shahzadpur Mosque & Makhdum Shah Dargah",
+    localName: "শাহজাদপুর মসজিদ ও মখদুম শাহের দরগাহ",
+    district: "Sirajganj",
+    upazila: "Shahzadpur",
+    division: "Rajshahi",
+    categories: ["Religious", "Heritage"],
+    difficulty: "Easy",
+    summary: "An old multi-domed mosque and the shrine of the saint Makhdum Shah Daula on the Hurasagar river in Shahzadpur.",
+    description: [
+      "The Shahzadpur Mosque stands at Dargahpara on the bank of the Hurasagar river, at the edge of Shahzadpur town. It has no inscription; it is believed to date from around the 15th century and is linked by tradition to the Sufi saint Makhdum Shah Daula, whose tomb lies in the same compound.",
+      "Inside, the prayer hall rests on eight black basalt pillars, and five arched doorways on the front face the prayer niches in the west wall. The outside has been plastered and brightly painted in recent times, so it looks newer than it is.",
+      "The dargah is an important place of pilgrimage in the region and is busy on Thursdays and at the annual urs. It is a short ride from Rabindra Kachharibari, so the two make an easy half-day in Shahzadpur.",
+    ],
+    highlights: [
+      "Old mosque with black basalt pillars inside",
+      "Tomb of the saint Makhdum Shah Daula",
+      "Setting on the Hurasagar river",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Shahzadpur",
+        detail: "Bus toward Sirajganj, Pabna or Bera via the Jamuna Bridge, getting off at Shahzadpur (about 3.5–5 hours, approx. ৳400–800).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Shahzadpur town",
+        detail: "Rickshaw or easy-bike to Dargahpara, about 5–10 minutes, approx. ৳20–40.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes – 1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily; avoid prayer times, especially Friday midday.",
+    tips: [
+      "Dress modestly; women should cover their hair and may be asked to stay outside the prayer hall.",
+      "Take off your shoes before entering the mosque or the shrine.",
+      "Ask before photographing worshippers, and don't give money to people who pressure you at the shrine.",
+    ],
+    map: { lat: 24.1735, lng: 89.5960 },
   },
 ];

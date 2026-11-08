@@ -411,6 +411,49 @@ export const SPOTS_I: Spot[] = [
     ],
     map: { lat: 26.4200, lng: 88.5850 },
   },
+  {
+    slug: "rocks-museum-panchagarh",
+    name: "Rocks Museum, Panchagarh",
+    localName: "রকস মিউজিয়াম, পঞ্চগড়",
+    district: "Panchagarh",
+    upazila: "Panchagarh Sadar",
+    division: "Rangpur",
+    categories: ["Heritage", "City"],
+    difficulty: "Easy",
+    summary: "Bangladesh's only museum devoted to rocks, with stones, fossil wood and old artefacts collected around Panchagarh.",
+    description: [
+      "The Rocks Museum is on the campus of Panchagarh Government Women's College in Panchagarh town. It was started in 1997 by the college's then principal, Dr. Nazmul Haque, and is often described as the first and only rock museum in the country.",
+      "The collection includes large stones and boulders of many kinds, petrified (fossil) wood, and old objects found in the area such as pottery, inscriptions and boats. Many of the biggest pieces sit outdoors in front of the two-storey museum building, with more inside.",
+      "It is a small, low-key museum, but it explains why stone collection from the rivers is such a big part of life in Panchagarh, and it is an easy stop on the way to Tetulia.",
+    ],
+    highlights: [
+      "Large rocks and boulders displayed outdoors",
+      "Fossil wood and local stones",
+      "Old pottery and artefacts from the region",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Panchagarh",
+        detail: "Bus to Panchagarh (about 10–12 hours, approx. ৳900–1,600), or the intercity train Panchagarh Express / Ekota Express (about 10–12 hours, approx. ৳600–1,800).",
+        mode: "train",
+      },
+      {
+        title: "In Panchagarh town",
+        detail: "Rickshaw or easy-bike to Panchagarh Government Women's College, about 10 minutes from the bus stand, approx. ৳20–50.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "1 hour",
+    entryFee: "Free or a small fee (approx.)",
+    openingHours: "Daytime on college working days (approx. 10:00–16:00); may be closed on holidays.",
+    tips: [
+      "It is inside a women's college — dress modestly and follow the guards' directions.",
+      "Call or ask locally before going on Fridays and public holidays.",
+      "Combine with a trip to Tetulia and Banglabandha further north.",
+    ],
+    map: { lat: 26.3380, lng: 88.5560 },
+  },
 
   /* ------------------------------- Thakurgaon ---------------------------- */
   {
@@ -719,6 +762,49 @@ export const SPOTS_I: Spot[] = [
     ],
     map: { lat: 25.7790, lng: 88.8970 },
   },
+  {
+    slug: "saidpur-railway-workshop",
+    name: "Saidpur Railway Workshop",
+    localName: "সৈয়দপুর রেলওয়ে কারখানা",
+    district: "Nilphamari",
+    upazila: "Saidpur",
+    division: "Rangpur",
+    categories: ["Heritage", "City"],
+    difficulty: "Easy",
+    summary: "The country's largest railway workshop, founded in 1870, with old red-brick sheds and preserved steam locomotives.",
+    description: [
+      "The Saidpur Railway Workshop was set up in 1870 as a repair shed for metre-gauge steam locomotives, on more than 100 acres beside Saidpur station. It grew into the largest railway workshop in Bangladesh, and the town of Saidpur largely grew up around it.",
+      "Inside the walls are long red-brick workshop halls from the colonial period, rail yards and a small collection of preserved locomotives and parts, including old steam engines. Carriages and wagons are still repaired here today.",
+      "It is a working industrial site, so entry needs permission from the workshop authorities, and the small museum is not always open to the public. Even from outside, the old buildings and engines on display give a good sense of Saidpur's railway history.",
+    ],
+    highlights: [
+      "Colonial-era red-brick workshop halls",
+      "Preserved steam locomotives",
+      "Saidpur's railway-town atmosphere",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Saidpur",
+        detail: "Flight from Dhaka to Saidpur (about 1 hour, approx. ৳4,000–8,000), intercity train Nilsagar Express to Saidpur (about 9–10 hours, approx. ৳600–1,800), or bus (about 8–9 hours, approx. ৳800–1,500).",
+        mode: "train",
+      },
+      {
+        title: "In Saidpur town",
+        detail: "The workshop is next to Saidpur railway station; walk or take a rickshaw from the town centre, about 5–10 minutes, approx. ৳20–40.",
+        mode: "rickshaw",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "1–2 hours",
+    entryFee: "Free (permission required)",
+    openingHours: "Working days, daytime, with permission from the workshop office (approx.).",
+    tips: [
+      "Ask at the workshop office for permission before entering; carry ID.",
+      "Do not photograph restricted areas or machinery without permission.",
+      "Wear closed shoes and keep clear of moving rail vehicles.",
+    ],
+    map: { lat: 25.7790, lng: 88.8950 },
+  },
 
   /* ------------------------------ Lalmonirhat ---------------------------- */
   {
@@ -894,6 +980,50 @@ export const SPOTS_I: Spot[] = [
     ],
     map: { lat: 26.4130, lng: 88.9800 },
   },
+  {
+    slug: "nidaria-mosque",
+    name: "Nidaria Mosque",
+    localName: "নিদারিয়া মসজিদ",
+    district: "Lalmonirhat",
+    upazila: "Lalmonirhat Sadar",
+    division: "Rangpur",
+    categories: ["Heritage", "Religious"],
+    difficulty: "Easy",
+    summary: "A small three-domed Mughal-era mosque in a village south of Lalmonirhat, still used for daily prayers.",
+    description: [
+      "Nidaria Mosque stands in Kishamat village in Panchagram union, a short way south of the Rangpur–Kurigram highway. A Persian inscription is said to date it to 1176 AH (around 1762–63), and local tradition links it to a Mughal official named Mansur Khan, whose grave is believed to lie beside it.",
+      "It is a single-room mosque with three domes in a row and slender towers at the four corners — the classic late-Mughal village style of north Bengal. The Department of Archaeology lists it as a protected monument.",
+      "The name is popularly explained by a story about the builder's beard, though there is little written evidence for it. It is a quiet, active village mosque rather than a tourist site, and an easy stop on the way between Lalmonirhat and Rangpur or Kurigram.",
+    ],
+    highlights: [
+      "Three domes in a row with corner towers",
+      "Old Persian inscription over the entrance",
+      "The grave believed to be the builder's, beside the mosque",
+      "Peaceful village setting",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Lalmonirhat",
+        detail: "Bus to Lalmonirhat (about 9–10 hours, approx. ৳800–1,500), or intercity train Lalmoni Express (about 10–12 hours, approx. ৳550–1,600).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Lalmonirhat town",
+        detail: "CNG or auto-rickshaw towards Barabari on the Rangpur–Kurigram road, then about 2 km south to the mosque; about 30–40 minutes in total, approx. ৳300–500 reserved.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes – 1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily; best visited outside the five daily prayer times.",
+    tips: [
+      "Dress modestly — long trousers or a long skirt, and a scarf for women.",
+      "Remove your shoes before stepping inside, and avoid visiting during prayers, especially Friday midday.",
+      "Ask before photographing worshippers; some parts of the old structure are fragile.",
+    ],
+    map: { lat: 25.8000, lng: 89.4300 },
+  },
 
   /* -------------------------------- Kurigram ----------------------------- */
   {
@@ -986,6 +1116,93 @@ export const SPOTS_I: Spot[] = [
       "Carry a light jacket in winter evenings; it gets cold and foggy by the water.",
     ],
     map: { lat: 25.8350, lng: 89.6280 },
+  },
+  {
+    slug: "chandamari-mosque",
+    name: "Chandamari Mosque",
+    localName: "চান্দামারী মসজিদ",
+    district: "Kurigram",
+    upazila: "Rajarhat",
+    division: "Rangpur",
+    categories: ["Heritage", "Religious"],
+    difficulty: "Easy",
+    summary: "An old three-domed mosque in a Rajarhat village, built in a blend of Sultanate and Mughal styles.",
+    description: [
+      "Chandamari Mosque, officially the Chandamari Mondalpara Jame Mosque, stands in Chandamari village about 4 km south-west of Rajarhat upazila headquarters. There is no inscription, and nobody knows exactly when or by whom it was built; from its style it is usually dated to the Mughal period, roughly the late 16th or 17th century.",
+      "The small brick prayer hall carries three domes, with towers at the corners, and mixes features of Sultanate and Mughal architecture. Today it is whitewashed, with small domed turrets along the roof and a tall minaret beside it added in later times.",
+      "It is still an active mosque. People from the village and from further away come to pray here, and it is one of the best-known historic buildings in Kurigram district.",
+    ],
+    highlights: [
+      "Whitewashed old three-domed mosque",
+      "Mix of Sultanate and Mughal details",
+      "Quiet village surroundings in Rajarhat",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Kurigram",
+        detail: "Bus to Kurigram (about 9–10 hours, approx. ৳800–1,500), or the intercity train Kurigram Express (about 10–12 hours, approx. ৳550–1,600).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Kurigram town",
+        detail: "Bus or CNG to Rajarhat (about 30–40 minutes, approx. ৳30–50 by bus), then an auto-rickshaw or easy-bike to Chandamari village, about 15 minutes, approx. ৳50–100.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes – 1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily; best visited outside the five daily prayer times.",
+    tips: [
+      "Dress modestly and remove your shoes before entering the prayer hall.",
+      "Avoid prayer times, especially Friday midday; women may be asked to stay in the courtyard.",
+      "Ask locals for 'Chandamari Masjid' — signs are few.",
+    ],
+    map: { lat: 25.7765, lng: 89.5354 },
+  },
+  {
+    slug: "ulipur-munshibari",
+    name: "Ulipur Munshibari",
+    localName: "উলিপুর মুন্সিবাড়ি",
+    district: "Kurigram",
+    upazila: "Ulipur",
+    division: "Rangpur",
+    categories: ["Heritage"],
+    difficulty: "Easy",
+    summary: "A grand but crumbling old zamindar mansion with ornate pillars and arched verandas, just outside Ulipur town.",
+    description: [
+      "Munshibari is an old zamindar estate in Dharanibari union, about 2 km north of Ulipur town. Local accounts trace the family's rise to the mid-18th century, when an ancestor is said to have worked as a 'munshi' (clerk) for the Nawabs of Bengal — which is how the house got its name.",
+      "The main building has ornate pillars topped with urn-like finials, arched doorways, long vaulted verandas and decorated plasterwork, now streaked with moss and creepers. Ownership changed several times over the years, and the house is now registered as a protected monument under the Department of Archaeology.",
+      "Parts of it are in poor repair, but it is still the most impressive historic building in Kurigram, and the grounds are a popular afternoon outing for local families.",
+    ],
+    highlights: [
+      "Ornate pillars along the old facade",
+      "Long arched verandas inside",
+      "Decorated plasterwork and old wooden doors",
+      "Moss and creepers on the old walls",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Kurigram",
+        detail: "Bus to Kurigram (about 9–10 hours, approx. ৳800–1,500), or the intercity train Kurigram Express (about 10–12 hours, approx. ৳550–1,600).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Kurigram town",
+        detail: "Bus or CNG to Ulipur, about 30–40 minutes (approx. ৳30–50 by bus), then a rickshaw or easy-bike to Munshibari, about 10 minutes, approx. ৳30–60.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "1 hour",
+    entryFee: "Free",
+    openingHours: "Daylight hours.",
+    tips: [
+      "Some parts of the building are fragile — do not go into damaged rooms or climb the walls.",
+      "Local people live around the estate; ask before photographing them.",
+      "Combine with Chilmari river port, a short ride further south.",
+    ],
+    map: { lat: 25.6800, lng: 89.6300 },
   },
 
   /* -------------------------------- Gaibandha ---------------------------- */
@@ -1124,5 +1341,48 @@ export const SPOTS_I: Spot[] = [
       "Combine with Chilmari river port on the Kurigram side.",
     ],
     map: { lat: 25.5400, lng: 89.6500 },
+  },
+  {
+    slug: "jamalpur-shahi-mosque-gaibandha",
+    name: "Jamalpur Shahi Mosque",
+    localName: "জামালপুর শাহী মসজিদ",
+    district: "Gaibandha",
+    upazila: "Sadullapur",
+    division: "Rangpur",
+    categories: ["Heritage", "Religious"],
+    difficulty: "Easy",
+    summary: "An old domed mosque in Bara Jamalpur village, rediscovered under a fallen banyan tree and known locally as the 'Gayebi' mosque.",
+    description: [
+      "Jamalpur Shahi Mosque stands in Bara Jamalpur village, about 6 km west of Sadullapur upazila headquarters. Local tradition links it to a saint named Shah Jamal, after whom the village is said to be named; historians who have studied its style suggest it probably dates from around the early 18th century.",
+      "According to local accounts the mosque was lost under earth and forest for many years, until a storm brought down a huge banyan tree and villagers found the building beneath it. Since then people have called it the Gayebi (hidden) mosque.",
+      "It is an active village mosque with a large pond beside it, and visitors come from around Gaibandha, especially on Fridays.",
+    ],
+    highlights: [
+      "Three-domed old mosque with a story of rediscovery",
+      "Large pond beside the mosque",
+      "Rural setting in Sadullapur",
+    ],
+    howToReach: [
+      {
+        title: "From Dhaka to Gaibandha",
+        detail: "Bus to Gaibandha (about 7–8 hours, approx. ৳700–1,300), or the intercity train Rangpur Express / Lalmoni Express to Gaibandha (about 8–9 hours, approx. ৳450–1,400).",
+        mode: "non-ac-bus",
+      },
+      {
+        title: "From Gaibandha town",
+        detail: "Bus or CNG to Sadullapur (about 30 minutes, approx. ৳30–50), then an auto-rickshaw or easy-bike to Bara Jamalpur, about 20 minutes, approx. ৳50–100.",
+        mode: "cng",
+      },
+    ],
+    bestTime: "October – March.",
+    timeNeeded: "30 minutes – 1 hour",
+    entryFee: "Free",
+    openingHours: "Open daily; best visited outside the five daily prayer times.",
+    tips: [
+      "Dress modestly and remove your shoes before entering.",
+      "Friday midday prayers are crowded — visit in the morning or afternoon instead.",
+      "Women should carry a scarf; ask before photographing people at prayer.",
+    ],
+    map: { lat: 25.3830, lng: 89.4100 },
   },
 ];
