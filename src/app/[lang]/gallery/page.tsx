@@ -4,16 +4,18 @@ import { PhotoGallery } from "@/components/gallery/PhotoGallery";
 import { PageHero } from "@/components/ui/PageHero";
 import { GALLERY_CATEGORIES, getGalleryItems } from "@/data/gallery";
 import { pageMetadata } from "@/lib/seo";
+import { getLocale, getT } from "@/i18n/server";
 
-export const metadata: Metadata = pageMetadata({
-  title: "Bangladesh Photo Gallery: Beaches, Hills, Forests, Food & Heritage",
-  description:
-    "See Bangladesh before you go: Cox's Bazar sunsets, clouds over Sajek, Sundarbans wildlife, Ratargul swamp forest, Mughal forts, tea gardens, street food and colourful rickshaw art.",
-  path: "/gallery",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getT();
+  return pageMetadata({ title: t.meta.gallery.title, description: t.meta.gallery.description, path: "/gallery", locale });
+}
 
-export default function GalleryPage() {
-  const items = getGalleryItems();
+export default async function GalleryPage() {
+  const locale = await getLocale();
+  const t = await getT();
+  const items = getGalleryItems(locale);
   const places = new Set(items.map((i) => i.place)).size;
   const heroPhoto = items.find((i) => i.photo.src.includes("ratargul-boat"))?.photo ?? items[0].photo;
 
@@ -21,19 +23,19 @@ export default function GalleryPage() {
     <>
       <PageHero
         photo={heroPhoto}
-        eyebrow="Gallery"
-        title="Bangladesh"
-        accent="in pictures."
-        text="Golden beaches, cloud-wrapped hills, flooded forests, Mughal palaces and street food. Tap any photo to see it full screen, then jump straight to the travel guide."
+        eyebrow={t.gallery.eyebrow}
+        title={t.gallery.title}
+        accent={t.gallery.titleAccent}
+        text={t.gallery.text}
         size="lg"
       >
         <dl className="flex gap-10">
           <div>
-            <dt className="text-xs font-semibold uppercase tracking-wider text-white/60">Photos</dt>
+            <dt className="text-xs font-semibold uppercase tracking-wider text-white/60">{t.gallery.photos}</dt>
             <dd className="font-display text-5xl font-semibold text-white">{items.length}</dd>
           </div>
           <div>
-            <dt className="text-xs font-semibold uppercase tracking-wider text-white/60">Places &amp; dishes</dt>
+            <dt className="text-xs font-semibold uppercase tracking-wider text-white/60">{t.gallery.placesDishes}</dt>
             <dd className="font-display text-5xl font-semibold text-white">{places}</dd>
           </div>
         </dl>
@@ -42,7 +44,7 @@ export default function GalleryPage() {
       <div className="mx-auto max-w-7xl px-4 pb-14 sm:px-6 lg:px-8">
         <PhotoGallery items={items} categories={GALLERY_CATEGORIES} />
         <p className="mt-12 text-center text-sm text-muted">
-          Photos from Wikimedia Commons under Creative Commons licences. Open any photo to see who took it.
+          {t.gallery.footer}
         </p>
       </div>
     </>

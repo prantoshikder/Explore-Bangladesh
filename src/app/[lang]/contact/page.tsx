@@ -1,6 +1,6 @@
 /** /contact — questions, corrections and suggestions. */
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { Suspense } from "react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { PageHero } from "@/components/ui/PageHero";

@@ -5,7 +5,7 @@
  * one destination, with a live itemised total. Uses the same maths as the full
  * calculator (estimateTripCost), so numbers always match /tools/cost-calculator.
  */
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { useState } from "react";
 import type { BudgetTier } from "@/types/destination";
 import { estimateTripCost } from "@/components/tools/cost";

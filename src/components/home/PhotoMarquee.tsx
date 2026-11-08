@@ -4,7 +4,7 @@
  * Each photo links to its spot / guide when available.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { GalleryItem } from "@/data/gallery";
 import { getT } from "@/i18n/server";
 import type { Dictionary } from "@/i18n/dictionaries";

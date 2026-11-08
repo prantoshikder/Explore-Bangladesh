@@ -1,18 +1,19 @@
 /**
- * Root layout. Sets <html lang>, fonts, site-wide SEO defaults, structured
- * data and the I18nProvider that client components read UI text from.
+ * Root layout (one per language: /… = English, /bn/… = Bangla).
+ * Sets <html lang>, fonts, site-wide SEO defaults, structured data and the
+ * I18nProvider that client components use for translations.
  */
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { ScrollHelpers } from "@/components/layout/ScrollHelpers";
 import { I18nProvider } from "@/i18n/client";
-import { LOCALE_META, localizePath } from "@/i18n/config";
+import { LOCALES, LOCALE_META, localizePath } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { getLocale } from "@/i18n/server";
 import { SITE, absoluteUrl, jsonLd } from "@/lib/site";
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Hind_Siliguri, Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 /* Display serif for headings, friendly geometric sans for body copy. */
 const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
@@ -27,8 +28,12 @@ const hind = Hind_Siliguri({
   weight: ["400", "500", "600", "700"],
 });
 
+export function generateStaticParams() {
+  return LOCALES.map((lang) => ({ lang }));
+}
+
 /**
- * Site-wide SEO defaults. Pages override title/description/canonical
+ * Site-wide SEO defaults per language. Pages override title/description/canonical
  * via pageMetadata(). Note: a page that sets `openGraph` replaces this object.
  */
 export async function generateMetadata(): Promise<Metadata> {
@@ -41,11 +46,15 @@ export async function generateMetadata(): Promise<Metadata> {
     applicationName: SITE.name,
     keywords: [...SITE.keywords],
     category: "travel",
-    alternates: { canonical: "/" },
+    alternates: {
+      canonical: localizePath(locale, "/"),
+      languages: { en: "/", bn: "/bn", "x-default": "/" },
+    },
     openGraph: {
       type: "website",
       siteName: SITE.name,
       locale: LOCALE_META[locale].ogLocale,
+      alternateLocale: LOCALES.filter((l) => l !== locale).map((l) => LOCALE_META[l].ogLocale),
       url: localizePath(locale, "/"),
       title: t.meta.siteTitle,
       description: t.meta.siteDescription,
@@ -76,7 +85,7 @@ export const viewport: Viewport = {
   themeColor: SITE.themeColor,
 };
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   const locale = await getLocale();
   const t = getDictionary(locale);
 

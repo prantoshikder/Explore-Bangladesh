@@ -12,14 +12,15 @@
  *    Esc / click outside closes it).
  *  - The current page is highlighted.
  */
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { cn } from "@/lib/format";
 import { useSavedSpots } from "@/lib/saved-spots";
 import { useT } from "@/i18n/client";
-import { fmt } from "@/i18n/config";
+import { fmt, splitLocale } from "@/i18n/config";
+import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 
 /** Routes whose first section is a dark full-width photo the header can float over. */
 function hasPhotoHero(path: string) {
@@ -30,7 +31,8 @@ function hasPhotoHero(path: string) {
 
 export function Navbar() {
   const t = useT();
-  const pathname = usePathname() ?? "/";
+  // Compare paths without the /bn prefix so highlighting works in both languages
+  const pathname = splitLocale(usePathname() ?? "/").path;
   const overlay = hasPhotoHero(pathname);
 
   const MAIN_LINKS = [
@@ -102,7 +104,7 @@ export function Navbar() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 print:hidden">
         <nav
-          aria-label="Main"
+          aria-label={t.nav.mainAria}
           className={cn(
             "mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 rounded-full pr-2 pl-4 transition-all duration-300 sm:pl-5",
             glass
@@ -169,6 +171,9 @@ export function Navbar() {
 
           {/* ---- Right side ---- */}
           <div className="flex items-center gap-2">
+            <div className="hidden shrink-0 sm:block">
+              <LanguageSwitcher tone={glass ? "glass" : "light"} />
+            </div>
             {/* My Trip (saved places) */}
             <Link
               href="/my-trip"
@@ -189,7 +194,7 @@ export function Navbar() {
             <Link
               href="/destinations"
               className={cn(
-                "group hidden items-center gap-2 rounded-full py-2.5 pr-2.5 pl-5 text-sm font-semibold whitespace-nowrap shadow-sm transition sm:inline-flex",
+                "group hidden items-center gap-2 rounded-full py-2.5 pr-2.5 pl-5 text-sm font-semibold whitespace-nowrap whitespace-nowrap shadow-sm transition lg:inline-flex",
                 glass ? "bg-white text-brand-700 hover:bg-brand-50" : "bg-brand-600 text-white hover:bg-brand-700",
               )}
             >
@@ -250,6 +255,10 @@ export function Navbar() {
               </li>
             ))}
           </ul>
+          <div className="mt-3 flex items-center gap-3 rounded-2xl bg-sand p-2 pl-4">
+            <span className="flex-1 text-sm font-semibold text-ink/70">🌐 {t.nav.language}</span>
+            <LanguageSwitcher />
+          </div>
           <Link href="/destinations" onClick={() => setMobileOpen(false)} className="mt-2 block rounded-2xl bg-brand-600 py-3.5 text-center font-semibold text-white">
             {t.nav.planTrip} →
           </Link>

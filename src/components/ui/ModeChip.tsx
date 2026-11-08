@@ -4,7 +4,7 @@
  * Shows a transport mode with its emoji and a "What's this?" link into the
  * Transport Guide — the core of our "never assume local knowledge" rule.
  */
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { getGlossary } from "@/data/localized";
 import { useLocale, useT } from "@/i18n/client";
 import type { TransportMode } from "@/types/destination";

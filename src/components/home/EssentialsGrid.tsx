@@ -1,5 +1,5 @@
 /** Four "before you fly" cards on the homepage. */
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { getEssentials } from "@/data/localized";
 import { getLocale, getT } from "@/i18n/server";
 

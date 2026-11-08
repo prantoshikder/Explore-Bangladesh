@@ -9,6 +9,8 @@
  *   - Spot names, Bangla names, upazilas ("Jaflong", "জাফলং", "Sreemangal")
  *   - Categories ("waterfall", "beach", "temple")
  *   - Small typos (one or two wrong letters in longer words)
+ *   - On Bangla pages spot names are Bangla, so callers pass the English
+ *     names too (`altNames`, by slug) and "jaflong" still finds জাফলং.
  * ============================================================================
  */
 import type { Division } from "@/types/destination";
@@ -99,7 +101,10 @@ export interface SearchResult {
   spots: SpotCard[];
 }
 
-export function searchSpots(rawQuery: string, spots: SpotCard[], districts: District[]): SearchResult {
+/** Extra searchable names per spot slug (e.g. the English name + upazila on Bangla pages). */
+export type AltNames = Record<string, string[]>;
+
+export function searchSpots(rawQuery: string, spots: SpotCard[], districts: District[], altNames: AltNames = {}): SearchResult {
   const q = normalize(rawQuery);
   const empty: SearchResult = { query: rawQuery, districts: [], division: null, spots: [] };
   if (!q) return empty;
@@ -122,7 +127,7 @@ export function searchSpots(rawQuery: string, spots: SpotCard[], districts: Dist
   const nameMatches = (p: string) => (strict ? q.length >= 3 && normalize(p).includes(q) : phraseMatches(q, p));
   const matchedSpots = spots.filter((s) => {
     if (districtNames.has(s.district)) return false; // already listed under its district
-    if ([s.name, s.localName, s.upazila ?? "", s.slug.replace(/-/g, " ")].some(nameMatches)) return true;
+    if ([s.name, s.localName, s.upazila ?? "", s.slug.replace(/-/g, " "), ...(altNames[s.slug] ?? [])].some(nameMatches)) return true;
     if (strict) return false;
     return s.categories.some((c) => [c, ...(CATEGORY_WORDS[c] ?? [])].some((w) => keyMatches(q, normalize(w))));
   });
@@ -140,20 +145,23 @@ export function searchSpots(rawQuery: string, spots: SpotCard[], districts: Dist
   };
 }
 
-/** Autocomplete suggestions: districts first (with spot counts), then spots. */
-export function suggest(rawQuery: string, spots: SpotCard[], districts: District[], limit = 7) {
+export type Suggestion =
+  | { type: "district"; district: District; count: number }
+  | { type: "spot"; spot: SpotCard };
+
+/** Autocomplete suggestions: districts first (with spot counts), then spots. The UI words them in the page language. */
+export function suggest(rawQuery: string, spots: SpotCard[], districts: District[], altNames: AltNames = {}, limit = 7): Suggestion[] {
   const q = normalize(rawQuery);
   if (!q) return [];
-  const out: { type: "district" | "spot"; label: string; sub: string; value: string; href?: string; image?: string }[] = [];
+  const out: Suggestion[] = [];
   for (const d of districts) {
     if ([d.name, d.bn, ...(d.aliases ?? [])].some((k) => keyMatches(q, normalize(k)) || normalize(k).startsWith(q))) {
-      const n = spots.filter((s) => s.district === d.name).length;
-      out.push({ type: "district", label: d.name, sub: `${d.bn} · ${d.division} Division · ${n ? `${n} place${n > 1 ? "s" : ""}` : "no places yet"}`, value: d.name });
+      out.push({ type: "district", district: d, count: spots.filter((s) => s.district === d.name).length });
     }
   }
   for (const s of spots) {
-    if ([s.name, s.localName, s.upazila ?? ""].some((p) => phraseMatches(q, p) || normalize(p).startsWith(q))) {
-      out.push({ type: "spot", label: s.name, sub: `${s.localName} · ${s.district}`, value: s.name, href: `/spots/${s.slug}`, image: s.photo.src });
+    if ([s.name, s.localName, s.upazila ?? "", ...(altNames[s.slug] ?? [])].some((p) => phraseMatches(q, p) || normalize(p).startsWith(q))) {
+      out.push({ type: "spot", spot: s });
     }
   }
   return out.slice(0, limit);

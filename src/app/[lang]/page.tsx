@@ -11,7 +11,7 @@
  *  9. Final call to action
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { HeroSearch } from "@/components/home/HeroSearch";
 import { HeroCollage } from "@/components/home/HeroCollage";
 import { DestinationCarousel } from "@/components/home/DestinationCarousel";

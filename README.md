@@ -29,6 +29,7 @@ and every local word (CNG, Chander Gari, Launch…) explained in plain English.
 | ❤️ **My Trip** | Save places (no account), grouped by district, shareable link, printable |
 | 🚖 **Show to driver** | Full-screen Bangla place name to show CNG and rickshaw drivers |
 | 📸 **Photo gallery** | Grid with lightbox, infinite scroll and "Load more"; photo credits live here |
+| 🌐 **English ⇄ বাংলা** | Every page and all content in both languages, one-tap switcher |
 | 🔍 **SEO-ready** | Metadata, sitemap, robots, OG share images, JSON-LD (FAQ, breadcrumbs, places) |
 
 ---
@@ -87,7 +88,9 @@ npm run dev                  # http://localhost:3000
 
 ```
 src/
-├─ app/                      Pages, metadata, sitemap, robots, manifest, OG images
+├─ app/[lang]/               Pages (one tree serves /… English and /bn/… Bangla)
+├─ app/                      sitemap, robots, manifest, icons, globals.css
+├─ proxy.ts                  Language routing
 ├─ components/
 │  ├─ layout/                Navbar, Footer, ScrollHelpers
 │  ├─ home/                  Hero search, carousel, mini calculator, seasons…
@@ -104,7 +107,7 @@ src/
 │  ├─ phrases.ts             Phrasebook
 │  ├─ gallery.ts media.ts    Gallery list, food & transport photos
 │  └─ unsplash.ts/.json      Optional Unsplash photo overrides
-├─ i18n/dictionaries/en.ts   All interface text in one place
+├─ i18n/                    Languages: config, dictionaries (en + bn), helpers
 ├─ lib/                      SEO, site config, FAQ builder, search, formatting
 └─ types/                    Data contracts (destination.ts, spot.ts)
 ```
@@ -116,7 +119,7 @@ src/
 - **Never assume local knowledge.** Every journey step has a `mode` (e.g. `"cng"`), and the UI links it to `/transport-guide#cng` automatically.
 - **Prices are stored in BDT only.** USD is calculated from `BDT_PER_USD` in `src/data/essentials.ts`, so one number updates the whole site.
 - **Freshness is visible.** Each guide's `lastVerified` date is shown to travellers.
-- **Interface text lives in `src/i18n/dictionaries/en.ts`.** Change a label there instead of hunting through components.
+- **Interface text lives in the dictionaries** (`src/i18n/dictionaries/en.ts` + `bn.ts`). Change a label there instead of hunting through components.
 
 ---
 
@@ -166,7 +169,7 @@ Notes:
 
 | What | Where |
 | --- | --- |
-| Title, description, canonical, Open Graph, Twitter | `src/app/layout.tsx` + `pageMetadata()` in `src/lib/seo.ts` |
+| Title, description, canonical, Open Graph, Twitter | `src/app/[lang]/layout.tsx` + `pageMetadata()` in `src/lib/seo.ts` |
 | Sitemap, robots, web manifest | `src/app/sitemap.ts`, `robots.ts`, `manifest.ts` |
 | Share images (1200×630) | `opengraph-image.tsx` files, renderer in `src/lib/og.tsx` |
 | Structured data | Organization + WebSite (search box), ItemList, TouristDestination, TouristTrip, BreadcrumbList, FAQPage |
@@ -188,13 +191,39 @@ After deploying, submit `https://<your-domain>/sitemap.xml` in Google Search Con
 
 ---
 
-## 🌐 Bangla translations (not active)
+## 🌐 English ⇄ বাংলা
 
-The site is currently **English-only**. Bangla translations of the interface and all content are kept in the repo for later use but are not connected to any page:
+The whole site (interface **and** content) is available in English and Bangla.
 
-- `src/i18n/dictionaries/bn.ts` (interface text)
-- `src/data/bn/` (essentials, phrasebook, transport glossary)
-- `src/data/destinations/bn/*.json` (all 9 guides)
-- `src/data/spots/bn/group-*.ts` (all 67 spots)
+| URL | Language |
+| --- | --- |
+| `/explore`, `/destinations/sajek-valley`… | English (default, clean URLs) |
+| `/bn/explore`, `/bn/destinations/sajek-valley`… | বাংলা |
 
-`node scripts/check-translation.mjs <en-file> <bn-file> [enExport] [bnExport]` checks that a translation has the same structure, numbers and locked fields as the English file.
+- **Switcher:** the EN / বাং pill in the header, the mobile menu and the footer keeps you on the same page (query string and `#section` included).
+- **Remembered:** the choice is saved in a `lang` cookie, so the site opens in Bangla next time.
+- **SEO:** every page has its own canonical URL plus `hreflang` alternates (en, bn, x-default), and the sitemap lists both languages.
+- **Search works in both scripts:** "Jaflong" and "জাফলং" find the same place.
+
+How it works:
+
+| Piece | Where |
+| --- | --- |
+| Routing (`/en/…` → clean URL, un-prefixed → English, cookie redirect) | `src/proxy.ts` |
+| Locales, `localizePath()`, `fmt()` | `src/i18n/config.ts` |
+| Interface text | `src/i18n/dictionaries/en.ts` + `bn.ts` (TypeScript enforces identical keys) |
+| Server / client helpers | `getLocale()`, `getT()` in `src/i18n/server.ts` · `useT()`, `useLocale()` in `src/i18n/client.tsx` |
+| Language-aware links | `src/components/i18n/Link.tsx` (use instead of `next/link`) |
+| Switcher | `src/components/i18n/LanguageSwitcher.tsx` |
+| Bangla content | `src/data/destinations/bn/*.json`, `src/data/spots/bn/group-*.ts`, `src/data/bn/*` (essentials, phrases, transport) |
+
+**Adding a guide or spot?** Add the Bangla copy too, then check it:
+
+```bash
+node scripts/check-translation.mjs src/data/destinations/<slug>.json src/data/destinations/bn/<slug>.json
+node scripts/check-translation.mjs src/data/spots/group-a.ts src/data/spots/bn/group-a.ts SPOTS_A SPOTS_A_BN
+```
+
+The checker makes sure the translation has the same structure, the same numbers (prices, coordinates) and unchanged locked fields (slugs, enums, photo credits).
+
+> Share images (OG) stay in English, because the image renderer has no Bangla font.

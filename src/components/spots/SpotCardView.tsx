@@ -5,7 +5,7 @@
  * Client component (reads the page language itself); usable from server and client components.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import type { SpotCard } from "@/data/spots";
 import { DifficultyBadge } from "@/components/ui/Badge";
 import { cn } from "@/lib/format";

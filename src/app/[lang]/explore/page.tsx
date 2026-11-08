@@ -22,6 +22,9 @@ export default async function ExplorePage() {
   const covered = getCoveredDistricts(locale);
   const lalakhal = getAllSpots(locale).find((s) => s.slug === "lalakhal");
   const heroPhoto = lalakhal ? getSpotPhoto(lalakhal, locale) : spots[0].photo;
+  // On Bangla pages spot names are Bangla — send the English names too so "jaflong" still finds জাফলং
+  const altNames =
+    locale === "bn" ? Object.fromEntries(getAllSpots("en").map((s) => [s.slug, [s.name, ...(s.upazila ? [s.upazila] : [])]])) : undefined;
 
   return (
     <>
@@ -39,7 +42,7 @@ export default async function ExplorePage() {
       <div className="relative z-20 mx-auto -mt-28 max-w-7xl px-4 pb-14 sm:-mt-32 sm:px-6 lg:px-8">
         {/* useSearchParams needs a Suspense boundary so the shell can prerender */}
         <Suspense fallback={<div className="mx-auto h-16 max-w-3xl animate-pulse rounded-full bg-white ring-1 ring-jute" />}>
-          <SpotExplorer spots={spots} districts={DISTRICTS} covered={covered} topSpots={getTopSpots(10, locale)} />
+          <SpotExplorer spots={spots} districts={DISTRICTS} covered={covered} topSpots={getTopSpots(10, locale)} altNames={altNames} />
         </Suspense>
       </div>
     </>

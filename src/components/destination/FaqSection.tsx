@@ -1,6 +1,6 @@
 /** Section 8 — FAQ accordion (native <details>: no JS, fully crawlable). */
 import type { Faq } from "@/lib/faq";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { fmt } from "@/i18n/config";
 import { getT } from "@/i18n/server";

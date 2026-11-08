@@ -36,7 +36,7 @@ export function generateStaticParams() {
   return getAllDestinations().map((d) => ({ slug: d.slug }));
 }
 
-export async function generateMetadata(props: PageProps<"/destinations/[slug]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/[lang]/destinations/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const locale = await getLocale();
   const t = await getT();
@@ -135,7 +135,7 @@ function buildJsonLd(d: Destination, faqs: Faq[], locale: Locale, t: Dictionary)
 }
 
 /** Everything that depends on the URL `slug` — rendered inside <Suspense> (see default export). */
-async function DestinationContent({ params }: { params: PageProps<"/destinations/[slug]">["params"] }) {
+async function DestinationContent({ params }: { params: PageProps<"/[lang]/destinations/[slug]">["params"] }) {
   const { slug } = await params;
   const locale = await getLocale();
   const t = await getT();
@@ -170,7 +170,7 @@ async function DestinationContent({ params }: { params: PageProps<"/destinations
  * The page itself returns instantly; the slug-dependent content streams in
  * inside Suspense. All guides are prerendered, so the skeleton only flashes during client navigation.
  */
-export default function DestinationPage(props: PageProps<"/destinations/[slug]">) {
+export default function DestinationPage(props: PageProps<"/[lang]/destinations/[slug]">) {
   return (
     <Suspense fallback={<PhotoPageSkeleton />}>
       <DestinationContent params={props.params} />

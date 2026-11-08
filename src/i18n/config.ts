@@ -2,15 +2,13 @@
  * ============================================================================
  *  Languages
  * ============================================================================
- *  The site is English-only. All UI text lives in dictionaries/en.ts.
- *  Bangla translations (dictionaries/bn.ts, data/bn, destinations/bn,
- *  spots/bn) are kept in the repo but NOT wired into any route.
+ *  English lives at the site root (/explore), Bangla under /bn (/bn/explore).
+ *  Internally every page is under app/[lang]; src/proxy.ts rewrites
+ *  un-prefixed URLs to /en so English URLs stay clean.
  * ============================================================================
  */
-/** Languages the site actually serves. */
-export const LOCALES = ["en"] as const;
-/** Languages the data layer understands (Bangla kept for later). */
-export type Locale = "en" | "bn";
+export const LOCALES = ["en", "bn"] as const;
+export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "en";
 
 export const LOCALE_META: Record<Locale, { label: string; short: string; htmlLang: string; ogLocale: string }> = {
@@ -19,7 +17,7 @@ export const LOCALE_META: Record<Locale, { label: string; short: string; htmlLan
 };
 
 export function isLocale(value: string | undefined | null): value is Locale {
-  return value === "en" || value === "bn";
+  return !!value && (LOCALES as readonly string[]).includes(value);
 }
 
 /** "/explore" → "/bn/explore" for Bangla; unchanged for English. Leaves external/anchor links alone. */

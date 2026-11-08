@@ -11,28 +11,28 @@
  *  - With no query, shows a "browse by district" photo grid.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useId, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useId, useMemo, useRef, useState } from "react";
 import type { District } from "@/data/districts";
 import type { SpotCard } from "@/data/spots";
-import type { Photo } from "@/types/destination";
+import type { Division, Photo } from "@/types/destination";
 import type { SpotCategory } from "@/types/spot";
-import { normalize, searchSpots, suggest } from "@/lib/spot-search";
+import { normalize, searchSpots, suggest, type AltNames } from "@/lib/spot-search";
 import { SpotCardView } from "./SpotCardView";
 import { TopSpots } from "./TopSpots";
 import type { TopSpot } from "@/data/spots/top";
 import { cn } from "@/lib/format";
+import { fmt } from "@/i18n/config";
+import { useLocale, useLocalizedPath, useT } from "@/i18n/client";
 
 interface CoveredDistrict {
   name: string;
   bn: string;
-  division: string;
+  division: Division;
   count: number;
   photo: Photo;
 }
-
-const TRY = ["Sylhet", "Cox's Bazar", "Bandarban", "Dhaka", "সিলেট", "waterfall", "Chattogram"];
 
 function Grid({ items }: { items: SpotCard[] }) {
   return (
@@ -43,6 +43,7 @@ function Grid({ items }: { items: SpotCard[] }) {
 }
 
 function GroupHeading({ title, sub, count }: { title: string; sub?: string; count: number }) {
+  const t = useT();
   return (
     <div className="mb-6 flex flex-wrap items-end justify-between gap-2 border-b border-jute pb-4">
       <div>
@@ -50,13 +51,33 @@ function GroupHeading({ title, sub, count }: { title: string; sub?: string; coun
         {sub && <p className="mt-1 text-sm text-muted">{sub}</p>}
       </div>
       <span className="rounded-full bg-brand-50 px-3 py-1 text-sm font-semibold text-brand-700">
-        {count} place{count === 1 ? "" : "s"}
+        {fmt(count === 1 ? t.explore.placeCountOne : t.explore.placeCount, { count })}
       </span>
     </div>
   );
 }
 
-export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spots: SpotCard[]; districts: District[]; covered: CoveredDistrict[]; topSpots?: TopSpot[] }) {
+export function SpotExplorer({
+  spots,
+  districts,
+  covered,
+  topSpots = [],
+  altNames,
+}: {
+  spots: SpotCard[];
+  districts: District[];
+  covered: CoveredDistrict[];
+  topSpots?: TopSpot[];
+  /** Extra searchable names by slug — the English names on Bangla pages. */
+  altNames?: AltNames;
+}) {
+  const t = useT();
+  const locale = useLocale();
+  const lp = useLocalizedPath();
+  const bn = locale === "bn";
+  /* District names are English keys in the data; show (and search with) the page-language name */
+  const dName = (name: string) => (bn ? (districts.find((d) => d.name === name)?.bn ?? name) : name);
+  const divisionLabel = (d: District["division"]) => fmt(t.labels.divisionSuffix, { name: t.labels.division[d] });
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -98,8 +119,27 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
     setActive(-1);
   }
 
-  const result = useMemo(() => searchSpots(query, spots, districts), [query, spots, districts]);
-  const suggestions = useMemo(() => suggest(query, spots, districts), [query, spots, districts]);
+  const result = useMemo(() => searchSpots(query, spots, districts, altNames), [query, spots, districts, altNames]);
+  const rawSuggestions = useMemo(() => suggest(query, spots, districts, altNames), [query, spots, districts, altNames]);
+  const suggestions = rawSuggestions.map((s) =>
+    s.type === "district"
+      ? {
+          type: s.type,
+          label: bn ? s.district.bn : s.district.name,
+          sub: `${bn ? s.district.name : s.district.bn} · ${divisionLabel(s.district.division)} · ${s.count ? fmt(s.count === 1 ? t.explore.placeCountOne : t.explore.placeCount, { count: s.count }) : t.explore.noPlacesYet}`,
+          value: bn ? s.district.bn : s.district.name,
+          href: undefined,
+          image: undefined,
+        }
+      : {
+          type: s.type,
+          label: s.spot.name,
+          sub: `${bn ? (altNames?.[s.spot.slug]?.[0] ?? s.spot.localName) : s.spot.localName} · ${dName(s.spot.district)}`,
+          value: s.spot.name,
+          href: `/spots/${s.spot.slug}`,
+          image: s.spot.photo.src,
+        },
+  );
   const showSuggest = focused && suggestions.length > 0;
 
   const divisionSpots = result.division ? spots.filter((s) => s.division === result.division) : [];
@@ -117,7 +157,7 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
   const pick = (i: number) => {
     const s = suggestions[i];
     if (!s) return;
-    if (s.href) router.push(s.href);
+    if (s.href) router.push(lp(s.href));
     else setQuery(s.value);
     setFocused(false);
     inputRef.current?.blur();
@@ -148,8 +188,8 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
             onFocus={() => setFocused(true)}
             onBlur={() => setTimeout(() => setFocused(false), 120)}
             onKeyDown={onKeyDown}
-            placeholder="Type a district or place, e.g. Sylhet or Jaflong"
-            aria-label="Search by district or place"
+            placeholder={t.explore.placeholder}
+            aria-label={t.explore.aria}
             role="combobox"
             aria-expanded={showSuggest}
             aria-controls={listId}
@@ -158,15 +198,15 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
             className="min-w-0 flex-1 bg-transparent py-3 text-base text-ink placeholder:text-muted focus:outline-none sm:text-lg"
           />
           {!query && (
-            <kbd className="hidden shrink-0 rounded-md bg-sand px-2 py-1 font-mono text-xs text-muted ring-1 ring-jute sm:block" title="Press / to search">/</kbd>
+            <kbd className="hidden shrink-0 rounded-md bg-sand px-2 py-1 font-mono text-xs text-muted ring-1 ring-jute sm:block" title={t.explore.pressSlash}>/</kbd>
           )}
           {query && (
-            <button type="button" onClick={() => { setQuery(""); inputRef.current?.focus(); }} aria-label="Clear search" className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-muted hover:bg-sand">
+            <button type="button" onClick={() => { setQuery(""); inputRef.current?.focus(); }} aria-label={t.explore.clearSearch} className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-muted hover:bg-sand">
               ✕
             </button>
           )}
           <button type="submit" className="shrink-0 rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
-            Search
+            {t.explore.search}
           </button>
         </form>
 
@@ -193,7 +233,7 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
                   <span className="block truncate font-semibold text-ink">{s.label}</span>
                   <span className="block truncate text-xs text-muted">{s.sub}</span>
                 </span>
-                <span className="text-xs font-semibold text-brand-600">{s.type === "district" ? "District" : "Place"}</span>
+                <span className="text-xs font-semibold text-brand-600">{s.type === "district" ? t.explore.district : t.explore.place}</span>
               </li>
             ))}
           </ul>
@@ -201,10 +241,10 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
 
         {/* Quick tries */}
         <p className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-muted">
-          <span>Try:</span>
-          {TRY.map((t) => (
-            <button key={t} type="button" onClick={() => setQuery(t)} className="rounded-full bg-white px-3 py-1 font-medium text-ink/80 ring-1 ring-jute transition hover:bg-brand-600 hover:text-white">
-              {t}
+          <span>{t.explore.try}</span>
+          {t.explore.tries.map((q) => (
+            <button key={q} type="button" onClick={() => setQuery(q)} className="rounded-full bg-white px-3 py-1 font-medium text-ink/80 ring-1 ring-jute transition hover:bg-brand-600 hover:text-white">
+              {q}
             </button>
           ))}
         </p>
@@ -213,24 +253,24 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
       {/* ================= Browse (no query) ================= */}
       {!hasQuery && topSpots.length > 0 && (
         <section className="mt-16">
-          <GroupHeading title="Top 10 must-see spots" sub="Not sure where to start? Begin with the places visitors love most." count={topSpots.length} />
+          <GroupHeading title={t.explore.topTitle} sub={t.explore.topSub} count={topSpots.length} />
           <TopSpots spots={topSpots} variant="row" />
         </section>
       )}
 
       {!hasQuery && (
         <section className="mt-16">
-          <GroupHeading title="Browse by district" sub="Tap a district to see every place worth visiting there." count={spots.length} />
+          <GroupHeading title={t.explore.browseTitle} sub={t.explore.browseSub} count={spots.length} />
           <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
             {covered.map((d) => (
               <li key={d.name}>
-                <button type="button" onClick={() => { setQuery(d.name); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="group relative block aspect-[4/5] w-full overflow-hidden rounded-3xl text-left">
+                <button type="button" onClick={() => { setQuery(bn ? d.bn : d.name); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="group relative block aspect-[4/5] w-full overflow-hidden rounded-3xl text-left">
                   <Image src={d.photo.src} alt="" fill sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, 50vw" className="object-cover transition duration-700 group-hover:scale-110" />
                   <span className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                   <span className="absolute inset-x-0 bottom-0 p-4 text-white">
-                    <span className="block text-xs font-semibold text-white/75">{d.division}</span>
-                    <span className="block font-display text-2xl font-semibold leading-tight">{d.name}</span>
-                    <span className="mt-1 block text-xs text-white/85">{d.bn} · {d.count} place{d.count > 1 ? "s" : ""}</span>
+                    <span className="block text-xs font-semibold text-white/75">{t.labels.division[d.division]}</span>
+                    <span className="block font-display text-2xl font-semibold leading-tight">{bn ? d.bn : d.name}</span>
+                    <span className="mt-1 block text-xs text-white/85">{bn ? d.name : d.bn} · {fmt(d.count === 1 ? t.explore.placeCountOne : t.explore.placeCount, { count: d.count })}</span>
                   </span>
                 </button>
               </li>
@@ -241,17 +281,19 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
 
       {/* ================= Results ================= */}
       {tooShort && empty && (
-        <p className="mt-14 text-center text-sm text-muted">Keep typing… (at least 3 letters)</p>
+        <p className="mt-14 text-center text-sm text-muted">{t.explore.keepTyping}</p>
       )}
 
       {hasQuery && !nothing && !(tooShort && empty) && (
         <div className="mt-14">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="text-sm text-muted" aria-live="polite">
-              <strong className="text-ink">{total}</strong> place{total === 1 ? "" : "s"} for &ldquo;{query.trim()}&rdquo;
+              {fmt(total === 1 ? t.explore.resultsForOne : t.explore.resultsFor, { query: query.trim() })
+                .split("{count}")
+                .map((part, i) => (i === 0 ? part : <Fragment key={i}><strong className="text-ink">{total}</strong>{part}</Fragment>))}
             </p>
             {categories.length > 1 && (
-              <div className="no-scrollbar flex gap-2 overflow-x-auto" role="group" aria-label="Filter by type">
+              <div className="no-scrollbar flex gap-2 overflow-x-auto" role="group" aria-label={t.explore.filterByType}>
                 {(["All", ...categories] as const).map((c) => (
                   <button
                     key={c}
@@ -260,7 +302,7 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
                     onClick={() => setCategory(c)}
                     className={cn("shrink-0 rounded-full px-3.5 py-1.5 text-xs font-semibold transition", category === c ? "bg-brand-600 text-white" : "bg-white text-ink/75 ring-1 ring-jute hover:bg-jute")}
                   >
-                    {c}
+                    {c === "All" ? t.explore.all : t.labels.category[c]}
                   </button>
                 ))}
               </div>
@@ -270,18 +312,18 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
           <div className="mt-10 space-y-16">
             {result.districts.map(({ district, spots: list }) => (
               <section key={district.name}>
-                <GroupHeading title={`Places to visit in ${district.name}`} sub={`${district.bn} · ${district.division} Division`} count={list.length} />
+                <GroupHeading title={fmt(t.explore.placesIn, { district: dName(district.name) })} sub={`${bn ? district.name : district.bn} · ${divisionLabel(district.division)}`} count={list.length} />
                 {list.length ? (
-                  byCat(list).length ? <Grid items={byCat(list)} /> : <p className="text-sm text-muted">No {category.toLowerCase()} spots in {district.name}.</p>
+                  byCat(list).length ? <Grid items={byCat(list)} /> : <p className="text-sm text-muted">{fmt(t.explore.noTypeIn, { type: category === "All" ? "" : t.labels.category[category].toLowerCase(), district: dName(district.name) })}</p>
                 ) : (
                   <div className="rounded-3xl bg-white p-8 text-center ring-1 ring-jute">
                     <p className="text-3xl">🧭</p>
-                    <p className="mt-2 font-semibold">We haven&apos;t added places in {district.name} yet</p>
-                    <p className="mt-1 text-sm text-muted">New districts are added regularly. Meanwhile, try one of these:</p>
+                    <p className="mt-2 font-semibold">{fmt(t.explore.notAddedYet, { district: dName(district.name) })}</p>
+                    <p className="mt-1 text-sm text-muted">{t.explore.notAddedText}</p>
                     <div className="mt-4 flex flex-wrap justify-center gap-2">
                       {covered.filter((c) => c.division === district.division).concat(covered.filter((c) => c.division !== district.division)).slice(0, 6).map((c) => (
-                        <button key={c.name} type="button" onClick={() => setQuery(c.name)} className="rounded-full bg-sand px-3 py-1.5 text-sm font-semibold ring-1 ring-jute hover:bg-brand-600 hover:text-white">
-                          {c.name}
+                        <button key={c.name} type="button" onClick={() => setQuery(bn ? c.bn : c.name)} className="rounded-full bg-sand px-3 py-1.5 text-sm font-semibold ring-1 ring-jute hover:bg-brand-600 hover:text-white">
+                          {bn ? c.bn : c.name}
                         </button>
                       ))}
                     </div>
@@ -292,14 +334,14 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
 
             {result.division && (
               <section>
-                <GroupHeading title={`${result.division} Division`} sub="Every district we cover in this division" count={divisionSpots.length} />
+                <GroupHeading title={divisionLabel(result.division)} sub={t.explore.divisionSub} count={divisionSpots.length} />
                 <div className="space-y-12">
-                  {Array.from(new Set(divisionSpots.map((s) => s.district))).map((dName) => {
-                    const list = byCat(divisionSpots.filter((s) => s.district === dName));
+                  {Array.from(new Set(divisionSpots.map((s) => s.district))).map((dKey) => {
+                    const list = byCat(divisionSpots.filter((s) => s.district === dKey));
                     return list.length ? (
-                      <div key={dName}>
+                      <div key={dKey}>
                         <h3 className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-brand-600">
-                          <span aria-hidden className="h-px w-6 bg-brand-600" /> {dName}
+                          <span aria-hidden className="h-px w-6 bg-brand-600" /> {dName(dKey)}
                         </h3>
                         <Grid items={list} />
                       </div>
@@ -311,7 +353,7 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
 
             {result.spots.length > 0 && byCat(result.spots).length > 0 && (
               <section>
-                <GroupHeading title={result.districts.length || result.division ? "Other matching places" : "Matching places"} count={byCat(result.spots).length} />
+                <GroupHeading title={result.districts.length || result.division ? t.explore.otherMatching : t.explore.matching} count={byCat(result.spots).length} />
                 <Grid items={byCat(result.spots)} />
               </section>
             )}
@@ -322,16 +364,16 @@ export function SpotExplorer({ spots, districts, covered, topSpots = [] }: { spo
       {nothing && (
         <div className="mx-auto mt-14 max-w-xl rounded-3xl bg-white p-10 text-center ring-1 ring-jute">
           <p className="text-4xl">🔎</p>
-          <p className="mt-3 font-display text-2xl font-semibold">No places found for &ldquo;{query.trim()}&rdquo;</p>
-          <p className="mt-2 text-sm text-muted">Check the spelling, or pick one of the districts we cover:</p>
+          <p className="mt-3 font-display text-2xl font-semibold">{fmt(t.explore.nothingTitle, { query: query.trim() })}</p>
+          <p className="mt-2 text-sm text-muted">{t.explore.nothingText}</p>
           <div className="mt-5 flex flex-wrap justify-center gap-2">
             {covered.map((c) => (
-              <button key={c.name} type="button" onClick={() => setQuery(c.name)} className="rounded-full bg-sand px-3 py-1.5 text-sm font-semibold ring-1 ring-jute hover:bg-brand-600 hover:text-white">
-                {c.name}
+              <button key={c.name} type="button" onClick={() => setQuery(bn ? c.bn : c.name)} className="rounded-full bg-sand px-3 py-1.5 text-sm font-semibold ring-1 ring-jute hover:bg-brand-600 hover:text-white">
+                {bn ? c.bn : c.name}
               </button>
             ))}
           </div>
-          <Link href="/destinations" className="mt-6 inline-block text-sm font-semibold text-brand-600 underline underline-offset-4">Or browse the full destination guides</Link>
+          <Link href="/destinations" className="mt-6 inline-block text-sm font-semibold text-brand-600 underline underline-offset-4">{t.explore.orGuides}</Link>
         </div>
       )}
     </div>

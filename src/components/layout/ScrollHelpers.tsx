@@ -1,10 +1,8 @@
 "use client";
 
 /**
- * Site-wide scroll helpers:
- *  - a thin reading-progress bar at the very top
- *  - a "back to top" button that appears after scrolling down
- * Both are hidden when printing.
+ * Site-wide "back to top" button that appears after scrolling down.
+ * Hidden when printing.
  */
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/format";
@@ -12,31 +10,25 @@ import { useT } from "@/i18n/client";
 
 export function ScrollHelpers() {
   const t = useT();
-  const [progress, setProgress] = useState(0);
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
     let frame = 0;
     const update = () => {
       frame = 0;
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(max > 0 ? Math.min(1, window.scrollY / max) : 0);
       setShowTop(window.scrollY > 900);
     };
     const onScroll = () => { if (!frame) frame = requestAnimationFrame(update); };
     update();
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
     return () => {
       window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
       cancelAnimationFrame(frame);
     };
   }, []);
 
   return (
     <div className="print:hidden">
-      <div aria-hidden className="fixed inset-x-0 top-0 z-[60] h-1 origin-left bg-gradient-to-r from-brand-500 via-brand-200 to-sun" style={{ transform: `scaleX(${progress})` }} />
       <button
         type="button"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

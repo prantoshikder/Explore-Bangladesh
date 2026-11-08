@@ -1,9 +1,10 @@
 /**
- * Per-page metadata builder. Gives every page a canonical URL and complete
- * Open Graph & Twitter tags (OG images come from opengraph-image.tsx files).
+ * Per-page metadata builder. Gives every page a canonical URL in its own
+ * language, hreflang alternates (English ⇄ Bangla) and complete Open Graph &
+ * Twitter tags (OG images come from opengraph-image.tsx files).
  */
 import type { Metadata } from "next";
-import { LOCALE_META, localizePath, type Locale } from "@/i18n/config";
+import { LOCALES, LOCALE_META, localizePath, type Locale } from "@/i18n/config";
 import { SITE } from "./site";
 
 export function pageMetadata({
@@ -27,7 +28,10 @@ export function pageMetadata({
     title,
     description,
     ...(keywords ? { keywords } : {}),
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: { ...Object.fromEntries(LOCALES.map((l) => [l, localizePath(l, path)])), "x-default": localizePath("en", path) },
+    },
     openGraph: { type: ogType, siteName: SITE.name, locale: LOCALE_META[locale].ogLocale, url, title, description },
     twitter: { card: "summary_large_image", title, description },
   };

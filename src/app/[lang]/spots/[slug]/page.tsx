@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { PhotoPageSkeleton } from "@/components/ui/PageSkeleton";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { notFound } from "next/navigation";
 import { getAllSpots, getSpotBySlug, getSpotPhoto, getSpotsByDistrict, toSpotCard } from "@/data/spots";
 import { getDestinationBySlug } from "@/data/destinations";
@@ -31,7 +31,7 @@ function districtName(district: string, locale: Locale): string {
   return locale === "bn" ? (DISTRICTS.find((d) => d.name === district)?.bn ?? district) : district;
 }
 
-export async function generateMetadata(props: PageProps<"/spots/[slug]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/[lang]/spots/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const locale = await getLocale();
   const t = await getT();
@@ -51,7 +51,7 @@ export async function generateMetadata(props: PageProps<"/spots/[slug]">): Promi
 }
 
 /** Everything that depends on the URL `slug` — rendered inside <Suspense> (see default export). */
-async function SpotContent({ params }: { params: PageProps<"/spots/[slug]">["params"] }) {
+async function SpotContent({ params }: { params: PageProps<"/[lang]/spots/[slug]">["params"] }) {
   const { slug } = await params;
   const locale = await getLocale();
   const t = await getT();
@@ -264,7 +264,7 @@ async function SpotContent({ params }: { params: PageProps<"/spots/[slug]">["par
  * The page itself returns instantly; the slug-dependent content streams in
  * inside Suspense. All spots are prerendered, so the skeleton only flashes during client navigation.
  */
-export default function SpotPage(props: PageProps<"/spots/[slug]">) {
+export default function SpotPage(props: PageProps<"/[lang]/spots/[slug]">) {
   return (
     <Suspense fallback={<PhotoPageSkeleton />}>
       <SpotContent params={props.params} />

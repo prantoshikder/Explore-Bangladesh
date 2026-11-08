@@ -8,13 +8,14 @@
  * Server component — no client JS.
  */
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { ESSENTIALS_LAST_VERIFIED, BDT_PER_USD } from "@/data/essentials";
 import { getFeaturedSummaries } from "@/data/destinations";
 import { getGalleryItems } from "@/data/gallery";
 import { monthYear } from "@/lib/format";
 import { Logo } from "@/components/ui/Logo";
 import { fmt } from "@/i18n/config";
+import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 import { getLocale } from "@/i18n/server";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -147,7 +148,7 @@ export async function Footer() {
       {/* 5. Oversized wordmark */}
       <div aria-hidden className="relative -mt-16 overflow-hidden sm:-mt-24">
         <p className="mx-auto max-w-7xl translate-y-[18%] px-4 text-center font-display text-[17vw] leading-none font-semibold tracking-tight text-white/[0.04] select-none sm:px-6 lg:px-8 xl:text-[13rem]">
-          Bangladesh
+          {locale === "bn" ? "বাংলাদেশ" : "Bangladesh"}
         </p>
       </div>
 
@@ -155,10 +156,13 @@ export async function Footer() {
       <div className="relative border-t border-white/10 bg-black/15">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-xs text-brand-200/70 sm:flex-row sm:px-6 lg:px-8">
           <p>{fmt(f.copyright, { year, date: monthYear(ESSENTIALS_LAST_VERIFIED, t.labels.months) })}</p>
+          <div className="flex flex-wrap items-center gap-3">
+          <LanguageSwitcher tone="dark" />
           <a href="#" className="group inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/20">
             {f.backToTop}
             <span aria-hidden className="transition group-hover:-translate-y-0.5">↑</span>
           </a>
+          </div>
         </div>
       </div>
     </footer>
