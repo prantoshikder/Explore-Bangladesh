@@ -240,14 +240,21 @@ export function SpotExplorer({
         )}
 
         {/* Quick tries */}
-        <p className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-muted">
-          <span>{t.explore.try}</span>
-          {t.explore.tries.map((q) => (
-            <button key={q} type="button" onClick={() => setQuery(q)} className="rounded-full bg-white px-3 py-1 font-medium text-ink/80 ring-1 ring-jute transition hover:bg-brand-600 hover:text-white">
+        {/* Sits below the hero's wave edge so every chip is on the light background */}
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-2 text-sm sm:mt-12">
+          <span className="mr-1 text-xs font-bold tracking-[0.18em] text-brand-600 uppercase">{t.explore.try}</span>
+          {t.explore.tries.map((q, i) => (
+            <button
+              key={q}
+              type="button"
+              onClick={() => setQuery(q)}
+              className="group inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-semibold text-ink/80 shadow-sm ring-1 ring-jute transition hover:-translate-y-0.5 hover:bg-brand-600 hover:text-white hover:shadow-md hover:ring-brand-600"
+            >
+              <span aria-hidden className="text-xs opacity-70 group-hover:opacity-100">{i < t.explore.tries.length - 2 ? "📍" : i === t.explore.tries.length - 2 ? "💧" : "🏖️"}</span>
               {q}
             </button>
           ))}
-        </p>
+        </div>
       </div>
 
       {/* ================= Browse (no query) ================= */}
